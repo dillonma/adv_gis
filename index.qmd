@@ -1,0 +1,168 @@
+---
+title: "Advanced GIS"
+format: html
+---
+
+<!-- https://bootswatch.com/cyborg/ -->
+
+## GES 486/687/673: Advanced Applications in Geographic Information Systems
+
+**Instructor: [Dillon Mahmoudi](http://ges.umbc.edu/mahmoudi)** (he/him)\
+**Email:** dillonm\@umbc.edu\
+**Lecture:** Tue 6:00PM, Sondheim 007\
+**Office hours:** Wed 11:00AM - 12:00PM, Sondheim 211-J and by appointment (email me)
+
+![](material/dollardollarbmore.png){fig-align="center"}
+
+::: callout-important
+## Deadlines and Turn-ins
+
+This is the course outline and schedule. Please check [**Blackboard**](https://my3.my.umbc.edu/go/blackboard) for a link to this site, a link to the class Blackboard session, and the books. Please turn in all labs on Bb.
+:::
+
+### Course Focus and Guiding Questions
+
+This course focuses on the methods for analyzing spatial data and provides an in-depth examination of technical aspects in spatial data handling, spatial pattern analysis, advanced raster processing, and dynamics GIS modeling. Students become familiar with advanced concepts, methods, and applications of Geographic Information Systems (GIS).
+
+### Course Objectives and Goals
+
+#### We will be pursuing a host of *goals*.
+
+1.  Provide general map development skills for the visualization, animation, scripting with spatial data.
+
+2.  Enhance student's abilities to initiate and complete a GIS project from proposal to end product which contains sound reasoning in the use of scientific methods.
+
+3.  Data management and R programming.
+
+4.  Exposure to open-source GIS software and new technologies.
+
+    1.  Satellite photos and machine-learning
+
+    2.  Point clouds --- specifically with open-source
+
+5.  New spatial analysis methods
+
+6.  Interactive dashboards (can we use R Shiny for this in the class?).
+
+7.  International data exposure (IPUMS).
+
+#### You'll be assessed on three *outcomes.*
+
+1.  Define what constitutes a spatial analysis using GIS.
+
+2.  Understand how GIS technology is implemented using open source software.
+
+3.  Complete an independent research-based analysis utilizing main-stream GIS technology to address a scientific topic of societal concern.
+
+#### As policy, in this course, I have *expectations* of you.
+
+1.  You'll do the labs. On time. **In order**. This isn't me being a stickler, it's how the course scaffolds.
+
+2.  No makeup quizzes will be given. Contact me ahead of time if you're going to miss a class.
+
+3.  Attendance is expected. Missing more than a couple classes will significantly reduce your grade.
+
+#### Be thinking about
+
+::: callout-tip
+## What do you want to spatially explore in this course?
+:::
+
+::: callout-tip
+## Can we map people and the environment, separately?
+:::
+
+::: callout-tip
+## What role does theory play in mapping and analysis?
+:::
+
+### Required Texts
+
+Cutts, Andrew and Anita Graser. 2018. **Learn QGIS**: your step-by-step guide to the fundamental of QGIS 3.4. Fourth Edition. Birmingham, UK: Packt Publishing. ISBN-13: 9781788998864.
+
+-   You can get this book online for free from the UMBC library: <https://catalog.umd.edu/docno=006153965>
+
+-   Make sure to review the Preface to get the needed data and materials for the various chapters.
+
+Walker, Kyle. Online. **Analyzing US Census Data**: Methods, Maps, and Models in R.
+
+-   This book is freely available: https://walker-data.com/census-r/
+
+### Course Schedule
+
+This course is designed around a series of labs and a final project. The final project is designed to give you flexibility to explore what you want to explore. In addition there will be short quizzes along the way which are part of your grade.
+
+#### Learning the tools
+
+-   Week 1 (Jan 31): Lab 1
+
+-   Week 2 (Feb 7): Lab 2
+
+-   ...
+
+#### Doing analysis
+
+-   Weeks 5-8
+
+#### Hot topics
+
+-   Week 9-12
+
+### Grading
+
+#### Scale
+
+**A** 90%-100%; **B** 80%-89%; **C** 70%-79%; **D** 60%-69%; **F** \< 60%
+
+#### Breakdown
+
+Attendance + Participation + Sharing: **10%**\
+Labs: **40%\
+**Quizzes: **10%**\
+Final Project: **40%**
+
+### Late Assignments
+
+::: callout-warning
+## Late Work
+
+You do \_yourself\_ a disservice when you turn in late work or skip assignments. It hampers your ability to build. Don't do it!
+:::
+
+Late work will be deducted 5% per twenty-four hour period that elapses after the due date. If foreseen or unforeseen circumstances prevent you from completing an assignment on time, you may request an extension. Extensions must be requested in advance of the due date. If the situation warrants an extension, we will determine a new due date for the essay based on your individual circumstances.
+
+### Plagiarism
+
+"Academic integrity has everything to do with one's character." -Former UMBC President Freeman Hrawbowski
+
+Academic integrity is an important value at UMBC. By enrolling in this course, each student assumes the responsibilities of an active participant in UMBC's scholarly community in which everyone's academic work and behavior are held to the highest standards of honesty. Cheating, fabrication, plagiarism, and helping others to commit these acts are all forms of academic dishonesty, and they are wrong. Academic misconduct could result in disciplinary action that may include, but is not limited to, suspension or dismissal.
+
+✅ Policy: <https://oue.umbc.edu/ai/>
+
+### Disabilities
+
+The Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires that all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Moreover, the UMBC requires students register with the Office of Student Disability Services and I will work with you and the SDS to ensure your success.
+
+### ✅ Policy: <http://sds.umbc.edu/accommodations/registering-with-sds>
+
+Discrimination and Sexual Harassment
+
+With UMBC, I am dedicated to fostering an inclusive and welcoming environment for all members of the campus community and recognizes its responsibility to maintain a campus environment which is free from Sexual Misconduct, and other Related Misconduct. This Policy embodies the University's commitment to increasing awareness of such prohibited conduct and actively promoting prevention and educational programs for community members in an effort to eliminate occurrences, prevent re-occurrences, and address and remedy the discriminatory effects of the Sexual Misconduct. For additional resources, see UMBC's policy posted online.
+
+✅ Policy: <http://humanrelations.umbc.edu/sexual-misconduct/umbc-resource-page-for-sexual-misconduct-andother-related-misconduct/>
+
+✅ File a complaint: <http://humanrelations.umbc.edu/sexual-misconduct/file-a-complaint/>
+
+**If you need to speak to someone, UMBC has the following resources available to support you:**
+
+-   The Counseling Center (confidential): 410-455-2472
+
+-   University Health Services (confidential): 410-455-2542
+
+-   After-hours counseling and care available by calling campus police at: 410-455-5555
+
+-   The Women's Center (quasi-confidential): 410-455-2714
+
+-   Title IX Coordinator (quasi-confidential): 410-455-1606
+
+✅ Additional on and off campus supports and resources can be found at: <http://humanrelations.umbc.edu/sexualmisconduct/gender-equitytitle-ix/>

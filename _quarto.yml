@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Advanced GIS 486/687"
@@ -17,3 +18,4 @@ format:
     toc: true
 
 editor: visual
+

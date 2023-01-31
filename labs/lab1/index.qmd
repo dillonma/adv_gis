@@ -1,0 +1,38 @@
+---
+title: "advLab 1"
+format: html
+---
+
+## Lab 1 / Week 1
+
+-   Download and install QGIS on your computer: <https://www.qgis.org/en/site/>
+
+    -   If you're on Windows, I highly recommend doing it through Chocolatey.
+
+        -   Installing Chocolatey: <https://chocolatey.org/install>
+
+        -   Installing QGIS in Chocolatey: <https://chocolatey.org/packages/QGIS>
+
+-   Download and install R and RStudio (don't do this through Chocolatey).
+
+    -   Install R: [https://cran.r-project.org/](https://cran.r-project.org/https://cran.r-project.org/)
+
+    -   Install RStudio: <https://rstudio.com/products/rstudio/download/>
+
+-   Create an account on github.com
+
+-   Reproduce maps in Chapters 2-4 in the Learn QGIS book.
+
+    -   Find three maps that you'd like to embellish or add flair to customize the maps.
+
+::: {.alert .alert-info}
+### What to turn-in
+
+Turn in a single PDF that contains:
+
+-   A nicely formatted cover page with your name, email address, your github profile and link, your interests in the course, and inklings on a potential final project. Include any other material you think I need to know.
+
+-   Your three embellished maps. Challenge yourself. You can be creative customize the cartography, but you could also add additional data. For each map, explain what you embellished.
+
+-   **Hint:** Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files.
+:::
