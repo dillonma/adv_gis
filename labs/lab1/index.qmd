@@ -1,9 +1,11 @@
 ---
-title: "advLab 1"
+title: "Lab 1"
 format: html
 ---
 
 ## Lab 1 / Week 1
+
+You'll need to carefully read the instructions to get everything installed correctly.
 
 -   Download and install QGIS on your computer: <https://www.qgis.org/en/site/>
 
@@ -25,14 +27,30 @@ format: html
 
     -   Find three maps that you'd like to embellish or add flair to customize the maps.
 
+-   **Graduate students**: Please be review and be conversant in how GIS can connect doing things in the world and uneven knowledge production. See especially the sections Ontology Research (starts page 731) and the Conclusion (starts page 735).
+
+    -   Schuurman, Nadine. 2006. "Formalization Matters: Critical GIS and Ontology Research." *Annals of the Association of American Geographers* 96 (4): 726--39. <https://doi.org/10.1111/j.1467-8306.2006.00513.x>
+
 ::: {.alert .alert-info}
 ### What to turn-in
 
 Turn in a single PDF that contains:
 
--   A nicely formatted cover page with your name, email address, your github profile and link, your interests in the course, and inklings on a potential final project. Include any other material you think I need to know.
+1.  A nicely formatted cover page with
 
--   Your three embellished maps. Challenge yourself. You can be creative customize the cartography, but you could also add additional data. For each map, explain what you embellished.
+    -   your name,
 
--   **Hint:** Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files.
+    -   your UMBC email address,
+
+    -   your github name, and a link to your github profile (it's okay if nothing is there),
+
+    -   your interests and how they relate to the course, and
+
+    -   inklings on a potential final project.
+
+    -   Lastly, include any other material you think I need to know.
+
+2.  Your three embellished maps. Challenge yourself. You can be creative and customize the cartography, but you could also add additional data. For each map, explain what you embellished and why pushed yourself to do it that way.
+
+**Hint:** Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files.
 :::
