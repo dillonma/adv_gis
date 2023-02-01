@@ -26,6 +26,7 @@ You'll need to carefully read the instructions to get everything installed corre
 -   Reproduce maps in Chapters 2-4 in the Learn QGIS book.
 
     -   Find three maps that you'd like to embellish or add flair to customize the maps.
+    -   Read the Preface to find the links to the QGIS sample data and the data for the book. If you can't find the data for the book, use this link to download the zip file (and extract!) the files: [https://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharing](https://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharinghttps://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharing)
 
 -   **Graduate students**: Please be review and be conversant in how GIS can connect doing things in the world and uneven knowledge production. See especially the sections Ontology Research (starts page 731) and the Conclusion (starts page 735).
 
