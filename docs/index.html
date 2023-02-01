@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Advanced GIS 486/687 - Advanced GIS</title>
+<title>Advanced GIS 486/687 - Lab 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,7 +60,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Advanced GIS 486/687</span>
     </a>
   </div>
@@ -80,11 +80,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="../../index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs/lab1/index.html">
+    <a class="nav-link active" href="../../labs/lab1/index.html" aria-current="page">
  <span class="menu-text">Lab 1</span></a>
   </li>  
 </ul>
@@ -102,17 +102,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ges-486687673-advanced-applications-in-geographic-information-systems" id="toc-ges-486687673-advanced-applications-in-geographic-information-systems" class="nav-link active" data-scroll-target="#ges-486687673-advanced-applications-in-geographic-information-systems">GES 486/687/673: Advanced Applications in Geographic Information Systems</a>
+  <li><a href="#lab-1-week-1" id="toc-lab-1-week-1" class="nav-link active" data-scroll-target="#lab-1-week-1">Lab 1 / Week 1</a>
   <ul class="collapse">
-  <li><a href="#course-focus-and-guiding-questions" id="toc-course-focus-and-guiding-questions" class="nav-link" data-scroll-target="#course-focus-and-guiding-questions">Course Focus and Guiding Questions</a></li>
-  <li><a href="#course-objectives-and-goals" id="toc-course-objectives-and-goals" class="nav-link" data-scroll-target="#course-objectives-and-goals">Course Objectives and Goals</a></li>
-  <li><a href="#required-texts" id="toc-required-texts" class="nav-link" data-scroll-target="#required-texts">Required Texts</a></li>
-  <li><a href="#course-schedule" id="toc-course-schedule" class="nav-link" data-scroll-target="#course-schedule">Course Schedule</a></li>
-  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
-  <li><a href="#late-assignments" id="toc-late-assignments" class="nav-link" data-scroll-target="#late-assignments">Late Assignments</a></li>
-  <li><a href="#plagiarism" id="toc-plagiarism" class="nav-link" data-scroll-target="#plagiarism">Plagiarism</a></li>
-  <li><a href="#disabilities" id="toc-disabilities" class="nav-link" data-scroll-target="#disabilities">Disabilities</a></li>
-  <li><a href="#policy-httpsds.umbc.eduaccommodationsregistering-with-sds" id="toc-policy-httpsds.umbc.eduaccommodationsregistering-with-sds" class="nav-link" data-scroll-target="#policy-httpsds.umbc.eduaccommodationsregistering-with-sds">✅ Policy: http://sds.umbc.edu/accommodations/registering-with-sds</a></li>
+  <li><a href="#what-to-turn-in" id="toc-what-to-turn-in" class="nav-link" data-scroll-target="#what-to-turn-in">What to turn-in</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -122,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Advanced GIS</h1>
+<h1 class="title">Lab 1</h1>
 </div>
 
 
@@ -137,207 +129,52 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!-- https://bootswatch.com/cyborg/ -->
-<section id="ges-486687673-advanced-applications-in-geographic-information-systems" class="level2">
-<h2 class="anchored" data-anchor-id="ges-486687673-advanced-applications-in-geographic-information-systems">GES 486/687/673: Advanced Applications in Geographic Information Systems</h2>
-<p><strong>Instructor: <a href="http://ges.umbc.edu/mahmoudi">Dillon Mahmoudi</a></strong> (he/him)<br>
-<strong>Email:</strong> dillonm@umbc.edu<br>
-<strong>Lecture:</strong> Tue 6:00PM, Sondheim 007<br>
-<strong>Office hours:</strong> Wed 11:00AM - 12:00PM, Sondheim 211-J and by appointment (email me)</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="material/dollardollarbmore.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<div class="callout-important callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Deadlines and Turn-ins
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is the course outline and schedule. Please check <a href="https://my3.my.umbc.edu/go/blackboard"><strong>Blackboard</strong></a> for a link to this site, a link to the class Blackboard session, and the books. Please turn in all labs on Bb.</p>
-</div>
-</div>
-<section id="course-focus-and-guiding-questions" class="level3">
-<h3 class="anchored" data-anchor-id="course-focus-and-guiding-questions">Course Focus and Guiding Questions</h3>
-<p>This course focuses on the methods for analyzing spatial data and provides an in-depth examination of technical aspects in spatial data handling, spatial pattern analysis, advanced raster processing, and dynamics GIS modeling. Students become familiar with advanced concepts, methods, and applications of Geographic Information Systems (GIS).</p>
-</section>
-<section id="course-objectives-and-goals" class="level3">
-<h3 class="anchored" data-anchor-id="course-objectives-and-goals">Course Objectives and Goals</h3>
-<section id="we-will-be-pursuing-a-host-of-goals." class="level4">
-<h4 class="anchored" data-anchor-id="we-will-be-pursuing-a-host-of-goals.">We will be pursuing a host of <em>goals</em>.</h4>
+<section id="lab-1-week-1" class="level2">
+<h2 class="anchored" data-anchor-id="lab-1-week-1">Lab 1 / Week 1</h2>
+<p>You’ll need to carefully read the instructions to get everything installed correctly.</p>
+<ul>
+<li><p>Download and install QGIS on your computer: <a href="https://www.qgis.org/en/site/" class="uri">https://www.qgis.org/en/site/</a></p>
+<ul>
+<li><p>If you’re on Windows, I highly recommend doing it through Chocolatey.</p>
+<ul>
+<li><p>Installing Chocolatey: <a href="https://chocolatey.org/install" class="uri">https://chocolatey.org/install</a></p></li>
+<li><p>Installing QGIS in Chocolatey: <a href="https://chocolatey.org/packages/QGIS" class="uri">https://chocolatey.org/packages/QGIS</a></p></li>
+</ul></li>
+</ul></li>
+<li><p>Download and install R and RStudio (don’t do this through Chocolatey).</p>
+<ul>
+<li><p>Install R: <a href="https://cran.r-project.org/https://cran.r-project.org/">https://cran.r-project.org/</a></p></li>
+<li><p>Install RStudio: <a href="https://rstudio.com/products/rstudio/download/" class="uri">https://rstudio.com/products/rstudio/download/</a></p></li>
+</ul></li>
+<li><p>Create an account on github.com</p></li>
+<li><p>Reproduce maps in Chapters 2-4 in the Learn QGIS book.</p>
+<ul>
+<li>Find three maps that you’d like to embellish or add flair to customize the maps.</li>
+</ul></li>
+<li><p><strong>Graduate students</strong>: Please be review and be conversant in how GIS can connect doing things in the world and uneven knowledge production. See especially the sections Ontology Research (starts page 731) and the Conclusion (starts page 735).</p>
+<ul>
+<li>Schuurman, Nadine. 2006. "Formalization Matters: Critical GIS and Ontology Research." <em>Annals of the Association of American Geographers</em> 96 (4): 726–39. <a href="https://doi.org/10.1111/j.1467-8306.2006.00513.x" class="uri">https://doi.org/10.1111/j.1467-8306.2006.00513.x</a></li>
+</ul></li>
+</ul>
+<section id="what-to-turn-in" class="level3 alert alert-info">
+<h3 class="anchored" data-anchor-id="what-to-turn-in">What to turn-in</h3>
+<p>Turn in a single PDF that contains:</p>
 <ol type="1">
-<li><p>Provide general map development skills for the visualization, animation, scripting with spatial data.</p></li>
-<li><p>Enhance student’s abilities to initiate and complete a GIS project from proposal to end product which contains sound reasoning in the use of scientific methods.</p></li>
-<li><p>Data management and R programming.</p></li>
-<li><p>Exposure to open-source GIS software and new technologies.</p>
-<ol type="1">
-<li><p>Satellite photos and machine-learning</p></li>
-<li><p>Point clouds — specifically with open-source</p></li>
-</ol></li>
-<li><p>New spatial analysis methods</p></li>
-<li><p>Interactive dashboards (can we use R Shiny for this in the class?).</p></li>
-<li><p>International data exposure (IPUMS).</p></li>
+<li><p>A nicely formatted cover page with</p>
+<ul>
+<li><p>your name,</p></li>
+<li><p>your UMBC email address,</p></li>
+<li><p>your github name, and a link to your github profile (it’s okay if nothing is there),</p></li>
+<li><p>your interests and how they relate to the course, and</p></li>
+<li><p>inklings on a potential final project.</p></li>
+<li><p>Lastly, include any other material you think I need to know.</p></li>
+</ul></li>
+<li><p>Your three embellished maps. Challenge yourself. You can be creative and customize the cartography, but you could also add additional data. For each map, explain what you embellished and why pushed yourself to do it that way.</p></li>
 </ol>
+<p><strong>Hint:</strong> Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files.</p>
 </section>
-<section id="youll-be-assessed-on-three-outcomes." class="level4">
-<h4 class="anchored" data-anchor-id="youll-be-assessed-on-three-outcomes.">You’ll be assessed on three <em>outcomes.</em></h4>
-<ol type="1">
-<li><p>Define what constitutes a spatial analysis using GIS.</p></li>
-<li><p>Understand how GIS technology is implemented using open source software.</p></li>
-<li><p>Complete an independent research-based analysis utilizing main-stream GIS technology to address a scientific topic of societal concern.</p></li>
-</ol>
-</section>
-<section id="as-policy-in-this-course-i-have-expectations-of-you." class="level4">
-<h4 class="anchored" data-anchor-id="as-policy-in-this-course-i-have-expectations-of-you.">As policy, in this course, I have <em>expectations</em> of you.</h4>
-<ol type="1">
-<li><p>You’ll do the labs. On time. <strong>In order</strong>. This isn’t me being a stickler, it’s how the course scaffolds.</p></li>
-<li><p>No makeup quizzes will be given. Contact me ahead of time if you’re going to miss a class.</p></li>
-<li><p>Attendance is expected. Missing more than a couple classes will significantly reduce your grade.</p></li>
-</ol>
-</section>
-<section id="be-thinking-about" class="level4">
-<h4 class="anchored" data-anchor-id="be-thinking-about">Be thinking about</h4>
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-What do you want to spatially explore in this course?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-
-</div>
-</div>
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Can we map people and the environment, separately?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-
-</div>
-</div>
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-What role does theory play in mapping and analysis?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-
-</div>
-</div>
-</section>
-</section>
-<section id="required-texts" class="level3">
-<h3 class="anchored" data-anchor-id="required-texts">Required Texts</h3>
-<p>Cutts, Andrew and Anita Graser. 2018. <strong>Learn QGIS</strong>: your step-by-step guide to the fundamental of QGIS 3.4. Fourth Edition. Birmingham, UK: Packt Publishing. ISBN-13: 9781788998864.</p>
-<ul>
-<li><p>You can get this book online for free from the UMBC library: <a href="https://catalog.umd.edu/docno=006153965" class="uri">https://catalog.umd.edu/docno=006153965</a></p></li>
-<li><p>Make sure to review the Preface to get the needed data and materials for the various chapters.</p></li>
-</ul>
-<p>Walker, Kyle. Online. <strong>Analyzing US Census Data</strong>: Methods, Maps, and Models in R.</p>
-<ul>
-<li>This book is freely available: https://walker-data.com/census-r/</li>
-</ul>
-</section>
-<section id="course-schedule" class="level3">
-<h3 class="anchored" data-anchor-id="course-schedule">Course Schedule</h3>
-<p>This course is designed around a series of labs and a final project. The final project is designed to give you flexibility to explore what you want to explore. In addition there will be short quizzes along the way which are part of your grade.</p>
-<section id="learning-the-tools" class="level4">
-<h4 class="anchored" data-anchor-id="learning-the-tools">Learning the tools</h4>
-<ul>
-<li><p>Week 1 (Jan 31): Lab 1</p></li>
-<li><p>Week 2 (Feb 7): Lab 2</p></li>
-<li><p>…</p></li>
-</ul>
-</section>
-<section id="doing-analysis" class="level4">
-<h4 class="anchored" data-anchor-id="doing-analysis">Doing analysis</h4>
-<ul>
-<li>Weeks 5-8</li>
-</ul>
-</section>
-<section id="hot-topics" class="level4">
-<h4 class="anchored" data-anchor-id="hot-topics">Hot topics</h4>
-<ul>
-<li>Week 9-12</li>
-</ul>
-</section>
-</section>
-<section id="grading" class="level3">
-<h3 class="anchored" data-anchor-id="grading">Grading</h3>
-<section id="scale" class="level4">
-<h4 class="anchored" data-anchor-id="scale">Scale</h4>
-<p><strong>A</strong> 90%-100%; <strong>B</strong> 80%-89%; <strong>C</strong> 70%-79%; <strong>D</strong> 60%-69%; <strong>F</strong> &lt; 60%</p>
-</section>
-<section id="breakdown" class="level4">
-<h4 class="anchored" data-anchor-id="breakdown">Breakdown</h4>
-<p>Attendance + Participation + Sharing: <strong>10%</strong><br>
-Labs: <strong>40%<br>
-</strong>Quizzes: <strong>10%</strong><br>
-Final Project: <strong>40%</strong></p>
-</section>
-</section>
-<section id="late-assignments" class="level3">
-<h3 class="anchored" data-anchor-id="late-assignments">Late Assignments</h3>
-<div class="callout-warning callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Late Work
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You do _yourself_ a disservice when you turn in late work or skip assignments. It hampers your ability to build. Don’t do it!</p>
-</div>
-</div>
-<p>Late work will be deducted 5% per twenty-four hour period that elapses after the due date. If foreseen or unforeseen circumstances prevent you from completing an assignment on time, you may request an extension. Extensions must be requested in advance of the due date. If the situation warrants an extension, we will determine a new due date for the essay based on your individual circumstances.</p>
-</section>
-<section id="plagiarism" class="level3">
-<h3 class="anchored" data-anchor-id="plagiarism">Plagiarism</h3>
-<p>“Academic integrity has everything to do with one’s character.” -Former UMBC President Freeman Hrawbowski</p>
-<p>Academic integrity is an important value at UMBC. By enrolling in this course, each student assumes the responsibilities of an active participant in UMBC’s scholarly community in which everyone’s academic work and behavior are held to the highest standards of honesty. Cheating, fabrication, plagiarism, and helping others to commit these acts are all forms of academic dishonesty, and they are wrong. Academic misconduct could result in disciplinary action that may include, but is not limited to, suspension or dismissal.</p>
-<p>✅ Policy: <a href="https://oue.umbc.edu/ai/" class="uri">https://oue.umbc.edu/ai/</a></p>
-</section>
-<section id="disabilities" class="level3">
-<h3 class="anchored" data-anchor-id="disabilities">Disabilities</h3>
-<p>The Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires that all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Moreover, the UMBC requires students register with the Office of Student Disability Services and I will work with you and the SDS to ensure your success.</p>
-</section>
-<section id="policy-httpsds.umbc.eduaccommodationsregistering-with-sds" class="level3">
-<h3 class="anchored" data-anchor-id="policy-httpsds.umbc.eduaccommodationsregistering-with-sds">✅ Policy: <a href="http://sds.umbc.edu/accommodations/registering-with-sds" class="uri">http://sds.umbc.edu/accommodations/registering-with-sds</a></h3>
-<p>Discrimination and Sexual Harassment</p>
-<p>With UMBC, I am dedicated to fostering an inclusive and welcoming environment for all members of the campus community and recognizes its responsibility to maintain a campus environment which is free from Sexual Misconduct, and other Related Misconduct. This Policy embodies the University’s commitment to increasing awareness of such prohibited conduct and actively promoting prevention and educational programs for community members in an effort to eliminate occurrences, prevent re-occurrences, and address and remedy the discriminatory effects of the Sexual Misconduct. For additional resources, see UMBC’s policy posted online.</p>
-<p>✅ Policy: <a href="http://humanrelations.umbc.edu/sexual-misconduct/umbc-resource-page-for-sexual-misconduct-andother-related-misconduct/" class="uri">http://humanrelations.umbc.edu/sexual-misconduct/umbc-resource-page-for-sexual-misconduct-andother-related-misconduct/</a></p>
-<p>✅ File a complaint: <a href="http://humanrelations.umbc.edu/sexual-misconduct/file-a-complaint/" class="uri">http://humanrelations.umbc.edu/sexual-misconduct/file-a-complaint/</a></p>
-<p><strong>If you need to speak to someone, UMBC has the following resources available to support you:</strong></p>
-<ul>
-<li><p>The Counseling Center (confidential): 410-455-2472</p></li>
-<li><p>University Health Services (confidential): 410-455-2542</p></li>
-<li><p>After-hours counseling and care available by calling campus police at: 410-455-5555</p></li>
-<li><p>The Women’s Center (quasi-confidential): 410-455-2714</p></li>
-<li><p>Title IX Coordinator (quasi-confidential): 410-455-1606</p></li>
-</ul>
-<p>✅ Additional on and off campus supports and resources can be found at: <a href="http://humanrelations.umbc.edu/sexualmisconduct/gender-equitytitle-ix/" class="uri">http://humanrelations.umbc.edu/sexualmisconduct/gender-equitytitle-ix/</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
