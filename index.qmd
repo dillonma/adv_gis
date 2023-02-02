@@ -94,7 +94,7 @@ This course is designed around a series of labs and a final project. The final p
 
 #### Learning the tools
 
--   Week 1 (Jan 31): Lab 1
+-   Week 1 (Jan 31): [Lab 1](labs/lab1)
 
 -   Week 2 (Feb 7): Lab 2
 
