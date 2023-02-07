@@ -13,7 +13,7 @@ website:
 
 format:
   html:
-    theme: cyborg
+    theme: zephyr
     css: styles.css
     toc: true
 
