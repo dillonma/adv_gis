@@ -96,7 +96,7 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 1 (Jan 31): [Lab 1](labs/lab1)
 
--   Week 2 (Feb 7): Lab 2
+-   Week 2 (Feb 7): [Lab 2](labs/lab2)
 
 -   ...
 

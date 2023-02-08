@@ -12,5 +12,54 @@
     "title": "Lab 1",
     "section": "",
     "text": "You’ll need to carefully read the instructions to get everything installed correctly.\n\nDownload and install QGIS on your computer: https://www.qgis.org/en/site/\n\nIf you’re on Windows, I highly recommend doing it through Chocolatey.\n\nInstalling Chocolatey: https://chocolatey.org/install\nInstalling QGIS in Chocolatey: https://chocolatey.org/packages/QGIS\n\n\nDownload and install R and RStudio (don’t do this through Chocolatey).\n\nInstall R: https://cran.r-project.org/\nInstall RStudio: https://rstudio.com/products/rstudio/download/\n\nCreate an account on github.com\nReproduce maps in Chapters 2-4 in the Learn QGIS book.\n\nFind three maps that you’d like to embellish or add flair to customize the maps.\nRead the Preface to find the links to the QGIS sample data and the data for the book. If you can’t find the data for the book, use this link to download the zip file (and extract!) the files: https://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharing\n\nGraduate students: Please review and be conversant in how GIS can connect doing things in the world and uneven knowledge production. See especially the sections Ontology Research (starts page 731) and the Conclusion (starts page 735).\n\nSchuurman, Nadine. 2006. “Formalization Matters: Critical GIS and Ontology Research.” Annals of the Association of American Geographers 96 (4): 726–39. https://doi.org/10.1111/j.1467-8306.2006.00513.x\n\n\n\n\nTurn in a single PDF that contains:\n\nA nicely formatted cover page with\n\nyour name,\nyour UMBC email address,\nyour github name, and a link to your github profile (it’s okay if nothing is there),\nyour interests and how they relate to the course, and\ninklings on a potential final project.\nLastly, include any other material you think I need to know.\n\nYour three embellished maps. Challenge yourself. You can be creative and customize the cartography, but you could also add additional data. For each map, explain what you embellished and why pushed yourself to do it that way.\n\nHint: Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files."
+  },
+  {
+    "objectID": "labs/lab2/week2.html#setting-up-rstudio",
+    "href": "labs/lab2/week2.html#setting-up-rstudio",
+    "title": "Week 2",
+    "section": "Setting up RStudio",
+    "text": "Setting up RStudio\n\nIf it’s not installed already, refer to Lab 1.\nYou need to install R (the language) AND RStudio (the IDE - Integrated Development Environment)\nThe is what you use to write R code, but when you “run” the code, it refers to R (technically “rlang”)"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#setup",
+    "href": "labs/lab2/week2.html#setup",
+    "title": "Week 2",
+    "section": "Setup",
+    "text": "Setup\n\n\n\nImportant to not open up your last project\nDon’t save you .RData (variables)\nBe deliberate about your code!\n\n\nx"
+  },
+  {
+    "objectID": "labs/lab2/index.html",
+    "href": "labs/lab2/index.html",
+    "title": "Lab 2",
+    "section": "",
+    "text": "Before continuing, ensure that you have these setting changed in RStudio.\n\n\n\n\n\n\n\n\n\nSee Analyzing US Census Data: Methods, Maps, and Models in R\nSee Guide for Reproducible Research\nSee Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data\nSee R Studio Cheatsheets\nSee Markdown Cheatsheets\n\n\n\n\nPlease do the R work in R Markdown and turn in the HTML file(s), the Rmd file(s), and a PDF of your maps!\n\nUse Rmd to complete Exercises in in Ch 2-4 of Walker.\n\nSave you Rmd as HTML, then print it to PDF. Combine it with write-up on what things worked well and what things did not, as well as a write-up on part 2 lab 1.\nCreate a repository in Github"
+  },
+  {
+    "objectID": "labs/lab2/week2.html",
+    "href": "labs/lab2/week2.html",
+    "title": "Week 2",
+    "section": "",
+    "text": "If it’s not installed already, refer to Lab 1.\nYou need to install R (the language) AND RStudio (the IDE - Integrated Development Environment)\nThe is what you use to write R code, but when you “run” the code, it refers to R (technically “rlang”)"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#settings-in-rstudio",
+    "href": "labs/lab2/week2.html#settings-in-rstudio",
+    "title": "Week 2",
+    "section": "Settings in RStudio",
+    "text": "Settings in RStudio\n\n\n\nImportant to not open up your last project\nDon’t save you .RData (variables)\nBe deliberate about your code!"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#why-focus-on-reproducibility",
+    "href": "labs/lab2/week2.html#why-focus-on-reproducibility",
+    "title": "Week 2",
+    "section": "Why focus on reproducibility?",
+    "text": "Why focus on reproducibility?\n\nThere is a reproducibility “crisis” in science\nSocial and natural, in any field where we want to show a relationship between two or multiple phenomenon\nIt’s not just about “data” it’s about how what the data represents, how it is used, and whether or not we can make the same conclusions from that data"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#data-and-methods-matter",
+    "href": "labs/lab2/week2.html#data-and-methods-matter",
+    "title": "Week 2",
+    "section": "Data and methods matter",
+    "text": "Data and methods matter\n\n\n\nOntology: what is reality/true\nEpistemology: methods for figuring out reality/truth (or best approximation)"
   }
 ]

@@ -1,0 +1,28 @@
+---
+title: "Lab 2"
+format: html
+---
+
+## Lab 2 / Week 2
+
+### RStudio Settings
+Before continuing, ensure that you have these setting changed in RStudio.
+
+![](/material/rstudiosettings.png){fig-align="center"}
+
+### Lab 2 Background Readings
+
+ - See [Analyzing US Census Data: Methods, Maps, and Models in R](https://walker-data.com/census-r/)
+ - See [Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
+ - See [Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data](https://www.researchgate.net/publication/306538473_Advantages_and_Limits_in_the_Adoption_of_Reproducible_Research_and_R-Tools_for_the_Analysis_of_Omic_Data)
+ - See [R Studio Cheatsheets](https://support--rstudio-com.netlify.app/resources/cheatsheets/)
+ - See [Markdown Cheatsheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+ 
+### Turn-in
+
+Please do the R work in R Markdown and **turn in the HTML file(s), the Rmd file(s), and a PDF of your maps!**
+
+1. Use Rmd to complete Exercises in in Ch 2-4 of Walker.
+    - Save you Rmd as HTML, then print it to PDF. Combine it with write-up on what things worked well and what things did not, as well as a write-up on part 2 lab 1.
+    - Create a repository in Github
+ 
