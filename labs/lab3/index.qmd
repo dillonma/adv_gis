@@ -1,0 +1,34 @@
+---
+title: "Lab 3"
+format: html
+---
+
+## Lab 3 / Week 3
+
+### RStudio Settings
+
+Before continuing, ensure that you have these setting changed in RStudio.
+
+![](/material/rstudiosettings.png){fig-align="center"}
+
+### Lab 3 Background Readings
+
+![](/material/state_graphic.png)
+
+-   See the readings from [Lab 2](/labs/lab2).
+-   See this for the [weekly challenge](https://erdavis.com/2022/02/09/how-i-made-the-viral-map/) (required for grad students, optional for undergrads).
+
+### Turn-in
+
+::: {.alert .alert-info}
+### What to turn-in
+
+Please do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and **turn in the PDF file(s) and the Rmd file(s)**.
+
+1.  Work through Chapters 4 through 7 of *Analyzing US Census Data*. Use an Rmd file to keep track of your progress.
+2.  At the beginning of the Rmd file, use Markdown formatting to answer these questions:
+    -   Questions will be posted by 2/21.
+3.  A separate Rmd of the weekly challenge.
+
+**Hint:** Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files.
+:::

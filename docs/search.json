@@ -16,7 +16,7 @@
   {
     "objectID": "labs/lab2/week2.html#setting-up-rstudio",
     "href": "labs/lab2/week2.html#setting-up-rstudio",
-    "title": "Week 2",
+    "title": "Week 2+3",
     "section": "Setting up RStudio",
     "text": "Setting up RStudio\n\nIf it’s not installed already, refer to Lab 1.\nYou need to install R (the language) AND RStudio (the IDE - Integrated Development Environment)\nThe is what you use to write R code, but when you “run” the code, it refers to R (technically “rlang”)"
   },
@@ -32,42 +32,42 @@
     "href": "labs/lab2/index.html",
     "title": "Lab 2",
     "section": "",
-    "text": "Before continuing, ensure that you have these setting changed in RStudio.\n\n\n\n\n\n\n\n\n\nSee Analyzing US Census Data: Methods, Maps, and Models in R\nSee Guide for Reproducible Research\nSee Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data\nSee R Studio Cheatsheets\nSee Markdown Cheatsheets\n\n\n\n\n\n\n\nPlease do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and turn in the PDF file(s) and the Rmd file(s).\nWork through Chapters 1 through 4 of Analyzing US Census Data. Use an Rmd file to keep track of your progress.\nAt the beginning of the Rmd file, use Markdown formatting to answer these questions:\n-   What worked well for you and what didn't work?\n-   Does the importance of using something like RMarkdown \n-   What would you like to see different?\nHint: Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files."
+    "text": "Slides for weeks 2 and 3.\n\n\nBefore continuing, ensure that you have these setting changed in RStudio.\n\n\n\n\n\n\n\n\n\nSee Analyzing US Census Data: Methods, Maps, and Models in R\nSee Guide for Reproducible Research\nSee Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data\nSee R Studio Cheatsheets\nSee Markdown Cheatsheets\nSee Visual design guidelines\nSee Good enough practices in scientific computing. Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510.\nSee Data Organization in Spreadsheets. Broman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician, April.\n\n\n\n\n\n\n\nPlease do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and turn in the PDF file(s) and the Rmd file(s).\nWork through Chapters 1 through 4 of Analyzing US Census Data. Use an Rmd file to keep track of your progress.\nAt the beginning of the Rmd file, use Markdown formatting to answer these questions:\n-   What worked well for you and what didn't work?\n-   What do you see as the value in using RMarkdown? \n-   Based on lab 2 so far, what things would you like to do?\nHint: Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files."
   },
   {
     "objectID": "labs/lab2/week2.html",
     "href": "labs/lab2/week2.html",
-    "title": "Week 2",
+    "title": "Week 2+3",
     "section": "",
-    "text": "If it’s not installed already, refer to Lab 1.\nYou need to install R (the language) AND RStudio (the IDE - Integrated Development Environment)\nThe is what you use to write R code, but when you “run” the code, it refers to R (technically “rlang”)"
+    "text": "Lab 2 due Friday\nLab 3 due next Friday, will do a demo on the ggplot next week\nLabs will be released on Tuesday, due the following Friday\nGithub will be week 4"
   },
   {
     "objectID": "labs/lab2/week2.html#settings-in-rstudio",
     "href": "labs/lab2/week2.html#settings-in-rstudio",
-    "title": "Week 2",
+    "title": "Week 2+3",
     "section": "Settings in RStudio",
     "text": "Settings in RStudio\n\n\n\nImportant to not open up your last project\nDon’t save you .RData (variables)\nBe deliberate about your code!"
   },
   {
     "objectID": "labs/lab2/week2.html#why-focus-on-reproducibility",
     "href": "labs/lab2/week2.html#why-focus-on-reproducibility",
-    "title": "Week 2",
+    "title": "Week 2+3",
     "section": "Why focus on reproducibility?",
     "text": "Why focus on reproducibility?\n\nThere is a reproducibility “crisis” in science\nSocial and natural, in any field where we want to show a relationship between two or multiple phenomenon\nIt’s not just about “data” it’s about how what the data represents, how it is used, and whether or not we can make the same conclusions from that data"
   },
   {
     "objectID": "labs/lab2/week2.html#data-and-methods-matter",
     "href": "labs/lab2/week2.html#data-and-methods-matter",
-    "title": "Week 2",
+    "title": "Week 2+3",
     "section": "Data and methods matter",
     "text": "Data and methods matter\n\n\n\nOntology: what is reality/true\nEpistemology: methods for figuring out reality/truth (or best approximation)"
   },
   {
     "objectID": "labs/lab2/week2.html#more-reading",
     "href": "labs/lab2/week2.html#more-reading",
-    "title": "Week 2",
+    "title": "Week 2+3",
     "section": "More Reading",
-    "text": "More Reading\n\nSee Guide for Reproducible Research\nSee Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data"
+    "text": "More Reading\n\nSee Guide for Reproducible Research\nSee Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data\nSee Good enough practices in scientific computing. Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510.\nSee Data Organization in Spreadsheets. Broman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician, April."
   },
   {
     "objectID": "labs/lab2/week2.html#why-we-focus-on-this",
@@ -75,5 +75,61 @@
     "title": "Week 2",
     "section": "Why we focus on this?",
     "text": "Why we focus on this?\n\nYou won’t necessarily be the owner of your work in the future.\nReproducibility improves the legibility of your work.\nReproducibility improves the accuracy of your work."
+  },
+  {
+    "objectID": "labs/lab2/week2.html#data-and-methods-matter-1",
+    "href": "labs/lab2/week2.html#data-and-methods-matter-1",
+    "title": "Week 2+3",
+    "section": "Data and methods matter",
+    "text": "Data and methods matter\n\nHow we represent reality (abstract) makes all data normative, there is no objective data\nRepresentation and abstraction often miss context of data collection, they capture a point in time\nWhat color is the slide background?"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#slide-background",
+    "href": "labs/lab2/week2.html#slide-background",
+    "title": "Week 2+3",
+    "section": "Slide background",
+    "text": "Slide background\nOn an RGB scale:\n\nHEX #191919\nRGB 25, 25, 25 or 10%, 10\nHSL 0, 0%, 10%\n\nOn other scales:\n\nCMYK 0.00, 0.00, 0.00, 0.90\nXYZ 0.9240, 0.9721, 1.0586\n\nIt’s basically black, how might the projector or the screen might impact this?"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#why-do-we-focus-on-this",
+    "href": "labs/lab2/week2.html#why-do-we-focus-on-this",
+    "title": "Week 2+3",
+    "section": "Why do we focus on this?",
+    "text": "Why do we focus on this?\n\nYou won’t necessarily be the owner of your work in the future.\nYour data will be taken out of context.\nReproducibility improves the legibility of your work.\nReproducibility improves the accuracy of your work."
+  },
+  {
+    "objectID": "labs/lab2/week2.html#file-management",
+    "href": "labs/lab2/week2.html#file-management",
+    "title": "Week 2+3",
+    "section": "File management",
+    "text": "File management\nEach project (or lab, should have a folder). See Wilson et al on “Good enough practices in scientific computing”\nLab:\n\n.Rproj (which defines this current folder as the “base”)\nREADME.md (github: markdown file that describes your project, has your name)\n/bin (compiled outputs, result maps, can use “results”)\n/data (original source data)\n/doc (background or your own documents, like a data dictionary)\n/results (intermediary outputs, processed data)\n/src (scripts, like .Rmd or .r files)"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#data-management",
+    "href": "labs/lab2/week2.html#data-management",
+    "title": "Week 2+3",
+    "section": "Data management",
+    "text": "Data management\nLegends matter. Variable names matter. They should be different. See Broman and Woo in “Data Organization in Spreadsheets”\nBe consistent with variable names. Pick one style and stick with it. Note where you put capital letters (computers are case sensitive), and where you put underscores and periods. Labels matter on maps.\n\nMax_temp_C ⇒ MaxTempC and a label of “Maximum Temp (C)”\nMean.year_Growth ??"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#scope-in-rstudio",
+    "href": "labs/lab2/week2.html#scope-in-rstudio",
+    "title": "Week 2+3",
+    "section": "Scope in RStudio",
+    "text": "Scope in RStudio\nThree ways to run R code:\n\nWhen you run an entire file Rmd, it runs in it’s own environment. The whole Rmd must be self-sustainable. It has it’s own “Environment” (the Environment tab). This is needed to save your file as a PDF.\nWhen you run a chunk, it just sends it to the console. The console is also it’s own bubble.\nWhen you type something in the console, it cannot talk to the file Rmd.\n\nHow do you troubleshoot an Rmd?\n\nClear your environment (the broom button on the Environment tab) and run each chunk (or line!) one-by-one by itself.\nCheck each step! Does the output look like what you expect?"
+  },
+  {
+    "objectID": "labs/lab3/index.html",
+    "href": "labs/lab3/index.html",
+    "title": "Lab 3",
+    "section": "",
+    "text": "Before continuing, ensure that you have these setting changed in RStudio.\n\n\n\n\n\n\n\n\n\n\nSee the readings from Lab 2.\nSee this for the weekly challenge (required for grad students, optional for undergrads).\n\n\n\n\n\n\n\nPlease do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and turn in the PDF file(s) and the Rmd file(s).\n\nWork through Chapters 4 through 7 of Analyzing US Census Data. Use an Rmd file to keep track of your progress.\nAt the beginning of the Rmd file, use Markdown formatting to answer these questions:\n\nQuestions will be posted by 2/21.\n\nA separate Rmd of the weekly challenge.\n\nHint: Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files."
+  },
+  {
+    "objectID": "labs/lab2/week2.html#housekeeping",
+    "href": "labs/lab2/week2.html#housekeeping",
+    "title": "Week 2+3",
+    "section": "Housekeeping",
+    "text": "Housekeeping\n\nLab 2 due Friday\nLab 3 due next Friday, will do a demo on the ggplot next week\nLabs will be released on Tuesday, due the following Friday\nGithub will be week 4"
   }
 ]

@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.269">
 
-  <title>Advanced GIS 486/687 - Week 2</title>
+  <title>Advanced GIS 486/687 - Week 2+3</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -323,11 +323,20 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 2</h1>
+  <h1 class="title">Week 2+3</h1>
 
 <div class="quarto-title-authors">
 </div>
 
+</section>
+<section id="housekeeping" class="slide level2">
+<h2>Housekeeping</h2>
+<ul>
+<li>Lab 2 due Friday</li>
+<li>Lab 3 due next Friday, will do a demo on the ggplot next week</li>
+<li>Labs will be released on Tuesday, due the following Friday</li>
+<li>Github will be week 4</li>
+</ul>
 </section>
 <section id="setting-up-rstudio" class="slide level2">
 <h2>Setting up RStudio</h2>
@@ -355,6 +364,20 @@
 </div>
 </div>
 </section>
+<section id="scope-in-rstudio" class="slide level2">
+<h2>Scope in RStudio</h2>
+<p>Three ways to run R code:</p>
+<ul>
+<li>When you run an <em>entire file Rmd</em>, it runs in it’s own environment. The whole Rmd must be self-sustainable. It has it’s own “Environment” (the Environment tab). <strong>This is needed to save your file as a PDF</strong>.</li>
+<li>When you run a <em>chunk</em>, it just sends it to the console. The console is also it’s own bubble.</li>
+<li>When you type something in the <em>console</em>, it cannot talk to the file Rmd.</li>
+</ul>
+<p>How do you troubleshoot an Rmd?</p>
+<ul>
+<li>Clear your environment (the broom button on the Environment tab) and run each chunk (or line!) one-by-one by itself.</li>
+<li>Check each step! Does the output look like what you expect?</li>
+</ul>
+</section>
 <section id="why-focus-on-reproducibility" class="slide level2">
 <h2>Why focus on reproducibility?</h2>
 <ul>
@@ -376,19 +399,68 @@
 </div>
 </div>
 </section>
+<section id="data-and-methods-matter-1" class="slide level2">
+<h2>Data and methods matter</h2>
+<ul>
+<li>How we represent reality (abstract) makes all data normative, there is no objective data</li>
+<li>Representation and abstraction often miss context of data collection, they capture a point in time</li>
+<li>What color is the slide background?</li>
+</ul>
+</section>
+<section id="slide-background" class="slide level2">
+<h2>Slide background</h2>
+<p>On an RGB scale:</p>
+<ul>
+<li>HEX #191919</li>
+<li>RGB 25, 25, 25 or 10%, 10</li>
+<li>HSL 0, 0%, 10%</li>
+</ul>
+<p>On other scales:</p>
+<ul>
+<li>CMYK 0.00, 0.00, 0.00, 0.90</li>
+<li>XYZ 0.9240, 0.9721, 1.0586</li>
+</ul>
+<p>It’s basically black, how might the projector or the screen might impact this?</p>
+</section>
 <section id="more-reading" class="slide level2">
 <h2>More Reading</h2>
 <ul>
 <li>See <a href="https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html">Guide for Reproducible Research</a></li>
 <li>See <a href="https://www.researchgate.net/publication/306538473_Advantages_and_Limits_in_the_Adoption_of_Reproducible_Research_and_R-Tools_for_the_Analysis_of_Omic_Data">Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data</a></li>
+<li>See <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510">Good enough practices in scientific computing</a>. Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510.</li>
+<li>See <a href="http://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375989">Data Organization in Spreadsheets</a>. Broman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician, April.</li>
 </ul>
 </section>
-<section id="why-we-focus-on-this" class="slide level2">
-<h2>Why we focus on this?</h2>
+<section id="why-do-we-focus-on-this" class="slide level2">
+<h2>Why do we focus on this?</h2>
 <ul>
 <li>You won’t necessarily be the owner of your work in the future.</li>
+<li>Your data will be taken out of context.</li>
 <li>Reproducibility improves the legibility of your work.</li>
 <li>Reproducibility improves the accuracy of your work.</li>
+</ul>
+</section>
+<section id="file-management" class="slide level2">
+<h2>File management</h2>
+<p>Each project (or lab, should have a folder). See <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510">Wilson et al</a> on “Good enough practices in scientific computing”</p>
+<p>Lab:</p>
+<ul>
+<li><strong>.Rproj</strong> (which defines this current folder as the “base”)</li>
+<li><strong>README.md</strong> (github: markdown file that describes your project, has your name)</li>
+<li><strong>/bin</strong> (compiled outputs, result maps, can use “results”)</li>
+<li><strong>/data</strong> (original source data)</li>
+<li><strong>/doc</strong> (background or your own documents, like a data dictionary)</li>
+<li><strong>/results</strong> (intermediary outputs, processed data)</li>
+<li><strong>/src</strong> (scripts, like .Rmd or .r files)</li>
+</ul>
+</section>
+<section id="data-management" class="slide level2">
+<h2>Data management</h2>
+<p>Legends matter. Variable names matter. <strong>They should be different</strong>. See <a href="http://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375989">Broman and Woo</a> in “Data Organization in Spreadsheets”</p>
+<p>Be consistent with variable names. Pick one style and stick with it. Note where you put capital letters (computers are case sensitive), and where you put underscores and periods. Labels matter on maps.</p>
+<ul>
+<li>Max_temp_C ⇒ MaxTempC and a label of “Maximum Temp (C)”</li>
+<li>Mean.year_Growth ??</li>
 </ul>
 
 <div class="footer footer-default">
