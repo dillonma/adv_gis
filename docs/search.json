@@ -32,7 +32,7 @@
     "href": "labs/lab2/index.html",
     "title": "Lab 2",
     "section": "",
-    "text": "Before continuing, ensure that you have these setting changed in RStudio.\n\n\n\n\n\n\n\n\n\nSee Analyzing US Census Data: Methods, Maps, and Models in R\nSee Guide for Reproducible Research\nSee Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data\nSee R Studio Cheatsheets\nSee Markdown Cheatsheets\n\n\n\n\nPlease do the R work in R Markdown and turn in the HTML file(s), the Rmd file(s), and a PDF of your maps!\n\nUse Rmd to complete Exercises in in Ch 2-4 of Walker.\n\nSave you Rmd as HTML, then print it to PDF. Combine it with write-up on what things worked well and what things did not, as well as a write-up on part 2 lab 1.\nCreate a repository in Github"
+    "text": "Before continuing, ensure that you have these setting changed in RStudio.\n\n\n\n\n\n\n\n\n\nSee Analyzing US Census Data: Methods, Maps, and Models in R\nSee Guide for Reproducible Research\nSee Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data\nSee R Studio Cheatsheets\nSee Markdown Cheatsheets\n\n\n\n\n\n\n\nPlease do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and turn in the PDF file(s) and the Rmd file(s).\nWork through Chapters 1 through 4 of Analyzing US Census Data. Use an Rmd file to keep track of your progress.\nAt the beginning of the Rmd file, use Markdown formatting to answer these questions:\n-   What worked well for you and what didn't work?\n-   Does the importance of using something like RMarkdown \n-   What would you like to see different?\nHint: Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files."
   },
   {
     "objectID": "labs/lab2/week2.html",
@@ -61,5 +61,19 @@
     "title": "Week 2",
     "section": "Data and methods matter",
     "text": "Data and methods matter\n\n\n\nOntology: what is reality/true\nEpistemology: methods for figuring out reality/truth (or best approximation)"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#more-reading",
+    "href": "labs/lab2/week2.html#more-reading",
+    "title": "Week 2",
+    "section": "More Reading",
+    "text": "More Reading\n\nSee Guide for Reproducible Research\nSee Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data"
+  },
+  {
+    "objectID": "labs/lab2/week2.html#why-we-focus-on-this",
+    "href": "labs/lab2/week2.html#why-we-focus-on-this",
+    "title": "Week 2",
+    "section": "Why we focus on this?",
+    "text": "Why we focus on this?\n\nYou won’t necessarily be the owner of your work in the future.\nReproducibility improves the legibility of your work.\nReproducibility improves the accuracy of your work."
   }
 ]

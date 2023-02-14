@@ -46,11 +46,11 @@ format:
 
 ## More Reading
 
- - See [Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
- - See [Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data](https://www.researchgate.net/publication/306538473_Advantages_and_Limits_in_the_Adoption_of_Reproducible_Research_and_R-Tools_for_the_Analysis_of_Omic_Data)
+-   See [Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
+-   See [Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data](https://www.researchgate.net/publication/306538473_Advantages_and_Limits_in_the_Adoption_of_Reproducible_Research_and_R-Tools_for_the_Analysis_of_Omic_Data)
 
 ## Why we focus on this?
 
- - You won't necessarily be the owner of your work in the future. 
- - Reproducibility improves the legibility of your work.
- - Reproducibility improves the accuracy of your work.
+-   You won't necessarily be the owner of your work in the future.
+-   Reproducibility improves the legibility of your work.
+-   Reproducibility improves the accuracy of your work.
