@@ -98,6 +98,8 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 2 (Feb 7): [Lab 2](labs/lab2)
 
+-   Week 3 (Feb 14): [Lab 3](/labs/lab3)
+
 -   ...
 
 #### Doing analysis

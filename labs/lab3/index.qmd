@@ -5,6 +5,8 @@ format: html
 
 ## Lab 3 / Week 3
 
+[Slides for weeks 2 and 3](/labs/lab2/week2.html).
+
 ### RStudio Settings
 
 Before continuing, ensure that you have these setting changed in RStudio.
