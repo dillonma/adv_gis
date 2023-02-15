@@ -1,5 +1,5 @@
 ---
-title: "Lab 3"
+title: "Lab 3 - tidycensus and RStudio (Part 2)"
 format: html
 ---
 
@@ -27,7 +27,7 @@ Before continuing, ensure that you have these setting changed in RStudio.
 
 Please do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and **turn in the PDF file(s) and the Rmd file(s)**.
 
-1.  Work through Chapters 4 through 7 of *Analyzing US Census Data*. Use an Rmd file to keep track of your progress.
+1.  Work through Chapters 5 through 7 of *Analyzing US Census Data*. Use an Rmd file to keep track of your progress.
 2.  At the beginning of the Rmd file, use Markdown formatting to answer these questions:
     -   Questions will be posted by 2/21.
 3.  A separate Rmd of the weekly challenge.

@@ -9,7 +9,7 @@
   {
     "objectID": "labs/lab1/index.html",
     "href": "labs/lab1/index.html",
-    "title": "Lab 1",
+    "title": "Lab 1 - QGIS Intro",
     "section": "",
     "text": "You’ll need to carefully read the instructions to get everything installed correctly.\n\nDownload and install QGIS on your computer: https://www.qgis.org/en/site/\n\nIf you’re on Windows, I highly recommend doing it through Chocolatey.\n\nInstalling Chocolatey: https://chocolatey.org/install\nInstalling QGIS in Chocolatey: https://chocolatey.org/packages/QGIS\n\n\nDownload and install R and RStudio (don’t do this through Chocolatey).\n\nInstall R: https://cran.r-project.org/\nInstall RStudio: https://rstudio.com/products/rstudio/download/\n\nCreate an account on github.com\nReproduce maps in Chapters 2-4 in the Learn QGIS book.\n\nFind three maps that you’d like to embellish or add flair to customize the maps.\nRead the Preface to find the links to the QGIS sample data and the data for the book. If you can’t find the data for the book, use this link to download the zip file (and extract!) the files: https://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharing\n\nGraduate students: Please review and be conversant in how GIS can connect doing things in the world and uneven knowledge production. See especially the sections Ontology Research (starts page 731) and the Conclusion (starts page 735).\n\nSchuurman, Nadine. 2006. “Formalization Matters: Critical GIS and Ontology Research.” Annals of the Association of American Geographers 96 (4): 726–39. https://doi.org/10.1111/j.1467-8306.2006.00513.x\n\n\n\n\nTurn in a single PDF that contains:\n\nA nicely formatted cover page with\n\nyour name,\nyour UMBC email address,\nyour github name, and a link to your github profile (it’s okay if nothing is there),\nyour interests and how they relate to the course, and\ninklings on a potential final project.\nLastly, include any other material you think I need to know.\n\nYour three embellished maps. Challenge yourself. You can be creative and customize the cartography, but you could also add additional data. For each map, explain what you embellished and why pushed yourself to do it that way.\n\nHint: Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files."
   },
@@ -30,7 +30,7 @@
   {
     "objectID": "labs/lab2/index.html",
     "href": "labs/lab2/index.html",
-    "title": "Lab 2",
+    "title": "Lab 2 - tidycensus and RStudio (Part 1)",
     "section": "",
     "text": "Slides for weeks 2 and 3.\n\n\nBefore continuing, ensure that you have these setting changed in RStudio.\n\n\n\n\n\n\n\n\n\nSee Analyzing US Census Data: Methods, Maps, and Models in R\nSee Guide for Reproducible Research\nSee Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data\nSee R Studio Cheatsheets\nSee Markdown Cheatsheets\nSee Visual design guidelines\nSee Good enough practices in scientific computing. Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510.\nSee Data Organization in Spreadsheets. Broman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician, April.\n\n\n\n\n\n\n\nPlease do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and turn in the PDF file(s) and the Rmd file(s).\nWork through Chapters 1 through 4 of Analyzing US Census Data. Use an Rmd file to keep track of your progress.\nAt the beginning of the Rmd file, use Markdown formatting to answer these questions:\n-   What worked well for you and what didn't work?\n-   What do you see as the value in using RMarkdown? \n-   Based on lab 2 so far, what things would you like to do?\nHint: Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files."
   },
@@ -121,9 +121,9 @@
   {
     "objectID": "labs/lab3/index.html",
     "href": "labs/lab3/index.html",
-    "title": "Lab 3",
+    "title": "Lab 3 - tidycensus and RStudio (Part 2)",
     "section": "",
-    "text": "Slides for weeks 2 and 3.\n\n\nBefore continuing, ensure that you have these setting changed in RStudio.\n\n\n\n\n\n\n\n\n\n\nSee the readings from Lab 2.\nSee this for the weekly challenge (required for grad students, optional for undergrads).\n\n\n\n\n\n\n\nPlease do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and turn in the PDF file(s) and the Rmd file(s).\n\nWork through Chapters 4 through 7 of Analyzing US Census Data. Use an Rmd file to keep track of your progress.\nAt the beginning of the Rmd file, use Markdown formatting to answer these questions:\n\nQuestions will be posted by 2/21.\n\nA separate Rmd of the weekly challenge.\n\nHint: Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files."
+    "text": "Slides for weeks 2 and 3.\n\n\nBefore continuing, ensure that you have these setting changed in RStudio.\n\n\n\n\n\n\n\n\n\n\nSee the readings from Lab 2.\nSee this for the weekly challenge (required for grad students, optional for undergrads).\n\n\n\n\n\n\n\nPlease do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and turn in the PDF file(s) and the Rmd file(s).\n\nWork through Chapters 5 through 7 of Analyzing US Census Data. Use an Rmd file to keep track of your progress.\nAt the beginning of the Rmd file, use Markdown formatting to answer these questions:\n\nQuestions will be posted by 2/21.\n\nA separate Rmd of the weekly challenge.\n\nHint: Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files."
   },
   {
     "objectID": "labs/lab2/week2.html#housekeeping",
@@ -131,5 +131,12 @@
     "title": "Week 2+3",
     "section": "Housekeeping",
     "text": "Housekeeping\n\nLab 2 due Friday\nLab 3 due next Friday, will do a demo on the ggplot next week\nLabs will be released on Tuesday, due the following Friday\nGithub will be week 4"
+  },
+  {
+    "objectID": "labs/index.html",
+    "href": "labs/index.html",
+    "title": "Labs",
+    "section": "",
+    "text": "Lab 1 - QGIS Intro\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 2 - tidycensus and RStudio (Part 1)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 3 - tidycensus and RStudio (Part 2)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

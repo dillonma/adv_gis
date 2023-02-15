@@ -1,0 +1,9 @@
+---
+title: "Labs"
+listing:
+  type: grid
+  contents:
+    - "*/index.qmd"
+  sort: "date desc"
+    
+---
