@@ -8,7 +8,7 @@ format:
 ## Housekeeping
 
 - Lab 2 due Friday
-- Lab 3 due next Friday, will do a demo on the ggplot next week
+- Lab 3 due next Tuesday, will do a demo on the ggplot next week
 - Labs will be released on Tuesday, due the following Friday
 - Github will be week 4
 

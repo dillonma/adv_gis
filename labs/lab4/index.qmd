@@ -1,0 +1,20 @@
+---
+title: "Lab 4"
+format: html
+---
+
+## Lab 4 / Week 4
+
+![](/material/lab4.png)
+
+### Turn-in
+
+::: {.alert .alert-info}
+### What to turn-in
+
+Please do the R work in R Markdown. Knit your Rmd file to HTML and open it in the browser. Save this file as a PDF (or print to PDF) and **turn in the PDF file and a ZIP file of your project folder.**.
+
+Put everything together you've learned and produce a cool map on any data set through `tidycensus` and do your best to explain the code. If you need an example, please refer to the [in-class example](https://www.dropbox.com/s/8oduc02415qi0z0/w3challenge.zip?dl=1) project that we worked on.\*\*
+
+**Hint:** Do NOT Knit to PDF. **Knit to HTML, open the file in your browser, then print to PDF.** Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files.
+:::
