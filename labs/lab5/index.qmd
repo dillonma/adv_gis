@@ -3,7 +3,7 @@ title: "Lab 4 - GitHub"
 format: html
 ---
 
-## Lab 4 / Week 4
+## Lab 5 / Week 5
 
 ![](images/exploregithub.jpg){fig-alt="GitHub promotional image"}
 
