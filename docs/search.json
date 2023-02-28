@@ -144,6 +144,13 @@
     "href": "labs/index.html",
     "title": "Labs",
     "section": "",
-    "text": "Lab 1 - QGIS Intro\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 2 - tidycensus and RStudio (Part 1)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 3 - tidycensus and RStudio (Part 2)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 4 - Showoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Lab 1 - QGIS Intro\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 2 - tidycensus and RStudio (Part 1)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 3 - tidycensus and RStudio (Part 2)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 4 - Showoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab 4 - GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "labs/lab5/index.html",
+    "href": "labs/lab5/index.html",
+    "title": "Lab 4 - GitHub",
+    "section": "",
+    "text": "Review this short description on version control, git, and GitHub. What Is GitHub? A Beginner’s Introduction to GitHub\nReview this short description on “GitHub Pages” – About GitHub Pages.\nFollow along in class to reproduce this github repository on your own website. This turns a git hub repository on GitHub into a website.\n\nGithub repository: https://github.com/academicpages/academicpages.github.io\nWeb pages: https://jayrobwilliams.com/posts/2020/06/academic-website/\nNote that the web page site is basically a tutorial on what and how to change the site.\n\nModify the _config.yml file accordingly.\nChange/replace the image with your image.\nChange the _pages/cv.md to reflect your resume, using what you now know about Markdown to visually represent your resume in a simple format.\nPlease do not make extensive changes, we will do that over time.\n\n\n\n\n\nInstall the R package Rcpp first, then install terra.\nPlease turn in all the Luxembourg maps from this page: https://rspatial.org/spatial/9-maps.html\n\nTo do this, you’ll need to review several sections. The first is Raster data.\nThen Reading and Writing Spatial Data.\nReview Coordinate Reference Systems.\nReview Raster data manipulation.\n\n\n\n\n\n\n\n\n\n\nTurn in a single PDF.\n\nOn the first page, please include a short header. Please also include a link to your GitHub page and your GitHub website. Note that these are different. Please also include a small screenshot of your GitHub page.\nGraduate students only: Review Perry Carter’s Geography, Race, and Quantification and write a short response to how this paper might influence or affect your work or map-making.\nThe following pages should be the outputs from your Rmd, output to HTML, then printed to PDF.\n\nA zip file of your Raster Data project properly formatted. You won’t be able to include the data, but what other files should you include and which folders should they go in?"
   }
 ]

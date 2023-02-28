@@ -5,6 +5,8 @@ format: html
 
 ## Lab 2 / Week 2
 
+![](images/walkerbook.png){fig-alt="Analyzing US Census Data book cover"}
+
 [Slides for weeks 2 and 3](/labs/lab2/week2.html).
 
 ### RStudio Settings

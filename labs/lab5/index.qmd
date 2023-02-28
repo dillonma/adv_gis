@@ -1,0 +1,44 @@
+---
+title: "Lab 4 - GitHub"
+format: html
+---
+
+## Lab 4 / Week 4
+
+![](images/exploregithub.jpg){fig-alt="GitHub promotional image"}
+
+### Directions
+
+#### GitHub Pages
+
+1.  Review this short description on version control, git, and GitHub. [What Is GitHub? A Beginner's Introduction to GitHub](https://kinsta.com/knowledgebase/what-is-github/)
+2.  Review this short description on "GitHub Pages" -- [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+3.  Follow along in class to reproduce this github repository on your own website. This turns a git hub repository on GitHub into a website.
+    -   Github repository: https://github.com/academicpages/academicpages.github.io
+    -   Web pages: https://jayrobwilliams.com/posts/2020/06/academic-website/
+    -   Note that the web page site is basically a tutorial on what and how to change the site.
+4.  Modify the \_config.yml file accordingly.
+5.  Change/replace the image with your image.
+6.  Change the \_pages/cv.md to reflect your resume, using what you now know about Markdown to visually represent your resume in a simple format.
+7.  Please do not make extensive changes, we will do that over time.
+
+#### Raster Data
+
+1.  Install the R package `Rcpp` first, then install `terra`.
+2.  Please turn in all the Luxembourg maps from this page: https://rspatial.org/spatial/9-maps.html
+    -   To do this, you'll need to review several sections. The first is [Raster data](https://rspatial.org/spatial/4-rasterdata.html).
+    -   Then [Reading and Writing Spatial Data](https://rspatial.org/spatial/5-files.html).
+    -   Review [Coordinate Reference Systems](https://rspatial.org/spatial/6-crs.html).
+    -   Review [Raster data manipulation](https://rspatial.org/spatial/8-rastermanip.html).
+
+### Turn-in
+
+::: {.alert .alert-info}
+### What to turn-in
+
+1.  **Turn in a single PDF.**
+    -   On the first page, please include a short header. Please also include a link to your GitHub page and your GitHub website. Note that these are different. Please also include a *small* screenshot of your GitHub page.
+    -   Graduate students only: Review Perry Carter's [*Geography, Race, and Quantification*](https://www.tandfonline.com/doi/full/10.1080/00330120903143466) and write a short response to how this paper might influence or affect your work or map-making.
+    -   The following pages should be the outputs from your Rmd, output to HTML, then printed to PDF.
+2.  **A zip file of your Raster Data project properly formatted**. You won't be able to include the data, but what other files should you include and which folders should they go in?
+:::
