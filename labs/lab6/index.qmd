@@ -1,0 +1,59 @@
+---
+title: "Lab 6 - Hexagons"
+format: html
+---
+
+## Lab 6 / Week 6
+
+![Hexagons and census tracts](/material/hexagons.png)
+
+### Background
+
+Don't skimp on these! There are some really useful links in here!
+
+-   Add a glow to your water in QGIS via [YouTube tutorial](https://www.youtube.com/watch?v=pb8EJFV4SLs).
+
+-   Layout Manager in QGIS via [QGIS documentation](https://docs.qgis.org/3.22/en/docs/training_manual/map_composer/map_composer.html).
+
+-   Walker's book chapter 7, specifically on analyzing census data via[Walker Data](https://walker-data.com/census-r/spatial-analysis-with-us-census-data.html).
+
+-   Advanced notes on rate mapping via [Spatial Data Science](https://spatialanalysis.github.io/lab_tutorials/Rate_mapping.html).
+
+-   More tutorials via [Spatial Data Science](https://spatialanalysis.github.io/tutorials/).
+
+-   Moran's I explanation via [YouTube](https://www.youtube.com/watch?v=_J_bmWmOF3I) (this is really good, I promise).
+
+### Directions
+
+#### GitHub Pages
+
+Please iterate on your Portfolio. Create a portfolio page that shows your map from week 4 and a separate portfolio page from this week. Please include a small write-up. We will go over this on March 14th.
+
+#### Spatial Analysis
+
+Complete the exercises in the w6_demo.Rmd **in a new file** and include a write-up as stated.
+
+### Grading
+
+This I'll be looking for while I'm grading.
+
+1.  Is your project folder organized properly? Are the necessary folders and files all there (hint: where will you st_write your files)?
+
+2.  What are the comments like, both in r chunks and in text? Are they sufficient? Is the formatting of the markdown proper? Are the headers done properly? Are r chunks named appropriately (hint: is there a setup r chunk)?
+
+3.  Are the maps of the three variables correct in the output of the Rmd?
+
+4.  Are the polished maps actually polished? Is there a single (not three) north arrow and scale bar? Is there a title and your name? What is the source of your data?
+
+### Turn-in
+
+::: {.alert .alert-info}
+### What to turn-in
+
+1.  **Turn in a single PDF.**
+    -   On the first page, please include a short header. Please also include a link to your GitHub page and your GitHub website. Note that these are different. Please also include a *small* screenshot of your portfolio pages.
+    -   I recommend putting your write-up of the Moran's I in here (in addition to in your Rmd).
+    -   Complete the exercises and produce a polished poster map.
+    -   Please feel free to build on the w6_demo.Rmd that is included, but copy and rename the file to have your work in it. The outputs from your Rmd should be an HTML, then printed to PDF.
+2.  **A zip file of your Raster Data project properly formatted**. You won't be able to include the data, but what other files should you include and which folders should they go in?
+:::
