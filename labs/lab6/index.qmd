@@ -31,7 +31,7 @@ Please iterate on your Portfolio. Create a portfolio page that shows your map fr
 
 #### Spatial Analysis
 
-Complete the exercises in the w6_demo.Rmd **in a new file** and include a write-up as stated.
+Complete the exercises in the [w6_demo.Rmd](https://www.dropbox.com/s/cs3p5emv0aqer0z/w6.zip?dl=0) **in a new file** and include a write-up as stated.
 
 ### Grading
 
