@@ -15,7 +15,7 @@ Don't skimp on these! There are some really useful links in here!
 
 -   Layout Manager in QGIS via [QGIS documentation](https://docs.qgis.org/3.22/en/docs/training_manual/map_composer/map_composer.html).
 
--   Walker's book chapter 7, specifically on analyzing census data via[Walker Data](https://walker-data.com/census-r/spatial-analysis-with-us-census-data.html).
+-   Walker's book chapter 7, specifically on analyzing census data via [Walker Data](https://walker-data.com/census-r/spatial-analysis-with-us-census-data.html).
 
 -   Advanced notes on rate mapping via [Spatial Data Science](https://spatialanalysis.github.io/lab_tutorials/Rate_mapping.html).
 
@@ -27,7 +27,7 @@ Don't skimp on these! There are some really useful links in here!
 
 #### GitHub Pages
 
-Please iterate on your Portfolio. Create a portfolio page that shows your map from week 4 and a separate portfolio page from this week. Please include a small write-up. We will go over this on March 14th.
+~~Please iterate on your Portfolio. Create a portfolio page that shows your map from week 4 and a separate portfolio page from this week. Please include a small write-up. We will go over this on March 14th.~~ <mark>We'll do this after Spring Break.</mark>
 
 #### Spatial Analysis
 
