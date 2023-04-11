@@ -1,0 +1,47 @@
+---
+title: "Lab 7 - Correlations"
+format: html
+---
+
+## Lab 7 / Week 10
+
+![OLS regression line](/material/ols.png)
+
+### Background
+
+Don't skimp on these! There are some really useful links in here!
+
+-   For tips on plotting and doing the correlation, see this [tutorial](https://thomaselove.github.io/431notes-2017/straight-line-models-and-correlation.html).
+-   [Here](https://www.r-bloggers.com/2017/07/ordinary-least-squares-ols-linear-regression-in-r/) is how to do a regression line in R, often called Ordinary Least Squares. We'll continue to work on this through-out the rest of the course.
+
+### Directions
+
+#### GitHub Pages (graded separately, please turn-in a link on Blackboard)
+
+Add a project to your GitHub portfolio, follow instructions from in-class demo. **Submit a link to your portfolio page here** (not the backend).
+
+#### Spatial Analysis (graded separately, please turn-in the PDF as well as zip file)
+
+Create a blank project and add week10 Rmd file to the appropriate folder. Complete the Rmd, knit it to html, then use a browser to save it to PDF in the appropriate folder. **Download week10 Rmd file from Blackboard.**
+
+### Grading
+
+This I'll be looking for while I'm grading.
+
+1.  Is your project folder organized properly? Are the necessary folders and files all there (hint: where will you st_write your files)?
+
+2.  What are the comments like, both in r chunks and in text? Are they sufficient? Is the formatting of the markdown proper? Are the headers done properly? Are r chunks named appropriately (hint: is there a setup r chunk)?
+
+3.  Are the polished maps actually polished?
+
+### Turn-in
+
+::: {.alert .alert-info}
+### What to turn-in
+
+1.  **Turn in a single PDF.**
+    -   On the first page, please include a short header.
+    -   Complete the exercises and produce a polished map.
+    -   The output of your Rmd should be an HTML, which you then open and print to PDF.
+2.  **A zip file of your project properly formatted**. You won't be able to include the data, but what other files should you include and which folders should they go in?
+:::

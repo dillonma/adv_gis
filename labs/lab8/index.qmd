@@ -1,0 +1,53 @@
+---
+title: "Lab 8 - Point Patterns"
+format: html
+---
+
+## Lab 8 / Week 11
+
+![Point pattern analysis can turn into heatmaps](/material/points.png)
+
+### Background
+
+Don't skimp on these! There are some really useful links in here!
+
+-   **FYI**: we will be mostly using base `R` to plot the results of our analyses. You can generate similar plots using `ggplot2` and `tmap`, but since the focus of this tutorial is understanding point pattern analysis and the `spatstat` package, we will only use the simple `plot()` function.
+
+-   **Videos**: It is assumed that you are familiar with some statistical vocabulary such as a variable's "distribution", you understand what a goodness-of-fit test is (i.e. chi-squared), and you are familiar with cumulative distribution functions. If not, watch [this](https://www.youtube.com/watch?v=bGS19PxlGC4) for a review of CDF and [this](https://www.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests/chi-square-goodness-of-fit-tests/v/pearson-s-chi-square-test-goodness-of-fit) for a review of chi-squared.
+
+-   **Packages**: Make sure that you can knit the exercise Rmd file without error. How would you change that file to improve it's readability?
+
+### Directions
+
+#### GitHub Pages (not graded)
+
+Please continue to work on your github portfolio, tidy up your CV/resume. We'll edit the blog part next week.
+
+#### Spatial Analysis
+
+Complete the assignment Rmd file in the data folder. Download the files/data from [https://www.dropbox.com/s/iggzjqnyrbvc8zg/lab8.zip?dl=0](https://www.dropbox.com/s/iggzjqnyrbvc8zg/lab8.zip?dl=0https://www.dropbox.com/s/iggzjqnyrbvc8zg/lab8.zip?dl=0)
+
+### Grading
+
+This I'll be looking for while I'm grading.
+
+1.  Is your project folder organized properly? Are the necessary folders and files all there (hint: where will you st_write your files)?
+
+2.  What are the comments like, both in r chunks and in text? Are they sufficient? Is the formatting of the markdown proper? Are the headers done properly? Are r chunks named appropriately (hint: is there a setup r chunk)?
+
+3.  Consider the assignment Rmd **incomplete** and be sure fill it out as necessary. Hint: name your r chunks for debugging!
+
+4.  Are the maps correct? Projected?
+
+5.  Are the polished maps actually polished?
+
+### Turn-in
+
+::: {.alert .alert-info}
+### What to turn-in
+
+1.  **Turn in a single PDF.**
+    -   On the first page, please include a short header. Please also include a link to your GitHub page and your GitHub website. Note that these are different.
+    -   Complete assignment Rmd and answer all the questions in there. Knit it to html, then print to PDF and combine it with the cover page.
+2.  **A zip file of your Raster Data project properly formatted**. You won't be able to include the data, but what other files should you include and which folders should they go in?
+:::

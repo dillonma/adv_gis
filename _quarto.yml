@@ -10,6 +10,8 @@ website:
         text: Home
       - href: labs/index.qmd
         text: Labs
+      - href: project/index.qmd
+        text: Final Project
 
 format:
   html:
