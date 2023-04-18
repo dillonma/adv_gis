@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Advanced GIS 486/687 - Lab 6 - Hexagons</title>
+<title>Advanced GIS 486/687 - Final Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,13 +106,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-6-week-6" id="toc-lab-6-week-6" class="nav-link active" data-scroll-target="#lab-6-week-6">Lab 6 / Week 6</a>
+  <li><a href="#final-project" id="toc-final-project" class="nav-link active" data-scroll-target="#final-project">Final Project</a>
   <ul class="collapse">
   <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
   <li><a href="#directions" id="toc-directions" class="nav-link" data-scroll-target="#directions">Directions</a></li>
+  <li><a href="#deliverables---proposal-due-friday-428-and-1159pm" id="toc-deliverables---proposal-due-friday-428-and-1159pm" class="nav-link" data-scroll-target="#deliverables---proposal-due-friday-428-and-1159pm">Deliverables - Proposal (Due Friday 4/28 and 11:59pm)</a></li>
+  <li><a href="#deliverables---final-project-due-tuesday-523-and-1159pm" id="toc-deliverables---final-project-due-tuesday-523-and-1159pm" class="nav-link" data-scroll-target="#deliverables---final-project-due-tuesday-523-and-1159pm">Deliverables - Final Project (Due Tuesday 5/23 and 11:59pm)</a></li>
   <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
   <li><a href="#turn-in" id="toc-turn-in" class="nav-link" data-scroll-target="#turn-in">Turn-in</a></li>
-  <li><a href="#what-to-turn-in" id="toc-what-to-turn-in" class="nav-link" data-scroll-target="#what-to-turn-in">What to turn-in</a></li>
+  <li><a href="#what-to-turn-in-see-above-for-explanation.-i-only-want-two-files." id="toc-what-to-turn-in-see-above-for-explanation.-i-only-want-two-files." class="nav-link" data-scroll-target="#what-to-turn-in-see-above-for-explanation.-i-only-want-two-files.">What to turn-in – see above for explanation. I only want two files.</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -122,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 6 - Hexagons</h1>
+<h1 class="title">Final Project</h1>
 </div>
 
 
@@ -137,60 +139,79 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="lab-6-week-6" class="level2">
-<h2 class="anchored" data-anchor-id="lab-6-week-6">Lab 6 / Week 6</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\material/hexagons.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Hexagons and census tracts</figcaption><p></p>
-</figure>
-</div>
+<section id="final-project" class="level2">
+<h2 class="anchored" data-anchor-id="final-project">Final Project</h2>
+<p><img src="https://media.giphy.com/media/mJHSkWKziszrkcNJPo/giphy.gif" class="img-fluid"></p>
 <section id="background" class="level3">
 <h3 class="anchored" data-anchor-id="background">Background</h3>
-<p>Don’t skimp on these! There are some really useful links in here!</p>
+<p>Review the work we’ve done to date. See the useful links in all of the labs we’ve done to date. How might they help you? Are there any examples from this work that might be useful to you?</p>
 <ul>
-<li><p>Add a glow to your water in QGIS via <a href="https://www.youtube.com/watch?v=pb8EJFV4SLs">YouTube tutorial</a>.</p></li>
-<li><p>Layout Manager in QGIS via <a href="https://docs.qgis.org/3.22/en/docs/training_manual/map_composer/map_composer.html">QGIS documentation</a>.</p></li>
-<li><p>Walker’s book chapter 7, specifically on analyzing census data via <a href="https://walker-data.com/census-r/spatial-analysis-with-us-census-data.html">Walker Data</a>.</p></li>
-<li><p>Advanced notes on rate mapping via <a href="https://spatialanalysis.github.io/lab_tutorials/Rate_mapping.html">Spatial Data Science</a>.</p></li>
-<li><p>More tutorials via <a href="https://spatialanalysis.github.io/tutorials/">Spatial Data Science</a>.</p></li>
-<li><p>Moran’s I explanation via <a href="https://www.youtube.com/watch?v=_J_bmWmOF3I">YouTube</a> (this is really good, I promise).</p></li>
+<li><p>We learned how to use <a href="https://dillonma.github.io/adv_gis/labs/lab1/">QGIS to create new print layouts</a>.</p></li>
+<li><p>We learned how to work with <a href="https://dillonma.github.io/adv_gis/labs/lab2/">census data in interesting ways</a>, visual design tips, and principles of reproducible research.</p></li>
+<li><p>We learned more about <a href="https://dillonma.github.io/adv_gis/labs/lab3/">census data</a>, how to assemble multiple plots (and potentially maps) in ggplot, how to make leaflet web maps, how to move Alaska and Hawaii in US plots, and how to use the package tigris with tidycensus, and how to do change over time with the census. Most importantly check out the clustering examples in Chapter 7 of the Analyzing US Census book.</p></li>
+<li><p>We mapped <a href="https://dillonma.github.io/adv_gis/labs/lab4/">interesting data</a> of our own and made maps (this could be a mini-final project, can you expand on this?)</p></li>
+<li><p>We learned how to make <a href="https://dillonma.github.io/adv_gis/labs/lab6/">hexagonal maps</a> to combine points or to do area weighted calculations. And we did a Moran’s I to measure spatial clustering and dispersion.</p></li>
+<li><p>We learned how to do <a href="https://dillonma.github.io/adv_gis/labs/lab7/">correlations</a>.</p></li>
+<li><p>And we learned how to do <a href="https://dillonma.github.io/adv_gis/labs/lab8/">point pattern analysis</a> and make heatmaps.</p></li>
+<li><p>Our next lab will look at data from rasters.</p></li>
+<li><p>We’ll done one more spatial analysis lab.</p></li>
 </ul>
 </section>
 <section id="directions" class="level3">
 <h3 class="anchored" data-anchor-id="directions">Directions</h3>
-<section id="github-pages" class="level4">
-<h4 class="anchored" data-anchor-id="github-pages">GitHub Pages</h4>
-<p><del>Please iterate on your Portfolio. Create a portfolio page that shows your map from week 4 and a separate portfolio page from this week. Please include a small write-up. We will go over this on March 14th.</del> <mark>We’ll do this after Spring Break.</mark></p>
+<p>The expectation is that the final project is at a minimum 20 hours of work. It is a semester long project.</p>
+<p>The focus is on doing analysis on maps (not just mapping something) and thinking through how we can interpret what we map. For example, it’s not enough to map income in Baltimore. How is this related to other social or environmental variables? How did you compare/correlate/assess that relationship? In what ways did you investigate it with multiple plots, statistics, etc?</p>
+<p>I expect data come from multiple sources - so not JUST census data.</p>
+<p>I expect the analysis to be done in R following the guidelines of reproducible research. I recommend making polished maps in QGIS, although you don’t have to use QGIS, you can do it in any graphics editor. ArcGIS Pro and Desktop are not to be used.</p>
 </section>
-<section id="spatial-analysis" class="level4">
-<h4 class="anchored" data-anchor-id="spatial-analysis">Spatial Analysis</h4>
-<p>Complete the exercises in the <a href="https://www.dropbox.com/s/cs3p5emv0aqer0z/w6.zip?dl=0">w6_demo.Rmd</a> <strong>in a new file</strong> and include a write-up as stated.</p>
+<section id="deliverables---proposal-due-friday-428-and-1159pm" class="level3">
+<h3 class="anchored" data-anchor-id="deliverables---proposal-due-friday-428-and-1159pm">Deliverables - Proposal (Due Friday 4/28 and 11:59pm)</h3>
+<p>Look below and think through what a rough draft of the Introduction + Background section would look like as well as the Data + Methods section. Then write a 1-page proposal. This should contain links to the data and how you plan on manipulating the data. What you submit here does not have to be what you end up doing, but you have to be able to download and look at the data you plan on using.</p>
 </section>
+<section id="deliverables---final-project-due-tuesday-523-and-1159pm" class="level3">
+<h3 class="anchored" data-anchor-id="deliverables---final-project-due-tuesday-523-and-1159pm">Deliverables - Final Project (Due Tuesday 5/23 and 11:59pm)</h3>
+<p><strong>There are multiple deliverables and they need to be submitted via Blackboard.</strong></p>
+<p><mark><strong>You should only submit TWO files on Blackboard</strong></mark>.</p>
+<p>Your files as a <strong>zipped project folder</strong>. This should have an R project file. If you used QGIS, then it should include your QGIS project file. I recommend exporting finalized data from R and opening the shapefiles in QGIS. Use what we’ve learned about folder structure to organize your files.</p>
+<p>While the range of projects can vary, there are some particular</p>
+<p>A single PDF that includes:</p>
+<ul>
+<li><p>A <strong>cover page</strong> that includes your name, GitHub website link (github.io), and your GitHub website repository (github.io), and a link to your final project portfolio page that has a short description of your work (github.io).</p></li>
+<li><p>A <strong>2-page research brief</strong> (like a report, 800-1200ish words) with these sections:</p>
+<ul>
+<li><p><strong>Introduction + Background</strong>. What is it that you’re studying? Why is it important? How is it connected to work you’ve done in other classes? Hint: use citations. What is it that you studied?</p></li>
+<li><p><strong>Data + Methods</strong>. Where did you get the data? How did you manipulate the data? How did you spatially analyze the data and why is that method useful (use citations). Explain each step. It may help to look back at your Rmd file and describe what you did.</p></li>
+<li><p><strong>Analysis + Results</strong>. What are the numerical results? What does your analysis tell us?</p></li>
+<li><p><strong>Conclusion</strong>. Interpret your results. What does this mean?</p></li>
+<li><p><strong>Reflection</strong>.</p>
+<ul>
+<li><p>What went well and didn’t go well for this project? What would you do differently next time?</p></li>
+<li><p>What went well and didn’t go well in the class? What would you have liked to have learned?</p></li>
+</ul></li>
+<li><p>Not as a separate section, but integrated into the text should be polished maps. I realize this will go over the 2 pages, but try to target 1,000 words total.</p></li>
+</ul></li>
+<li><p>A <strong>printed to PDF version of your final project portfolio page</strong>. It should not include all the of the debrief, just a summarized version of it. It does not need to be technical, but something short that someone who doesn’t know GIS should be able to understand. Here’s an <a href="https://oonuttlet.github.io/finalproj">example from last year</a>, but I expect you to do better.</p></li>
+<li><p><mark><strong>Graduate Student Poster</strong></mark>. A poster of your work (turned into a PDF and included in the single PDF). I’ll provide a template and some guidelines later.</p></li>
+</ul>
 </section>
 <section id="grading" class="level3">
 <h3 class="anchored" data-anchor-id="grading">Grading</h3>
 <p>This I’ll be looking for while I’m grading.</p>
-<ol type="1">
-<li><p>Is your project folder organized properly? Are the necessary folders and files all there (hint: where will you st_write your files)?</p></li>
-<li><p>What are the comments like, both in r chunks and in text? Are they sufficient? Is the formatting of the markdown proper? Are the headers done properly? Are r chunks named appropriately (hint: is there a setup r chunk)?</p></li>
-<li><p>Are the maps of the three variables correct in the output of the Rmd?</p></li>
-<li><p>Are the polished maps actually polished? Is there a single (not three) north arrow and scale bar? Is there a title and your name? What is the source of your data?</p></li>
-</ol>
+<ul>
+<li><p>Submission (5). Did you submit the correct files?</p></li>
+<li><p>GitHub overall (10). Is your GitHub Portfolio in order? Do the links on the left work? Did you delete the extra content?</p></li>
+<li><p>GitHub Final Project Page (30). Did you include images on the Portfolio page and the Project page? Did you adequately describe your project for a lay person?</p></li>
+<li><p>Report (40). Did you do spatial analysis? Did you explain what you did? Did you cite examples from the books? Did you cite any examples outside of class?</p></li>
+<li><p>Maps (15). Do the maps follow design and color guidelines we’ve talked about? Is the North Arrow not enormous?</p></li>
+</ul>
 </section>
 <section id="turn-in" class="level3">
 <h3 class="anchored" data-anchor-id="turn-in">Turn-in</h3>
 </section>
-<section id="what-to-turn-in" class="level3 alert alert-info">
-<h3 class="anchored" data-anchor-id="what-to-turn-in">What to turn-in</h3>
+<section id="what-to-turn-in-see-above-for-explanation.-i-only-want-two-files." class="level3 alert alert-info">
+<h3 class="anchored" data-anchor-id="what-to-turn-in-see-above-for-explanation.-i-only-want-two-files.">What to turn-in – see above for explanation. I only want two files.</h3>
 <ol type="1">
-<li><strong>Turn in a single PDF.</strong>
-<ul>
-<li>On the first page, please include a short header. Please also include a link to your GitHub page and your GitHub website. Note that these are different. Please also include a <em>small</em> screenshot of your portfolio pages.</li>
-<li>I recommend putting your write-up of the Moran’s I in here (in addition to in your Rmd).</li>
-<li>Complete the exercises and produce a polished poster map.</li>
-<li>Please feel free to build on the w6_demo.Rmd that is included, but copy and rename the file to have your work in it. The outputs from your Rmd should be an HTML, then printed to PDF.</li>
-</ul></li>
+<li><strong>Turn in a single PDF.</strong></li>
 <li><strong>A zip file of your Raster Data project properly formatted</strong>. You won’t be able to include the data, but what other files should you include and which folders should they go in?</li>
 </ol>
 </section>
