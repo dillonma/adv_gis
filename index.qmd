@@ -102,6 +102,18 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 4 (Feb 21): [Lab 4](/labs/lab4)
 
+-   Week 5 (Feb 28): [Lab 5](/labs/lab5)
+
+-   Week 6-7 (Mar 7): [Lab 6](/labs/lab6)
+
+-   Week 8-10 (Mar 21): [Lab 7](/labs/lab7)
+
+-   Week 11-12 (Apr 11): [Lab 8](/labs/lab8)
+
+-   Week 13 (Apr 25): [Lab 9](/labs/lab9)
+
+-   Week 14 (May 2): [Lab 10](/labs/lab10)
+
 #### Doing analysis
 
 -   Weeks 5-8

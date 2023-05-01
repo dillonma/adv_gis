@@ -1,0 +1,62 @@
+---
+title: "Lab 9 - Rasters Stacks"
+format: html
+---
+
+## Lab 9 / Week 13
+
+### ![](/material/manchester.png)
+
+### Background
+
+Don't skimp on these! There are some really useful links in here!
+
+-   [Appendix \"Raster operations in R\"](https://mgimond.github.io/Spatial/raster-operations-in-r.html) from Intro to GIS and Spatial Analysis by Gimond (2019).
+
+-   [Raster manipulation](https://rspatial.org/raster/spatial/8-rastermanip.html) from Spatial data science by Hijmans (2016). This last one is another
+    tutorial.
+
+-   [Intro to Rasters in R](https://geoscripting-wur.github.io/IntroToRaster/) from Wageningen Research. A good tutorial on Rasters.
+
+-   [Raster `Stack`](https://rdrr.io/cran/raster/man/stack.html) Documentation
+
+-   [How to use the `here` package](http://jenrichmond.rbind.io/post/how-to-use-the-here-package/) from Jen Richmond.
+
+### Directions
+
+#### Working with Rasters
+
+Complete the assignment Rmd file in the data folder. [Follow the tutorial from Andrew MacLachlan](https://andrewmaclachlan.github.io/CASA0005repo/advanced-raster-analysis.html#data-2), but don't start from scratch, start from the Project folder/file here:
+<https://www.dropbox.com/s/wpg4aqcqrdsesrh/lab9.zip?dl=0>
+
+To download data from [Earth Explorer](https://earthexplorer.usgs.gov/):
+
+1.  On the Search tab, once you zoom in appropriately to your location, click the Use Map button, then click Data Sets to advance to the next section.
+2.  Select Landsat \> Landsat Collection 2 Level-1 \> Landsat 8-9 OLI/TRS C2 L1, then click Results. You might get a warning that you can ignore.
+3.  Click on the footprint button for the appropriate coverage. Once you find the appropriate image, click the download icon.
+4.  In Download Options dialog box that appears, click the Product Options button and then click the top button for the "Bundle" - you'll then need to unzip the files (no subfolders) into the lab9/data/landsat folder.
+
+### Grading
+
+This I'll be looking for while I'm grading.
+
+1.  Is your project folder organized properly? Are the necessary folders and files all there (hint: where will you st_write your files)?
+
+2.  What are the comments like, both in r chunks and in text? Are they sufficient? Is the formatting of the markdown proper? Are the headers done properly? Are r chunks named appropriately (hint: is there a setup r chunk)?
+
+3.  Consider the assignment Rmd **incomplete** and be sure fill it out as necessary. Hint: name your r chunks for debugging!
+
+4.  Are the maps correct? Projected?
+
+5.  Are the polished maps actually polished?
+
+### Turn-in
+
+::: {.alert .alert-info}
+### What to turn-in
+
+1.  **Turn in a single PDF.**
+    -   On the first page, please include a short header. Please also include a link to your GitHub page and your GitHub website. Note that these are different.
+    -   Complete assignment Rmd and answer all the questions in there. Knit it to html, then print to PDF and combine it with the cover page.
+2.  **A zip file of your Raster Data project properly formatted**. You won't be able to include the data, but what other files should you include and which folders should they go in?
+:::
