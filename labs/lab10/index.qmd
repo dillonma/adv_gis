@@ -21,13 +21,33 @@ Please export using Mapbox. Once you're happy with your webmap, rename the html 
 
 You'll turn in a link to the Portfolio page of this map (not the index.html, but the landing page for this project in GitHub).
 
+Here are some other excellent tutorials to give you more ideas. I can't stress enough that these are worth your time to watch and get some ideas.
+
+-   Video: [Make a Web Map with QGIS Using the qgis2web Plugin](https://www.youtube.com/watch?v=KQRKkexIjXI)
+
+-   Video: [Design a web GIS map from a shapefile in just 2 minutes without coding in QGIS](https://www.youtube.com/watch?v=eG5CCqeNsJk)
+
+-   Series: [Create a webmap with QGIS](https://www.burdgis.com/blog/view/create-a-webmap-with-qgis/)
+
 #### GitHub
 
-**Delete the items in \_posts folder**. You won't need these.
+You'll need to finalize your portfolio site. A good place to start is to get some ideas on what others have done. The internet is your friend here.
 
-**Rename the menu header from CV to Resume.** This is optional, but it's good practice. Consider cleaning up the rest of your menu and making sure there is no spurious links/content.
+-   GISLounge: [Highlight Your Skills with a GIS Portfolio](https://www.gislounge.com/highlight-your-skills-with-a-gis-portfolio/)
 
-**Edit the about.md file**: The about page is the landing page for your site. landing page is one of the most important pages on your website. It should be a little bit about you, your goals in the workforce, and list the skills you have in a narrative form. It should also link to several of the item in your portfolio as demonstrations of the skills you've used. I recommend using [ChatGPT](https://openai.com/blog/chatgpt) here to provide some template wording that you will heavily modify. We'll run through an example in class. It makes sense to create an image that is a link. You can use [this tutorial](https://blog.hubspot.com/website/how-to-make-picture-into-link) (see Step #5) or ask ChatGPT how to do it.
+-   GeoSearch: [Creating a GIS Portfolio](Creating a GIS Portfolio)
+
+-   Rebecca Barney's [GIS Portfolio](http://rebeccabarney.com/gis-portfolio/academic/)
+
+-   Conley Kinkead's [GIS Portfolio](https://conleykinkead.github.io/)
+
+There are some specific steps to take:
+
+-   **Delete the items in \_posts folder**. You won't need these.
+
+-   **Rename the menu header from CV to Resume.** This is optional, but it's good practice. Consider cleaning up the rest of your menu and making sure there is no spurious links/content.
+
+-   **Edit the about.md file**: The about page is the landing page for your site. landing page is one of the most important pages on your website. It should be a little bit about you, your goals in the workforce, and list the skills you have in a narrative form. It should also link to several of the item in your portfolio as demonstrations of the skills you've used. I recommend using [ChatGPT](https://openai.com/blog/chatgpt) here to provide some template wording that you will heavily modify. We'll run through an example in class. It makes sense to create an image that is a link. You can use [this tutorial](https://blog.hubspot.com/website/how-to-make-picture-into-link) (see Step #5) or ask ChatGPT how to do it.
 
 ### Grading
 
