@@ -5,7 +5,7 @@ format: html
 
 ## Lab 10 / Week 14
 
-### ![](https://media.giphy.com/media/BUiNvRAeyMbMvOki7f/giphy.gif)
+![](/material/portfolio.gif)
 
 ### Directions
 
@@ -35,7 +35,7 @@ You'll need to finalize your portfolio site. A good place to start is to get som
 
 -   GISLounge: [Highlight Your Skills with a GIS Portfolio](https://www.gislounge.com/highlight-your-skills-with-a-gis-portfolio/)
 
--   GeoSearch: [Creating a GIS Portfolio](Creating a GIS Portfolio)
+-   GeoSearch: [Creating a GIS Portfolio](Creating%20a%20GIS%20Portfolio)
 
 -   Rebecca Barney's [GIS Portfolio](http://rebeccabarney.com/gis-portfolio/academic/)
 

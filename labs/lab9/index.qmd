@@ -11,10 +11,9 @@ format: html
 
 Don't skimp on these! There are some really useful links in here!
 
--   [Appendix \"Raster operations in R\"](https://mgimond.github.io/Spatial/raster-operations-in-r.html) from Intro to GIS and Spatial Analysis by Gimond (2019).
+-   [Appendix "Raster operations in R"](https://mgimond.github.io/Spatial/raster-operations-in-r.html) from Intro to GIS and Spatial Analysis by Gimond (2019).
 
--   [Raster manipulation](https://rspatial.org/raster/spatial/8-rastermanip.html) from Spatial data science by Hijmans (2016). This last one is another
-    tutorial.
+-   [Raster manipulation](https://rspatial.org/raster/spatial/8-rastermanip.html) from Spatial data science by Hijmans (2016). This last one is another tutorial.
 
 -   [Intro to Rasters in R](https://geoscripting-wur.github.io/IntroToRaster/) from Wageningen Research. A good tutorial on Rasters.
 
@@ -24,10 +23,13 @@ Don't skimp on these! There are some really useful links in here!
 
 ### Directions
 
+#### <mark>Update</mark>
+
+Only go through 8.10 in the following tutorial. No need to do your own county, but kudos if you do.
+
 #### Working with Rasters
 
-Complete the assignment Rmd file in the data folder. [Follow the tutorial from Andrew MacLachlan](https://andrewmaclachlan.github.io/CASA0005repo/advanced-raster-analysis.html#data-2), but don't start from scratch, start from the Project folder/file here:
-<https://www.dropbox.com/s/wpg4aqcqrdsesrh/lab9.zip?dl=0>
+Complete the assignment Rmd file in the data folder. [Follow the tutorial from Andrew MacLachlan](https://andrewmaclachlan.github.io/CASA0005repo/advanced-raster-analysis.html#data-2), but don't start from scratch, start from the Project folder/file here: <https://www.dropbox.com/s/wpg4aqcqrdsesrh/lab9.zip?dl=0>
 
 To download data from [Earth Explorer](https://earthexplorer.usgs.gov/):
 
