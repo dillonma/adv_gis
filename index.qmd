@@ -9,16 +9,10 @@ format: html
 
 **Instructor: [Dillon Mahmoudi](http://ges.umbc.edu/mahmoudi)** (he/him)\
 **Lecture:** Mondays + Wednesdays 2:30PM - 3:45PM, Sondheim 001\
-**Office hours:** Wednesdays 1:00PM to 2:30PM and by appointment (email me)
+**Office hours:** Wednesdays 1:00PM to 2:30PM and by appointment (email me)\
 **Email:** dillonm\@umbc.edu\
 
 ![](material/dollardollarbmore.png){fig-align="center"}
-
-::: callout-important
-## Deadlines and Turn-ins
-
-This is the course outline and schedule. Please check [**Blackboard**](https://my3.my.umbc.edu/go/blackboard) for a link to this site, a link to the class Blackboard session, and the books. Please turn in all labs on Bb.
-:::
 
 ### Course Focus and Guiding Questions
 
@@ -78,11 +72,14 @@ This course focuses on the methods for analyzing spatial data and provides an in
 
 ### Logistics
 
-**Blackboard.** Turn all assignments in on Blackboard. Know the difference between the backend (code) and the front end (formatted web page) to turn-in GitHub links. Assignments will be posted on Blackboard (links) and GitHub.
+::: callout-important
+**Blackboard.** This is the course outline and schedule. Please check [**Blackboard**](https://my3.my.umbc.edu/go/blackboard) for a link to this site, a link to the class Blackboard session. Turn all assignments in on Blackboard. Know the difference between the backend (code) and the front end (formatted web page) to turn-in GitHub links. Assignments will be posted on Blackboard (links) and GitHub.
+:::
+
 
 **Computing.** I recommend using your own personal laptop in this course, however, you're free to use one of the lab computers. I recommend using the same computer for each class.
 
-**Discord + Community.** <mark>Technical learning alone</mark> is a recipe for disaster. Rely on your fellow classmates and ask questions in the class discord. This link is an invite for Discord for the first week of class. https://discord.gg/9wUhDdQV
+**Discord + Community.** <mark>Technical learning alone</mark> is a recipe for disaster. Rely on your fellow classmates and ask questions in the class discord. This link is an invite for Discord for the first week of class. [https://discord.gg/9wUhDdQV]
 
 **Schedule.**. Mondays we will spend on lecturing. Wednesdays we'll start with a quick in-class exercise before moving into lab time. Quizzes will be on Wednesdays.
 
@@ -100,11 +97,11 @@ Cutts, Andrew and Anita Graser. 2018. **Learn QGIS**: your step-by-step guide to
 
 Walker, Kyle. Online. **Analyzing US Census Data**: Methods, Maps, and Models in R.
 
--   This book is freely available: https://walker-data.com/census-r/
+-   This book is freely available: <https://walker-data.com/census-r/>
 
 Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. **R for Data Science**: Import, Tidy, Transform, Visualize, and Model Data. 2nd edition. Beijing Boston Farnham Sebastopol Tokyo: O’Reilly Media.
 
--   This book is freely available: https://r4ds.hadley.nz/
+-   This book is freely available: <https://r4ds.hadley.nz/>
 
 ### Course Schedule
 
@@ -178,7 +175,7 @@ Final Project: **40%**
 ::: callout-warning
 ## Late Work
 
-You do \_yourself\_ a disservice when you turn in late work or skip assignments. It hampers your ability to build. Don't do it!
+You do <mark>**yourself**</mark> a disservice when you turn in late work or skip assignments. It hampers your ability to build. Don't do it!
 :::
 
 Late work will be deducted 5% per twenty-four hour period that elapses after the due date. If foreseen or unforeseen circumstances prevent you from completing an assignment on time, you may request an extension. Extensions must be requested in advance of the due date. If the situation warrants an extension, we will determine a new due date for the essay based on your individual circumstances.
