@@ -39,11 +39,11 @@ I expect data come from multiple sources - so not JUST census data.
 
 I expect the analysis to be done in R following the guidelines of reproducible research. I recommend making polished maps in QGIS, although you don't have to use QGIS, you can do it in any graphics editor. ArcGIS Pro and Desktop are not to be used.
 
-### Deliverables - Proposal (Due Friday 4/28 and 11:59pm)
+### Deliverables - Proposal
 
 Look below and think through what a rough draft of the Introduction + Background section would look like as well as the Data + Methods section. Then write a 1-page proposal. This should contain links to the data and how you plan on manipulating the data. What you submit here does not have to be what you end up doing, but you have to be able to download and look at the data you plan on using.
 
-### Deliverables - Final Project (Due Tuesday 5/23 and 11:59pm)
+### Deliverables - Final Project
 
 **There are multiple deliverables and they need to be submitted via Blackboard.**
 

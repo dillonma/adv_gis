@@ -3,6 +3,7 @@ title: "Labs"
 listing:
   type: grid
   contents:
-    - "*/index.qmd"
+  #  - "*/index.qmd"
+    - lab01/index.qmd
   sort: "date desc"
 ---

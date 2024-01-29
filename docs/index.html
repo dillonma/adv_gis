@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -55,7 +55,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -74,25 +75,27 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Advanced GIS 486/687</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs/index.html">
+    <a class="nav-link" href="./labs/index.html" rel="" target="">
  <span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./project/index.html">
+    <a class="nav-link" href="./project/index.html" rel="" target="">
  <span class="menu-text">Final Project</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -110,6 +113,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#course-focus-and-guiding-questions" id="toc-course-focus-and-guiding-questions" class="nav-link" data-scroll-target="#course-focus-and-guiding-questions">Course Focus and Guiding Questions</a></li>
   <li><a href="#course-objectives-and-goals" id="toc-course-objectives-and-goals" class="nav-link" data-scroll-target="#course-objectives-and-goals">Course Objectives and Goals</a></li>
+  <li><a href="#logistics" id="toc-logistics" class="nav-link" data-scroll-target="#logistics">Logistics</a></li>
   <li><a href="#required-texts" id="toc-required-texts" class="nav-link" data-scroll-target="#required-texts">Required Texts</a></li>
   <li><a href="#course-schedule" id="toc-course-schedule" class="nav-link" data-scroll-target="#course-schedule">Course Schedule</a></li>
   <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
@@ -145,20 +149,20 @@ ul.task-list li input[type="checkbox"] {
 <section id="ges-486687673-advanced-applications-in-geographic-information-systems" class="level2">
 <h2 class="anchored" data-anchor-id="ges-486687673-advanced-applications-in-geographic-information-systems">GES 486/687/673: Advanced Applications in Geographic Information Systems</h2>
 <p><strong>Instructor: <a href="http://ges.umbc.edu/mahmoudi">Dillon Mahmoudi</a></strong> (he/him)<br>
-<strong>Email:</strong> dillonm@umbc.edu<br>
-<strong>Lecture:</strong> Tue 6:00PM, Sondheim 007<br>
-<strong>Office hours:</strong> Wed 11:00AM - 12:00PM, Sondheim 211-J and by appointment (email me)</p>
+<strong>Lecture:</strong> Mondays + Wednesdays 2:30PM - 3:45PM, Sondheim 001<br>
+<strong>Office hours:</strong> Wednesdays 1:00PM to 2:30PM and by appointment (email me) <strong>Email:</strong> dillonm@umbc.edu<br>
+</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="material/dollardollarbmore.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Deadlines and Turn-ins
 </div>
 </div>
@@ -183,8 +187,8 @@ Deadlines and Turn-ins
 <li><p>Satellite photos and machine-learning</p></li>
 <li><p>Point clouds — specifically with open-source</p></li>
 </ol></li>
-<li><p>New spatial analysis methods</p></li>
-<li><p>Interactive dashboards (can we use R Shiny for this in the class?).</p></li>
+<li><p>New spatial analysis methods.</p></li>
+<li><p>Interactive dashboards.</p></li>
 <li><p>International data exposure (IPUMS).</p></li>
 </ol>
 </section>
@@ -206,12 +210,12 @@ Deadlines and Turn-ins
 </section>
 <section id="be-thinking-about" class="level4">
 <h4 class="anchored" data-anchor-id="be-thinking-about">Be thinking about</h4>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 What do you want to spatially explore in this course?
 </div>
 </div>
@@ -219,12 +223,12 @@ What do you want to spatially explore in this course?
 
 </div>
 </div>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Can we map people and the environment, separately?
 </div>
 </div>
@@ -232,12 +236,12 @@ Can we map people and the environment, separately?
 
 </div>
 </div>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 What role does theory play in mapping and analysis?
 </div>
 </div>
@@ -247,8 +251,19 @@ What role does theory play in mapping and analysis?
 </div>
 </section>
 </section>
+<section id="logistics" class="level3">
+<h3 class="anchored" data-anchor-id="logistics">Logistics</h3>
+<p><strong>Blackboard.</strong> Turn all assignments in on Blackboard. Know the difference between the backend (code) and the front end (formatted web page) to turn-in GitHub links. Assignments will be posted on Blackboard (links) and GitHub.</p>
+<p><strong>Computing.</strong> I recommend using your own personal laptop in this course, however, you’re free to use one of the lab computers. I recommend using the same computer for each class.</p>
+<p><strong>Discord + Community.</strong> <mark>Technical learning alone</mark> is a recipe for disaster. Rely on your fellow classmates and ask questions in the class discord. This link is an invite for Discord for the first week of class. https://discord.gg/9wUhDdQV</p>
+<p><strong>Schedule.</strong>. Mondays we will spend on lecturing. Wednesdays we’ll start with a quick in-class exercise before moving into lab time. Quizzes will be on Wednesdays.</p>
+</section>
 <section id="required-texts" class="level3">
 <h3 class="anchored" data-anchor-id="required-texts">Required Texts</h3>
+<p>O’Sullivan, David. 2024. <strong>Computing Geographically</strong>: Bridging GIScience and Geography. New York and London: Guilford Press. ISBN-13: 9781462553938.</p>
+<ul>
+<li>This will be the main material for quizzes. This will be required by Week 3. Consider the e-book.</li>
+</ul>
 <p>Cutts, Andrew and Anita Graser. 2018. <strong>Learn QGIS</strong>: your step-by-step guide to the fundamental of QGIS 3.4. Fourth Edition. Birmingham, UK: Packt Publishing. ISBN-13: 9781788998864.</p>
 <ul>
 <li><p>You can get this book online for free from the UMBC library: <a href="https://catalog.umd.edu/docno=006153965" class="uri">https://catalog.umd.edu/docno=006153965</a></p></li>
@@ -258,43 +273,67 @@ What role does theory play in mapping and analysis?
 <ul>
 <li>This book is freely available: https://walker-data.com/census-r/</li>
 </ul>
+<p>Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. <strong>R for Data Science</strong>: Import, Tidy, Transform, Visualize, and Model Data. 2nd edition. Beijing Boston Farnham Sebastopol Tokyo: O’Reilly Media.</p>
+<ul>
+<li>This book is freely available: https://r4ds.hadley.nz/</li>
+</ul>
 </section>
 <section id="course-schedule" class="level3">
 <h3 class="anchored" data-anchor-id="course-schedule">Course Schedule</h3>
 <p>This course is designed around a series of labs and a final project. The final project is designed to give you flexibility to explore what you want to explore. In addition there will be short quizzes along the way which are part of your grade.</p>
-<section id="learning-the-tools" class="level4">
-<h4 class="anchored" data-anchor-id="learning-the-tools">Learning the tools</h4>
+<section id="learning-qgis" class="level4">
+<h4 class="anchored" data-anchor-id="learning-qgis">Learning QGIS</h4>
 <ul>
-<li><p>Week 1 (Jan 31): <a href="labs/lab1">Lab 1</a></p></li>
-<li><p>Week 2 (Feb 7): <a href="labs/lab2">Lab 2</a></p></li>
-<li><p>Week 3 (Feb 14): <a href="./labs/lab3">Lab 3</a></p></li>
-<li><p>Week 4 (Feb 21): <a href="./labs/lab4">Lab 4</a></p></li>
-<li><p>Week 5 (Feb 28): <a href="./labs/lab5">Lab 5</a></p></li>
-<li><p>Week 6-7 (Mar 7): <a href="./labs/lab6">Lab 6</a></p></li>
-<li><p>Week 8-10 (Mar 21): <a href="./labs/lab7">Lab 7</a></p></li>
-<li><p>Week 11-12 (Apr 11): <a href="./labs/lab8">Lab 8</a></p></li>
-<li><p>Week 13 (Apr 25): <a href="./labs/lab9">Lab 9</a></p></li>
-<li><p>Week 14 (May 2): <a href="./labs/lab10">Lab 10</a></p></li>
+<li><p>Week 01 (Jan 29): <a href="labs/lab01">Lab 01</a></p></li>
+<li><p>Week 02 (Feb 05): Lab 02<!--[Lab 2](labs/lab02)--></p></li>
+<li><p>Week 03 (Feb 12): Lab 03<!--[Lab 3](/labs/lab03)--></p></li>
 </ul>
 </section>
-<section id="doing-analysis" class="level4">
-<h4 class="anchored" data-anchor-id="doing-analysis">Doing analysis</h4>
+<section id="learning-rrstudio" class="level4">
+<h4 class="anchored" data-anchor-id="learning-rrstudio">Learning R/RStudio</h4>
 <ul>
-<li>Weeks 5-8</li>
+<li><p>Week 04 (Feb 19): Lab 04<!--[Lab 4](/labs/lab04)--></p></li>
+<li><p>Week 05 (Feb 26): Lab 05<!--[Lab 5](/labs/lab05)--></p></li>
 </ul>
 </section>
-<section id="hot-topics" class="level4">
-<h4 class="anchored" data-anchor-id="hot-topics">Hot topics</h4>
+<section id="advanced-spatial-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="advanced-spatial-analysis">Advanced Spatial Analysis</h4>
 <ul>
-<li>Week 9-12</li>
+<li><p>Week 06 (Mar 04): Lab 06<!--[Lab 6](/labs/lab06)--></p></li>
+<li><p>Week 07 (Mar 11): Lab 07<!--[Lab 7](/labs/lab07)--></p></li>
+<li><p>Week 08 (Mar 18): <mark><strong>NO CLASS, Spring Break</strong></mark></p></li>
+<li><p>Week 09 (Mar 25): Lab 08<!--[Lab 8](/labs/lab08)-->; <mark><strong>NO CLASS Mar 27</strong></mark></p></li>
+</ul>
+</section>
+<section id="advanced-techniques" class="level4">
+<h4 class="anchored" data-anchor-id="advanced-techniques">Advanced Techniques</h4>
+<ul>
+<li><p>Week 10 (Apr 01): Lab 09<!--[Lab 9](/labs/lab09)--></p></li>
+<li><p>Week 11 (Apr 08): Lab 10<!--[Lab 9](/labs/lab09)--></p></li>
+<li><p>Week 12 (Apr 15): Lab 11<!--[Lab 10](/labs/lab10)--></p></li>
+<li><p>Week 13 (Apr 22): Lab 12<!--[Lab 11](/labs/lab11)--></p></li>
+</ul>
+</section>
+<section id="final-project" class="level4">
+<h4 class="anchored" data-anchor-id="final-project">Final Project</h4>
+<ul>
+<li><p>Week 14 (Apr 29): Final project proposal, work sessions.</p></li>
+<li><p>Week 15 (May 06): Final project work sessions.</p></li>
+<li><p>Week 16 (May 13): Final project draft due, code review.</p></li>
+<li><p><strong><mark>Finals Period (May 17, 1pm): Graduate Student Project Presentations</mark></strong></p></li>
+<li><p><strong><mark>May 17 at 11:59pm: Final projects submissions due.</mark></strong></p></li>
 </ul>
 </section>
 </section>
 <section id="grading" class="level3">
 <h3 class="anchored" data-anchor-id="grading">Grading</h3>
-<section id="scale" class="level4">
-<h4 class="anchored" data-anchor-id="scale">Scale</h4>
-<p><strong>A</strong> 90%-100%; <strong>B</strong> 80%-89%; <strong>C</strong> 70%-79%; <strong>D</strong> 60%-69%; <strong>F</strong> &lt; 60%</p>
+<section id="undergraduate-scale" class="level4">
+<h4 class="anchored" data-anchor-id="undergraduate-scale">Undergraduate Scale</h4>
+<p><strong>A</strong> 90%; <strong>B</strong> 80%; <strong>C</strong> 70%; <strong>D</strong> 60%; <strong>F</strong> &lt; 60%</p>
+</section>
+<section id="graduate-scale" class="level4">
+<h4 class="anchored" data-anchor-id="graduate-scale">Graduate Scale</h4>
+<p><strong>A</strong> 93%; <strong>A-</strong> 90%; <strong>B+</strong> 87%; <strong>B</strong> 83%; <strong>B-</strong> 80%; <strong>C+</strong> 77%; <strong>C</strong> 73%; <strong>C-</strong> 70%; <strong>D</strong> 67%; <strong>F</strong> &lt; 60%</p>
 </section>
 <section id="breakdown" class="level4">
 <h4 class="anchored" data-anchor-id="breakdown">Breakdown</h4>
@@ -306,12 +345,12 @@ Final Project: <strong>40%</strong></p>
 </section>
 <section id="late-assignments" class="level3">
 <h3 class="anchored" data-anchor-id="late-assignments">Late Assignments</h3>
-<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Late Work
 </div>
 </div>
@@ -379,9 +418,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -446,6 +499,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

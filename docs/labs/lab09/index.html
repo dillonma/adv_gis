@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Advanced GIS 486/687 - Labs</title>
+<title>Advanced GIS 486/687 - Lab 9 - Rasters Stacks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,40 +59,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -104,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Advanced GIS 486/687</span>
     </a>
   </div>
@@ -115,15 +82,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../labs/index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../labs/index.html" rel="" target="">
  <span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../project/index.html" rel="" target="">
+    <a class="nav-link" href="../../project/index.html" rel="" target="">
  <span class="menu-text">Final Project</span></a>
   </li>  
 </ul>
@@ -138,14 +105,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lab-9-week-13" id="toc-lab-9-week-13" class="nav-link active" data-scroll-target="#lab-9-week-13">Lab 9 / Week 13</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><img src="../..\material/manchester.png" class="img-fluid"></a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#directions" id="toc-directions" class="nav-link" data-scroll-target="#directions">Directions</a></li>
+  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
+  <li><a href="#turn-in" id="toc-turn-in" class="nav-link" data-scroll-target="#turn-in">Turn-in</a></li>
+  <li><a href="#what-to-turn-in" id="toc-what-to-turn-in" class="nav-link" data-scroll-target="#what-to-turn-in">What to turn-in</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Labs</h1>
+<h1 class="title">Lab 9 - Rasters Stacks</h1>
 </div>
 
 
@@ -160,37 +141,70 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="lab-9-week-13" class="level2">
+<h2 class="anchored" data-anchor-id="lab-9-week-13">Lab 9 / Week 13</h2>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"><img src="../..\material/manchester.png" class="img-fluid"></h3>
+</section>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">Background</h3>
+<p>Don’t skimp on these! There are some really useful links in here!</p>
+<ul>
+<li><p><a href="https://mgimond.github.io/Spatial/raster-operations-in-r.html">Appendix “Raster operations in R”</a> from Intro to GIS and Spatial Analysis by Gimond (2019).</p></li>
+<li><p><a href="https://rspatial.org/raster/spatial/8-rastermanip.html">Raster manipulation</a> from Spatial data science by Hijmans (2016). This last one is another tutorial.</p></li>
+<li><p><a href="https://geoscripting-wur.github.io/IntroToRaster/">Intro to Rasters in R</a> from Wageningen Research. A good tutorial on Rasters.</p></li>
+<li><p><a href="https://rdrr.io/cran/raster/man/stack.html">Raster <code>Stack</code></a> Documentation</p></li>
+<li><p><a href="http://jenrichmond.rbind.io/post/how-to-use-the-here-package/">How to use the <code>here</code> package</a> from Jen Richmond.</p></li>
+</ul>
+</section>
+<section id="directions" class="level3">
+<h3 class="anchored" data-anchor-id="directions">Directions</h3>
+<section id="update" class="level4">
+<h4 class="anchored" data-anchor-id="update"><mark>Update</mark></h4>
+<p>Only go through 8.10 in the following tutorial. No need to do your own county, but kudos if you do.</p>
+</section>
+<section id="working-with-rasters" class="level4">
+<h4 class="anchored" data-anchor-id="working-with-rasters">Working with Rasters</h4>
+<p>Complete the assignment Rmd file in the data folder. <a href="https://andrewmaclachlan.github.io/CASA0005repo/advanced-raster-analysis.html#data-2">Follow the tutorial from Andrew MacLachlan</a>, but don’t start from scratch, start from the Project folder/file here: <a href="https://www.dropbox.com/s/wpg4aqcqrdsesrh/lab9.zip?dl=0" class="uri">https://www.dropbox.com/s/wpg4aqcqrdsesrh/lab9.zip?dl=0</a></p>
+<p>To download data from <a href="https://earthexplorer.usgs.gov/">Earth Explorer</a>:</p>
+<ol type="1">
+<li>On the Search tab, once you zoom in appropriately to your location, click the Use Map button, then click Data Sets to advance to the next section.</li>
+<li>Select Landsat &gt; Landsat Collection 2 Level-1 &gt; Landsat 8-9 OLI/TRS C2 L1, then click Results. You might get a warning that you can ignore.</li>
+<li>Click on the footprint button for the appropriate coverage. Once you find the appropriate image, click the download icon.</li>
+<li>In Download Options dialog box that appears, click the Product Options button and then click the top button for the “Bundle” - you’ll then need to unzip the files (no subfolders) into the lab9/data/landsat folder.</li>
+</ol>
+</section>
+</section>
+<section id="grading" class="level3">
+<h3 class="anchored" data-anchor-id="grading">Grading</h3>
+<p>This I’ll be looking for while I’m grading.</p>
+<ol type="1">
+<li><p>Is your project folder organized properly? Are the necessary folders and files all there (hint: where will you st_write your files)?</p></li>
+<li><p>What are the comments like, both in r chunks and in text? Are they sufficient? Is the formatting of the markdown proper? Are the headers done properly? Are r chunks named appropriately (hint: is there a setup r chunk)?</p></li>
+<li><p>Consider the assignment Rmd <strong>incomplete</strong> and be sure fill it out as necessary. Hint: name your r chunks for debugging!</p></li>
+<li><p>Are the maps correct? Projected?</p></li>
+<li><p>Are the polished maps actually polished?</p></li>
+</ol>
+</section>
+<section id="turn-in" class="level3">
+<h3 class="anchored" data-anchor-id="turn-in">Turn-in</h3>
+</section>
+<section id="what-to-turn-in" class="level3 alert alert-info">
+<h3 class="anchored" data-anchor-id="what-to-turn-in">What to turn-in</h3>
+<ol type="1">
+<li><strong>Turn in a single PDF.</strong>
+<ul>
+<li>On the first page, please include a short header. Please also include a link to your GitHub page and your GitHub website. Note that these are different.</li>
+<li>Complete assignment Rmd and answer all the questions in there. Knit it to html, then print to PDF and combine it with the cover page.</li>
+</ul></li>
+<li><strong>A zip file of your Raster Data project properly formatted</strong>. You won’t be able to include the data, but what other files should you include and which folders should they go in?</li>
+</ol>
+</section>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1706547699998" data-listing-reading-time-sort="3">
-<a href="../labs/lab01/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Lab 1 - QGIS Intro
-</h5>
-<div class="card-text listing-description">
-You’ll need to carefully read the instructions to get everything installed correctly.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

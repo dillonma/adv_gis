@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Advanced GIS 486/687 - Labs</title>
+<title>Advanced GIS 486/687 - Lab 1 - QGIS Intro</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,40 +59,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -104,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Advanced GIS 486/687</span>
     </a>
   </div>
@@ -115,15 +82,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../labs/index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../labs/index.html" rel="" target="">
  <span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../project/index.html" rel="" target="">
+    <a class="nav-link" href="../../project/index.html" rel="" target="">
  <span class="menu-text">Final Project</span></a>
   </li>  
 </ul>
@@ -138,14 +105,27 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lab-1-week-1" id="toc-lab-1-week-1" class="nav-link active" data-scroll-target="#lab-1-week-1">Lab 1 / Week 1</a>
+  <ul class="collapse">
+  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
+  <li><a href="#create-a-github-account" id="toc-create-a-github-account" class="nav-link" data-scroll-target="#create-a-github-account">Create a GitHub Account</a></li>
+  <li><a href="#making-maps" id="toc-making-maps" class="nav-link" data-scroll-target="#making-maps">Making Maps</a></li>
+  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
+  <li><a href="#what-to-turn-in" id="toc-what-to-turn-in" class="nav-link" data-scroll-target="#what-to-turn-in">What to turn-in</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Labs</h1>
+<h1 class="title">Lab 1 - QGIS Intro</h1>
 </div>
 
 
@@ -160,37 +140,78 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="lab-1-week-1" class="level2">
+<h2 class="anchored" data-anchor-id="lab-1-week-1">Lab 1 / Week 1</h2>
+<p>You’ll need to carefully read the instructions to get everything installed correctly.</p>
+<section id="installation" class="level3">
+<h3 class="anchored" data-anchor-id="installation">Installation</h3>
+<ul>
+<li><p>Download and install QGIS on your computer: <a href="https://www.qgis.org/en/site/" class="uri">https://www.qgis.org/en/site/</a></p>
+<ul>
+<li><p>If you’re on Windows, I highly recommend doing it through Chocolatey.</p>
+<ul>
+<li><p>Installing Chocolatey: <a href="https://chocolatey.org/install" class="uri">https://chocolatey.org/install</a></p></li>
+<li><p>Installing QGIS in Chocolatey: <a href="https://chocolatey.org/packages/QGIS" class="uri">https://chocolatey.org/packages/QGIS</a></p></li>
+</ul></li>
+</ul></li>
+<li><p>Download and install R and RStudio (don’t do this through Chocolatey).</p>
+<ul>
+<li><p>Install R: <a href="https://cran.r-project.org/https://cran.r-project.org/">https://cran.r-project.org/</a></p></li>
+<li><p>Install RStudio: <a href="https://rstudio.com/products/rstudio/download/" class="uri">https://rstudio.com/products/rstudio/download/</a></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="create-a-github-account" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-github-account">Create a GitHub Account</h3>
+<ul>
+<li><p>Create an account on github.com</p>
+<ul>
+<li>Your username will be part of your URL later in the course, so pick something that is obviously you and that you wouldn’t be embarrassed to show an employer.</li>
+</ul></li>
+</ul>
+</section>
+<section id="making-maps" class="level3">
+<h3 class="anchored" data-anchor-id="making-maps">Making Maps</h3>
+<ul>
+<li><p>Reproduce maps in Chapters 2-4 in the Learn QGIS book.</p>
+<ul>
+<li>Find three maps that you’d like to embellish or add flair to customize the maps.</li>
+<li>Read the Preface to find the links to the QGIS sample data and the data for the book. If you can’t find the data for the book, use this link to download the zip file (and extract!) the files: <a href="https://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharinghttps://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharing">https://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharing</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="readings" class="level3">
+<h3 class="anchored" data-anchor-id="readings">Readings</h3>
+<ul>
+<li><p>Acquire the book <em>Computing Geographically: Bridging Giscience and Geography</em> by David O’Sullivan.</p></li>
+<li><p><strong>Graduate students</strong>: Please review and be conversant in how GIS can connect doing things in the world and uneven knowledge production. See especially the sections Ontology Research (starts page 731) and the Conclusion (starts page 735).</p>
+<ul>
+<li>Schuurman, Nadine. 2006. “Formalization Matters: Critical GIS and Ontology Research.” <em>Annals of the Association of American Geographers</em> 96 (4): 726–39. <a href="https://doi.org/10.1111/j.1467-8306.2006.00513.x" class="uri">https://doi.org/10.1111/j.1467-8306.2006.00513.x</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="what-to-turn-in" class="level3 alert alert-info">
+<h3 class="anchored" data-anchor-id="what-to-turn-in">What to turn-in</h3>
+<p>Turn in a single PDF that contains:</p>
+<ol type="1">
+<li><p>A nicely formatted cover page with</p>
+<ul>
+<li><p>your name,</p></li>
+<li><p>your UMBC email address,</p></li>
+<li><p>your github name, and a link to your github profile (it’s okay if nothing is there),</p></li>
+<li><p>your interests and how they relate to the course,</p></li>
+<li><p>inklings on a potential final project, and</p></li>
+<li><p>include any other material you think I need to know.</p></li>
+</ul></li>
+<li><p>Your three embellished maps. Challenge yourself. You can be creative and customize the cartography, but you could also add additional data. For each map, explain what you embellished and why pushed yourself to do it that way.</p></li>
+</ol>
+<p><strong>Hint:</strong> Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files.</p>
+</section>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1706547699998" data-listing-reading-time-sort="3">
-<a href="../labs/lab01/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Lab 1 - QGIS Intro
-</h5>
-<div class="card-text listing-description">
-You’ll need to carefully read the instructions to get everything installed correctly.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -8,9 +8,9 @@ format: html
 ## GES 486/687/673: Advanced Applications in Geographic Information Systems
 
 **Instructor: [Dillon Mahmoudi](http://ges.umbc.edu/mahmoudi)** (he/him)\
+**Lecture:** Mondays + Wednesdays 2:30PM - 3:45PM, Sondheim 001\
+**Office hours:** Wednesdays 1:00PM to 2:30PM and by appointment (email me)
 **Email:** dillonm\@umbc.edu\
-**Lecture:** Tue 6:00PM, Sondheim 007\
-**Office hours:** Wed 11:00AM - 12:00PM, Sondheim 211-J and by appointment (email me)
 
 ![](material/dollardollarbmore.png){fig-align="center"}
 
@@ -40,9 +40,9 @@ This course focuses on the methods for analyzing spatial data and provides an in
 
     2.  Point clouds --- specifically with open-source
 
-5.  New spatial analysis methods
+5.  New spatial analysis methods.
 
-6.  Interactive dashboards (can we use R Shiny for this in the class?).
+6.  Interactive dashboards.
 
 7.  International data exposure (IPUMS).
 
@@ -76,7 +76,21 @@ This course focuses on the methods for analyzing spatial data and provides an in
 ## What role does theory play in mapping and analysis?
 :::
 
+### Logistics
+
+**Blackboard.** Turn all assignments in on Blackboard. Know the difference between the backend (code) and the front end (formatted web page) to turn-in GitHub links. Assignments will be posted on Blackboard (links) and GitHub.
+
+**Computing.** I recommend using your own personal laptop in this course, however, you're free to use one of the lab computers. I recommend using the same computer for each class.
+
+**Discord + Community.** <mark>Technical learning alone</mark> is a recipe for disaster. Rely on your fellow classmates and ask questions in the class discord. This link is an invite for Discord for the first week of class. https://discord.gg/9wUhDdQV
+
+**Schedule.**. Mondays we will spend on lecturing. Wednesdays we'll start with a quick in-class exercise before moving into lab time. Quizzes will be on Wednesdays.
+
 ### Required Texts
+
+O'Sullivan, David. 2024. **Computing Geographically**: Bridging GIScience and Geography. New York and London: Guilford Press. ISBN-13: 9781462553938.
+
+-   This will be the main material for quizzes. This will be required by Week 3. Consider the e-book.
 
 Cutts, Andrew and Anita Graser. 2018. **Learn QGIS**: your step-by-step guide to the fundamental of QGIS 3.4. Fourth Edition. Birmingham, UK: Packt Publishing. ISBN-13: 9781788998864.
 
@@ -88,45 +102,69 @@ Walker, Kyle. Online. **Analyzing US Census Data**: Methods, Maps, and Models in
 
 -   This book is freely available: https://walker-data.com/census-r/
 
+Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. **R for Data Science**: Import, Tidy, Transform, Visualize, and Model Data. 2nd edition. Beijing Boston Farnham Sebastopol Tokyo: O’Reilly Media.
+
+-   This book is freely available: https://r4ds.hadley.nz/
+
 ### Course Schedule
 
 This course is designed around a series of labs and a final project. The final project is designed to give you flexibility to explore what you want to explore. In addition there will be short quizzes along the way which are part of your grade.
 
-#### Learning the tools
+#### Learning QGIS
 
--   Week 1 (Jan 31): [Lab 1](labs/lab1)
+-   Week 01 (Jan 29): [Lab 01](labs/lab01)
 
--   Week 2 (Feb 7): [Lab 2](labs/lab2)
+-   Week 02 (Feb 05): Lab 02<!--[Lab 2](labs/lab02)-->
 
--   Week 3 (Feb 14): [Lab 3](/labs/lab3)
+-   Week 03 (Feb 12): Lab 03<!--[Lab 3](/labs/lab03)-->
 
--   Week 4 (Feb 21): [Lab 4](/labs/lab4)
+#### Learning R/RStudio
 
--   Week 5 (Feb 28): [Lab 5](/labs/lab5)
+-   Week 04 (Feb 19): Lab 04<!--[Lab 4](/labs/lab04)-->
 
--   Week 6-7 (Mar 7): [Lab 6](/labs/lab6)
+-   Week 05 (Feb 26): Lab 05<!--[Lab 5](/labs/lab05)-->
 
--   Week 8-10 (Mar 21): [Lab 7](/labs/lab7)
+#### Advanced Spatial Analysis
 
--   Week 11-12 (Apr 11): [Lab 8](/labs/lab8)
+-   Week 06 (Mar 04): Lab 06<!--[Lab 6](/labs/lab06)-->
 
--   Week 13 (Apr 25): [Lab 9](/labs/lab9)
+-   Week 07 (Mar 11): Lab 07<!--[Lab 7](/labs/lab07)-->
 
--   Week 14 (May 2): [Lab 10](/labs/lab10)
+-   Week 08 (Mar 18): <mark>**NO CLASS, Spring Break**</mark>
 
-#### Doing analysis
+-   Week 09 (Mar 25): Lab 08<!--[Lab 8](/labs/lab08)-->; <mark>**NO CLASS Mar 27**</mark>
 
--   Weeks 5-8
+#### Advanced Techniques
 
-#### Hot topics
+-   Week 10 (Apr 01): Lab 09<!--[Lab 9](/labs/lab09)-->
 
--   Week 9-12
+-   Week 11 (Apr 08): Lab 10<!--[Lab 9](/labs/lab09)-->
+
+-   Week 12 (Apr 15): Lab 11<!--[Lab 10](/labs/lab10)-->
+
+-   Week 13 (Apr 22): Lab 12<!--[Lab 11](/labs/lab11)-->
+
+#### Final Project
+
+-   Week 14 (Apr 29): Final project proposal, work sessions.
+
+-   Week 15 (May 06): Final project work sessions.
+
+-   Week 16 (May 13): Final project draft due, code review.
+
+-   **<mark>Finals Period (May 17, 1pm): Graduate Student Project Presentations</mark>**
+
+-   **<mark>May 17 at 11:59pm: Final projects submissions due.</mark>**
 
 ### Grading
 
-#### Scale
+#### Undergraduate Scale
 
-**A** 90%-100%; **B** 80%-89%; **C** 70%-79%; **D** 60%-69%; **F** \< 60%
+**A** 90%; **B** 80%; **C** 70%; **D** 60%; **F** \< 60%
+
+#### Graduate Scale
+
+**A** 93%; **A-** 90%; **B+** 87%; **B** 83%; **B-** 80%; **C+** 77%; **C** 73%; **C-** 70%; **D** 67%; **F** \< 60%
 
 #### Breakdown
 

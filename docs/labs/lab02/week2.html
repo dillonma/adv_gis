@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Advanced GIS 486/687 - Labs</title>
+<title>Advanced GIS 486/687 - Week 2+3</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,40 +59,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -104,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Advanced GIS 486/687</span>
     </a>
   </div>
@@ -115,15 +82,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../labs/index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../labs/index.html" rel="" target="">
  <span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../project/index.html" rel="" target="">
+    <a class="nav-link" href="../../project/index.html" rel="" target="">
  <span class="menu-text">Final Project</span></a>
   </li>  
 </ul>
@@ -138,14 +105,31 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#housekeeping" id="toc-housekeeping" class="nav-link active" data-scroll-target="#housekeeping">Housekeeping</a></li>
+  <li><a href="#setting-up-rstudio" id="toc-setting-up-rstudio" class="nav-link" data-scroll-target="#setting-up-rstudio">Setting up RStudio</a></li>
+  <li><a href="#settings-in-rstudio" id="toc-settings-in-rstudio" class="nav-link" data-scroll-target="#settings-in-rstudio">Settings in RStudio</a></li>
+  <li><a href="#scope-in-rstudio" id="toc-scope-in-rstudio" class="nav-link" data-scroll-target="#scope-in-rstudio">Scope in RStudio</a></li>
+  <li><a href="#why-focus-on-reproducibility" id="toc-why-focus-on-reproducibility" class="nav-link" data-scroll-target="#why-focus-on-reproducibility">Why focus on reproducibility?</a></li>
+  <li><a href="#data-and-methods-matter" id="toc-data-and-methods-matter" class="nav-link" data-scroll-target="#data-and-methods-matter">Data and methods matter</a></li>
+  <li><a href="#data-and-methods-matter-1" id="toc-data-and-methods-matter-1" class="nav-link" data-scroll-target="#data-and-methods-matter-1">Data and methods matter</a></li>
+  <li><a href="#slide-background" id="toc-slide-background" class="nav-link" data-scroll-target="#slide-background">Slide background</a></li>
+  <li><a href="#more-reading" id="toc-more-reading" class="nav-link" data-scroll-target="#more-reading">More Reading</a></li>
+  <li><a href="#why-do-we-focus-on-this" id="toc-why-do-we-focus-on-this" class="nav-link" data-scroll-target="#why-do-we-focus-on-this">Why do we focus on this?</a></li>
+  <li><a href="#file-management" id="toc-file-management" class="nav-link" data-scroll-target="#file-management">File management</a></li>
+  <li><a href="#data-management" id="toc-data-management" class="nav-link" data-scroll-target="#data-management">Data management</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="week2.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Labs</h1>
+<h1 class="title">Week 2+3</h1>
 </div>
 
 
@@ -160,37 +144,144 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="housekeeping" class="level2">
+<h2 class="anchored" data-anchor-id="housekeeping">Housekeeping</h2>
+<ul>
+<li>Lab 2 due Friday</li>
+<li>Lab 3 due next Tuesday, will do a demo on the ggplot next week</li>
+<li>Labs will be released on Tuesday, due the following Friday</li>
+<li>Github will be week 4</li>
+</ul>
+</section>
+<section id="setting-up-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-rstudio">Setting up RStudio</h2>
+<ul>
+<li>If it’s not installed already, refer to Lab 1.</li>
+<li>You need to install R (the language) AND RStudio (the IDE - Integrated Development Environment)</li>
+<li>The is what you use to write R code, but when you “run” the code, it refers to R (technically “rlang”)</li>
+</ul>
+</section>
+<section id="settings-in-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="settings-in-rstudio">Settings in RStudio</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Important to not open up your last project</li>
+<li>Don’t save you .RData (variables)</li>
+<li>Be deliberate about your code!</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../..\material/rstudiosettings.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="scope-in-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="scope-in-rstudio">Scope in RStudio</h2>
+<p>Three ways to run R code:</p>
+<ul>
+<li>When you run an <em>entire file Rmd</em>, it runs in it’s own environment. The whole Rmd must be self-sustainable. It has it’s own “Environment” (the Environment tab). <strong>This is needed to save your file as a PDF</strong>.</li>
+<li>When you run a <em>chunk</em>, it just sends it to the console. The console is also it’s own bubble.</li>
+<li>When you type something in the <em>console</em>, it cannot talk to the file Rmd.</li>
+</ul>
+<p>How do you troubleshoot an Rmd?</p>
+<ul>
+<li>Clear your environment (the broom button on the Environment tab) and run each chunk (or line!) one-by-one by itself.</li>
+<li>Check each step! Does the output look like what you expect?</li>
+</ul>
+</section>
+<section id="why-focus-on-reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="why-focus-on-reproducibility">Why focus on reproducibility?</h2>
+<ul>
+<li>There is a reproducibility “crisis” in science</li>
+<li>Social and natural, in any field where we want to show a relationship between two or multiple phenomenon</li>
+<li>It’s not just about “data” it’s about how what the data represents, how it is used, and whether or not we can make the same conclusions from that data</li>
+</ul>
+</section>
+<section id="data-and-methods-matter" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-methods-matter">Data and methods matter</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Ontology: what is reality/true</li>
+<li>Epistemology: methods for figuring out reality/truth (or best approximation)</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img src="../..\material/formalization.png" class="img-fluid" style="width:70.0%"></p>
+</div>
+</div>
+</section>
+<section id="data-and-methods-matter-1" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-methods-matter-1">Data and methods matter</h2>
+<ul>
+<li>How we represent reality (abstract) makes all data normative, there is no objective data</li>
+<li>Representation and abstraction often miss context of data collection, they capture a point in time</li>
+<li>What color is the slide background?</li>
+</ul>
+</section>
+<section id="slide-background" class="level2">
+<h2 class="anchored" data-anchor-id="slide-background">Slide background</h2>
+<p>On an RGB scale:</p>
+<ul>
+<li>HEX #191919</li>
+<li>RGB 25, 25, 25 or 10%, 10</li>
+<li>HSL 0, 0%, 10%</li>
+</ul>
+<p>On other scales:</p>
+<ul>
+<li>CMYK 0.00, 0.00, 0.00, 0.90</li>
+<li>XYZ 0.9240, 0.9721, 1.0586</li>
+</ul>
+<p>It’s basically black, how might the projector or the screen might impact this?</p>
+</section>
+<section id="more-reading" class="level2">
+<h2 class="anchored" data-anchor-id="more-reading">More Reading</h2>
+<ul>
+<li>See <a href="https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html">Guide for Reproducible Research</a></li>
+<li>See <a href="https://www.researchgate.net/publication/306538473_Advantages_and_Limits_in_the_Adoption_of_Reproducible_Research_and_R-Tools_for_the_Analysis_of_Omic_Data">Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data</a></li>
+<li>See <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510">Good enough practices in scientific computing</a>. Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLOS Computational Biology 13 (6): e1005510.</li>
+<li>See <a href="http://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375989">Data Organization in Spreadsheets</a>. Broman, Karl W., and Kara H. Woo. 2018. “Data Organization in Spreadsheets.” The American Statistician, April.</li>
+</ul>
+</section>
+<section id="why-do-we-focus-on-this" class="level2">
+<h2 class="anchored" data-anchor-id="why-do-we-focus-on-this">Why do we focus on this?</h2>
+<ul>
+<li>You won’t necessarily be the owner of your work in the future.</li>
+<li>Your data will be taken out of context.</li>
+<li>Reproducibility improves the legibility of your work.</li>
+<li>Reproducibility improves the accuracy of your work.</li>
+</ul>
+</section>
+<section id="file-management" class="level2">
+<h2 class="anchored" data-anchor-id="file-management">File management</h2>
+<p>Each project (or lab, should have a folder). See <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510">Wilson et al</a> on “Good enough practices in scientific computing”</p>
+<p>Lab:</p>
+<ul>
+<li><strong>.Rproj</strong> (which defines this current folder as the “base”)</li>
+<li><strong>README.md</strong> (github: markdown file that describes your project, has your name)</li>
+<li><strong>/bin</strong> (compiled outputs, result maps, can use “results”)</li>
+<li><strong>/data</strong> (original source data)</li>
+<li><strong>/doc</strong> (background or your own documents, like a data dictionary)</li>
+<li><strong>/results</strong> (intermediary outputs, processed data)</li>
+<li><strong>/src</strong> (scripts, like .Rmd or .r files)</li>
+</ul>
+</section>
+<section id="data-management" class="level2">
+<h2 class="anchored" data-anchor-id="data-management">Data management</h2>
+<p>Legends matter. Variable names matter. <strong>They should be different</strong>. See <a href="http://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375989">Broman and Woo</a> in “Data Organization in Spreadsheets”</p>
+<p>Be consistent with variable names. Pick one style and stick with it. Note where you put capital letters (computers are case sensitive), and where you put underscores and periods. Labels matter on maps.</p>
+<ul>
+<li>Max_temp_C ⇒ MaxTempC and a label of “Maximum Temp (C)”</li>
+<li>Mean.year_Growth ??</li>
+</ul>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1706547699998" data-listing-reading-time-sort="3">
-<a href="../labs/lab01/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Lab 1 - QGIS Intro
-</h5>
-<div class="card-text listing-description">
-You’ll need to carefully read the instructions to get everything installed correctly.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
