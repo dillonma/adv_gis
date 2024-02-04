@@ -19,7 +19,7 @@ You'll need to carefully read the instructions to get everything installed corre
 
 -   Download and install R and RStudio (don't do this through Chocolatey).
 
-    -   Install R: [https://cran.r-project.org/](https://cran.r-project.org/https://cran.r-project.org/)
+    -   Install R: <https://cran.r-project.org/>
 
     -   Install RStudio: <https://rstudio.com/products/rstudio/download/>
 
