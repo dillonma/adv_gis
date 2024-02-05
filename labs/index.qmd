@@ -5,5 +5,6 @@ listing:
   contents:
   #  - "*/index.qmd"
     - lab01/index.qmd
+    - lab02/index.qmd
   sort: "date desc"
 ---

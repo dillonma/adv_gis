@@ -31,15 +31,17 @@ Before continuing, ensure that you have these setting changed in RStudio.
 ::: {.alert .alert-info}
 ### What to turn-in
 
-Please do the R work in R Markdown. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and **turn in the PDF file(s) and the Rmd file(s)**.
+Please do the R work in R Quarto. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and **turn in the PDF file(s) and the Rmd file(s)**.
 
 Work through Chapters 1 through 4 of *Analyzing US Census Data*. Use an Rmd file to keep track of your progress.
 
-At the beginning of the Rmd file, use Markdown formatting to answer these questions:
+At the beginning of the Rmd file, use Quarto formatting to answer these questions:
 
-    -   What worked well for you and what didn't work?
-    -   What do you see as the value in using RMarkdown? 
-    -   Based on lab 2 so far, what things would you like to do?
+```         
+-   What worked well for you and what didn't work?
+-   What do you see as the value in using RQaurto? 
+-   Based on lab 2 so far, what things would you like to do?
+```
 
 **Hint:** Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files.
 :::

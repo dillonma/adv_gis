@@ -98,7 +98,7 @@ Walker, Kyle. Online. **Analyzing US Census Data**: Methods, Maps, and Models in
 
 -   This book is freely available: <https://walker-data.com/census-r/>
 
-Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. **R for Data Science**: Import, Tidy, Transform, Visualize, and Model Data. 2nd edition. Beijing Boston Farnham Sebastopol Tokyo: O’Reilly Media.
+Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. **R for Data Science**: Import, Tidy, Transform, Visualize, and Model Data. 2nd edition. Beijing Boston Farnham Sebastopol Tokyo: O'Reilly Media.
 
 -   This book is freely available: <https://r4ds.hadley.nz/>
 
@@ -110,7 +110,7 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 01 (Jan 29): [Lab 01](labs/lab01)
 
--   Week 02 (Feb 05): Lab 02<!--[Lab 2](labs/lab02)-->
+-   [Week 02](labs/lab02/week2.qmd) (Feb 05): Lab 02 [Lab 2](labs/lab02)
 
 -   Week 03 (Feb 12): Lab 03<!--[Lab 3](/labs/lab03)-->
 
