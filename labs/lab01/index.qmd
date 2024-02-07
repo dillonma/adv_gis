@@ -31,7 +31,7 @@ You'll need to carefully read the instructions to get everything installed corre
 
 ### Making Maps
 
--   Reproduce maps in Chapters 2-4 in the Learn QGIS book.
+-   Reproduce maps in Chapters 2-4 in the Learn QGIS book (skip the Topology section on pages 69-73).
 
     -   Find three maps that you'd like to embellish or add flair to customize the maps.
     -   Read the Preface to find the links to the QGIS sample data and the data for the book. If you can't find the data for the book, use this link to download the zip file (and extract!) the files: [https://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharing](https://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharinghttps://drive.google.com/file/d/1mKJ6mtUhkUGXodS_KEZbRN0_ail1KJeE/view?usp=sharing)

@@ -4,8 +4,8 @@ title: "Week 2"
 
 ## Housekeeping
 
--   Lab 2 due next Monday
--   Lab 3 due next Tuesday, will do a demo on the ggplot next week
+-   Lab 2 due next Friday 2/16
+-   Lab 3 due next Wednesday 2/21, will do a demo on the ggplot next week
 -   Github will be week 4
 
 ## Setting up RStudio
