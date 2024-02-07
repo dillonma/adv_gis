@@ -16,13 +16,11 @@ title: "Week 2"
 
 ## Settings in RStudio
 
-
 -   Important to not open up your last project
 -   Don't save you .RData (variables)
 -   Be deliberate about your code!
 
 ![](/material/rstudiosettings.png){fig-align="center"}
-
 
 ## Scope in RStudio
 
@@ -49,7 +47,6 @@ How do you troubleshoot an Rmd?
 -   Epistemology: methods for figuring out reality/truth (or best approximation)
 
 ![](/material/formalization.png){width="70%"}
-
 
 ## Data and methods matter
 
