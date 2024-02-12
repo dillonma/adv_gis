@@ -110,7 +110,7 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 01 (Jan 29): [Lab 01](labs/lab01)
 
--   [Week 02](labs/lab02/week2.qmd) (Feb 05): Lab 02 [Lab 2](labs/lab02)
+-   [Week 02](labs/lab02/week2.qmd) (Feb 05): [Lab 02](labs/lab02)
 
 -   Week 03 (Feb 12): Lab 03<!--[Lab 3](/labs/lab03)-->
 
