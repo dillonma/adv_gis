@@ -106,15 +106,15 @@ Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. **R for Da
 
 This course is designed around a series of labs and a final project. The final project is designed to give you flexibility to explore what you want to explore. In addition there will be short quizzes along the way which are part of your grade.
 
-#### Learning QGIS
+#### Learning QGIS and RStudio
 
 -   Week 01 (Jan 29): [Lab 01](labs/lab01)
 
 -   [Week 02](labs/lab02/week2.qmd) (Feb 05): Lab 02 [Lab 2](labs/lab02)
 
--   Week 03 (Feb 12): Lab 03<!--[Lab 3](/labs/lab03)-->
+-   Week 03 (Feb 12): Lab 2 cont'd, [Week 03 Demo](files/demo03.zip)
 
-#### Learning R/RStudio
+#### Combining R/RStudio
 
 -   Week 04 (Feb 19): Lab 04<!--[Lab 4](/labs/lab04)-->
 
