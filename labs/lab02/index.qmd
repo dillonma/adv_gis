@@ -7,7 +7,7 @@ format: html
 
 ![](images/walkerbook.png){fig-alt="Analyzing US Census Data book cover"}
 
-[Slides for weeks 2 and 3](/labs/lab2/week2.html).
+[Notes for weeks 2 and 3](/labs/lab2/week2.html).
 
 ### RStudio Settings
 
@@ -20,7 +20,7 @@ Before continuing, ensure that you have these setting changed in RStudio.
 -   See [Analyzing US Census Data: Methods, Maps, and Models in R](https://walker-data.com/census-r/)
 -   See [Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
 -   See [Advantages and Limits in the Adoption of Reproducible Research and R-Tools for the Analysis of Omic Data](https://www.researchgate.net/publication/306538473_Advantages_and_Limits_in_the_Adoption_of_Reproducible_Research_and_R-Tools_for_the_Analysis_of_Omic_Data)
--   See [R Studio Cheatsheets](https://support--rstudio-com.netlify.app/resources/cheatsheets/)
+-   <mark>See all of [Posit's Cheatsheets](https://posit.co/resources/cheatsheets/)</mark>
 -   See [Markdown Cheatsheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 -   See [Visual design guidelines](https://anthonyhobday.com/sideprojects/saferules/)
 -   See [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510). Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. "Good Enough Practices in Scientific Computing." PLOS Computational Biology 13 (6): e1005510.
