@@ -1,5 +1,5 @@
 ---
-title: "Lab 3 - tidycensus and RStudio (Part 2)"
+title: "Lab 3 - tidycensus and RStudio"
 format: html
 ---
 
@@ -17,10 +17,8 @@ Before continuing, ensure that you have these setting changed in RStudio.
 
 ### Lab 3 Background Readings
 
-![](/material/state_graphic.png)
-
 -   See the readings from [Lab 2](/labs/lab2).
--   See this for the [weekly challenge](https://erdavis.com/2022/02/09/how-i-made-the-viral-map/) (required for grad students, optional for undergrads). Please reproduce this with your own data, but don't use special fonts and instead use data from `tidycensus`. **See the [in-class example](https://www.dropbox.com/s/8oduc02415qi0z0/w3challenge.zip?dl=1) that we improved here from here.**
+-   See this for the [weekly challenge](https://erdavis.com/2022/02/09/how-i-made-the-viral-map/). Please reproduce this with your own data, but don't use special fonts and instead use data from `tidycensus`. **See the [in-class example](https://www.dropbox.com/s/8oduc02415qi0z0/w3challenge.zip?dl=1) that we improved here from here.**
 -   See [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510). Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal. 2017. "Good Enough Practices in Scientific Computing." PLOS Computational Biology 13 (6): e1005510.
 -   See [Data Organization in Spreadsheets](http://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375989). Broman, Karl W., and Kara H. Woo. 2018. "Data Organization in Spreadsheets." The American Statistician, April.
 
@@ -29,13 +27,5 @@ Before continuing, ensure that you have these setting changed in RStudio.
 ::: {.alert .alert-info}
 ### What to turn-in
 
-Please do the R work in R Markdown. Knit your Rmd file to HTML and open it in the browser. Save this file as a PDF (or print to PDF) and **turn in the PDF file(s) and the Rmd file(s)**.
-
-1.  Work through Chapters 5 through 7 of *Analyzing US Census Data*. Use an Rmd file to keep track of your progress.
-2.  At the beginning of the Rmd file, use Markdown formatting to answer these questions:
-    -   What is the purpose of having different folders? Why do we use R projects (.Rproj) files for everything we do?
-    -   Please explain what goes into each of these folders: bin, data, doc, results, src
-3.  An Rmd and PDF for the challenge if you do it.
-
-**Hint:** Do NOT Knit to PDF. **Knit to HTML, open the file in your browser, then print to PDF.** Use PDFSam (or install it with Chocolatey) to merge multiple PDFs together. For example, create a layout in QGIS and export those maps to PDF. Then use PDFSam to merge those files.
+See the instructions linked on the main page, but be sure to submit a single PDF.
 :::

@@ -31,7 +31,7 @@ Before continuing, ensure that you have these setting changed in RStudio.
 ::: {.alert .alert-info}
 ### What to turn-in
 
-Please do the R work in R Quarto. Render your Qmd file (to a web page / HTML, this is the default).. Then save or print the output to PDF and **turn in only the PDF file(s)**.
+Please do the R work in R Quarto. Render your Qmd file (to a web page / HTML, this is the default). Then save or print the output to PDF and **turn in only the PDF file(s)**.
 
 Work through Chapters 1 through 4 of *Analyzing US Census Data*. Use an Qmd (Quarto) file to keep track of your progress.
 

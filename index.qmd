@@ -112,33 +112,33 @@ This course is designed around a series of labs and a final project. The final p
 
 -   [Week 02](labs/lab02/week2.qmd) (Feb 05): [Lab 02](labs/lab02)
 
--   Week 03 (Feb 12): Lab 2 cont'd, [Week 03 Demo](files/demo03.zip)
+-   Week 03 (Feb 12): Lab 02 cont'd, [Week 03 Demo](files/demo03.zip)
 
-#### Combining R/RStudio
+#### Combining R/RStudio with QGIS
 
--   Week 04 (Feb 19): Lab 04<!--[Lab 4](/labs/lab04)-->
+-   Week 04 (Feb 19): [Lab 03](/labs/lab03), [Lab 03 Project](files/lab03.zip)
 
--   Week 05 (Feb 26): Lab 05<!--[Lab 5](/labs/lab05)-->
+-   Week 05 (Feb 26): Lab 04<!--[Lab 5](/labs/lab05)-->
 
 #### Advanced Spatial Analysis
 
--   Week 06 (Mar 04): Lab 06<!--[Lab 6](/labs/lab06)-->
+-   Week 06 (Mar 04): Lab 05<!--[Lab 6](/labs/lab06)-->
 
--   Week 07 (Mar 11): Lab 07<!--[Lab 7](/labs/lab07)-->
+-   Week 07 (Mar 11): Lab 06<!--[Lab 7](/labs/lab07)-->
 
 -   Week 08 (Mar 18): <mark>**NO CLASS, Spring Break**</mark>
 
--   Week 09 (Mar 25): Lab 08<!--[Lab 8](/labs/lab08)-->; <mark>**NO CLASS Mar 27**</mark>
+-   Week 09 (Mar 25): Lab 07<!--[Lab 8](/labs/lab08)-->; <mark>**NO CLASS Mar 27**</mark>
 
 #### Advanced Techniques
 
--   Week 10 (Apr 01): Lab 09<!--[Lab 9](/labs/lab09)-->
+-   Week 10 (Apr 01): Lab 08<!--[Lab 9](/labs/lab09)-->
 
--   Week 11 (Apr 08): Lab 10<!--[Lab 9](/labs/lab09)-->
+-   Week 11 (Apr 08): Lab 09<!--[Lab 9](/labs/lab09)-->
 
--   Week 12 (Apr 15): Lab 11<!--[Lab 10](/labs/lab10)-->
+-   Week 12 (Apr 15): Lab 10<!--[Lab 10](/labs/lab10)-->
 
--   Week 13 (Apr 22): Lab 12<!--[Lab 11](/labs/lab11)-->
+-   Week 13 (Apr 22): Lab 11<!--[Lab 11](/labs/lab11)-->
 
 #### Final Project
 
