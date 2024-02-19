@@ -1,5 +1,5 @@
 ---
-title: "Lab 2 - tidycensus and RStudio (Part 1)"
+title: "Lab 2 - tidycensus and RStudio"
 format: html
 ---
 
@@ -31,11 +31,11 @@ Before continuing, ensure that you have these setting changed in RStudio.
 ::: {.alert .alert-info}
 ### What to turn-in
 
-Please do the R work in R Quarto. Your Rmd file will be generated. Save this file as a PDF (or print to PDF) and **turn in the PDF file(s) and the Rmd file(s)**.
+Please do the R work in R Quarto. Your Qmd file will be generated. Save this file as a PDF (or print to PDF) and **turn in only the PDF file(s)**.
 
-Work through Chapters 1 through 4 of *Analyzing US Census Data*. Use an Rmd file to keep track of your progress.
+Work through Chapters 1 through 4 of *Analyzing US Census Data*. Use an Qmd (Quarto) file to keep track of your progress.
 
-At the beginning of the Rmd file, use Quarto formatting to answer these questions:
+At the beginning of the Qmd file, use Quarto formatting to answer these questions:
 
 ```         
 -   What worked well for you and what didn't work?
