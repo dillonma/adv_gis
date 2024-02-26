@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dillon Mahmoudi">
+
+<title>Advanced GIS 486/687 - exercise04</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Advanced GIS 486/687</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../labs/index.html" rel="" target="">
+ <span class="menu-text">Labs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../project/index.html" rel="" target="">
+ <span class="menu-text">Final Project</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">1. Setup</a></li>
+  <li><a href="#spatial-objects-in-r" id="toc-spatial-objects-in-r" class="nav-link" data-scroll-target="#spatial-objects-in-r">2. Spatial objects in R</a></li>
+  <li><a href="#projection" id="toc-projection" class="nav-link" data-scroll-target="#projection">3. Projection</a></li>
+  <li><a href="#spatial-data-and-dplyr" id="toc-spatial-data-and-dplyr" class="nav-link" data-scroll-target="#spatial-data-and-dplyr">4. Spatial data and dplyr</a></li>
+  <li><a href="#building-new-shapefiles-in-r" id="toc-building-new-shapefiles-in-r" class="nav-link" data-scroll-target="#building-new-shapefiles-in-r">5. Building new shapefiles in R</a>
+  <ul class="collapse">
+  <li><a href="#points" id="toc-points" class="nav-link" data-scroll-target="#points">Points</a></li>
+  <li><a href="#polygons" id="toc-polygons" class="nav-link" data-scroll-target="#polygons">Polygons</a></li>
+  </ul></li>
+  <li><a href="#writing-out-spatial-data" id="toc-writing-out-spatial-data" class="nav-link" data-scroll-target="#writing-out-spatial-data">6. Writing out spatial data</a></li>
+  <li><a href="#more-sf-functions-finding-the-distance-from-ny-to-ut" id="toc-more-sf-functions-finding-the-distance-from-ny-to-ut" class="nav-link" data-scroll-target="#more-sf-functions-finding-the-distance-from-ny-to-ut">7. More <code>sf</code> functions: finding the distance from NY to UT</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">exercise04</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dillon Mahmoudi </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">1. Setup</h2>
+<p>This tutorial will focus on giving you the tools required to import, project, and create spatial datasets. We will work with the <code>sp</code> and <code>sf</code> packages and our friend the <code>tidyverse</code>. Make sure you have these packages installed and loaded.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.11.2, GDAL 3.7.2, PROJ 9.3.0; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sp)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_bw</span>())</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rnaturalearth)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="spatial-objects-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-objects-in-r">2. Spatial objects in R</h2>
+<p><code>sf</code> is the mama-package of all the spatial packages. <code>sf</code> recently replaced the <code>sp</code> package which you may have used for working with spatial data in <code>R</code> in the past. You can look through the <a href="https://r-spatial.github.io/sf/"><code>sf</code> documentation</a> to get a sense of all the things you can do with this powerful package. The team behind the <code>sf</code> package created a set of new data classes that integrate our best friend the data.frame with some friends who at times can be very difficult to hang out with: point, polygon, and raster. These new data classes include the following:</p>
+<p><em><code>sf</code>, the table (data.frame) with feature attributes and feature geometries, which contains </em><code>sfc</code>, the list-column with the geometries for each feature (record), which is composed of *<code>sfg</code>, the feature geometry of an individual simple feature.</p>
+<p>The <code>sf</code> class has a multitude of spatial methods/functions that can be performed on it:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">methods</span>(<span class="at">class =</span> <span class="st">"sf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] $&lt;-                          [                           
+  [3] [[&lt;-                         [&lt;-                         
+  [5] aggregate                    anti_join                   
+  [7] arrange                      as.data.frame               
+  [9] cbind                        coerce                      
+ [11] dbDataType                   dbWriteTable                
+ [13] distinct                     dplyr_reconstruct           
+ [15] drop_na                      duplicated                  
+ [17] filter                       full_join                   
+ [19] gather                       group_by                    
+ [21] group_split                  identify                    
+ [23] initialize                   inner_join                  
+ [25] left_join                    merge                       
+ [27] mutate                       nest                        
+ [29] pivot_longer                 pivot_wider                 
+ [31] plot                         print                       
+ [33] rbind                        rename                      
+ [35] rename_with                  right_join                  
+ [37] rowwise                      sample_frac                 
+ [39] sample_n                     select                      
+ [41] semi_join                    separate                    
+ [43] separate_rows                show                        
+ [45] slice                        slotsFromS3                 
+ [47] spread                       st_agr                      
+ [49] st_agr&lt;-                     st_area                     
+ [51] st_as_s2                     st_as_sf                    
+ [53] st_as_sfc                    st_bbox                     
+ [55] st_boundary                  st_break_antimeridian       
+ [57] st_buffer                    st_cast                     
+ [59] st_centroid                  st_collection_extract       
+ [61] st_concave_hull              st_convex_hull              
+ [63] st_coordinates               st_crop                     
+ [65] st_crs                       st_crs&lt;-                    
+ [67] st_difference                st_drop_geometry            
+ [69] st_filter                    st_geometry                 
+ [71] st_geometry&lt;-                st_inscribed_circle         
+ [73] st_interpolate_aw            st_intersection             
+ [75] st_intersects                st_is                       
+ [77] st_is_valid                  st_join                     
+ [79] st_line_merge                st_m_range                  
+ [81] st_make_valid                st_minimum_rotated_rectangle
+ [83] st_nearest_points            st_node                     
+ [85] st_normalize                 st_point_on_surface         
+ [87] st_polygonize                st_precision                
+ [89] st_reverse                   st_sample                   
+ [91] st_segmentize                st_set_precision            
+ [93] st_shift_longitude           st_simplify                 
+ [95] st_snap                      st_sym_difference           
+ [97] st_transform                 st_triangulate              
+ [99] st_triangulate_constrained   st_union                    
+[101] st_voronoi                   st_wrap_dateline            
+[103] st_write                     st_z_range                  
+[105] st_zm                        summarise                   
+[107] transform                    transmute                   
+[109] ungroup                      unite                       
+[111] unnest                      
+see '?methods' for accessing help and source code</code></pre>
+</div>
+</div>
+<p>Notice that many functions and methods in sf that operate on spatial data are prefixed by <code>st_</code>, which refers to spatial type; this makes them easily findable by command-line completion.</p>
+<p>let’s open some shapefiles! A single shapefile is often split into many files (e.g.&nbsp;.cpg, .dbf, .prj, etc.), the most important of which is the sacred .SHP file. To get all of this info into an organized spatial object in R is easy, and in fact, as is often the case in R, there are multiple packages and functions that will do this for you. Today, we’ll learn how to use the <code>sf</code> package to load a shapefile:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#the first argument to the st_read function is the data source name (or dsn). For .shp files this is the folder where all the many files the shape file is split into live.</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#the second argument to the st_read function is the layer name. For shape files this will be the file name without the file extension</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>states <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"../data/states.shp"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Reading layer `states' from data source 
+  `C:\Users\dillonm\GitHub\adv_gis\labs\lab04\data\states.shp' 
+  using driver `ESRI Shapefile'
+Simple feature collection with 51 features and 5 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -178.2176 ymin: 18.92179 xmax: -66.96927 ymax: 71.40624
+Geodetic CRS:  NAD83</code></pre>
+</div>
+</div>
+<p>Lets check the class of <code>states</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(states)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "sf"         "data.frame"</code></pre>
+</div>
+</div>
+<p>The class of <code>states</code> is sf <em>and</em> data.frame. Meaning <code>states</code> extends (and “is” a) data.frame, but with a single list-column with geometries. <code>sf</code> geometries are held in the sf_column named:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attr</span>(states, <span class="st">"sf_column"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "geometry"</code></pre>
+</div>
+</div>
+<p>If we print the first three features, we see their attribute values and an abridged version of the geometry</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(states, <span class="at">n =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 51 features and 5 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -178.2176 ymin: 18.92179 xmax: -66.96927 ymax: 71.40624
+Geodetic CRS:  NAD83
+First 3 features:
+  STATE_NAME DRAWSEQ STATE_FIPS SUB_REGION STATE_ABBR
+1     Hawaii       1         15    Pacific         HI
+2 Washington       2         53    Pacific         WA
+3    Montana       3         30   Mountain         MT
+                        geometry
+1 MULTIPOLYGON (((-160.0738 2...
+2 MULTIPOLYGON (((-122.402 48...
+3 MULTIPOLYGON (((-111.4754 4...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#head(states, 3)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The column in the <code>sf</code> data.frame that contains the geometries is a list, of class <code>sfc</code>. We can retrieve the geometry list-column in this case by:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>states<span class="sc">$</span>geom </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Geometry set for 51 features 
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -178.2176 ymin: 18.92179 xmax: -66.96927 ymax: 71.40624
+Geodetic CRS:  NAD83
+First 5 geometries:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-160.0738 22.00418, -160.0497 2...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-122.402 48.22522, -122.4629 48...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-111.4754 44.70216, -111.4808 4...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-69.77728 44.07415, -69.85993 4...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-98.73044 45.93827, -99.00683 4...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>states[[<span class="dv">6</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Geometry set for 51 features 
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -178.2176 ymin: 18.92179 xmax: -66.96927 ymax: 71.40624
+Geodetic CRS:  NAD83
+First 5 geometries:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-160.0738 22.00418, -160.0497 2...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-122.402 48.22522, -122.4629 48...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-111.4754 44.70216, -111.4808 4...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-69.77728 44.07415, -69.85993 4...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-98.73044 45.93827, -99.00683 4...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">#but the more general way uses the sf function st_geometry </span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>(states_geom <span class="ot">&lt;-</span> <span class="fu">st_geometry</span>(states)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Geometry set for 51 features 
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -178.2176 ymin: 18.92179 xmax: -66.96927 ymax: 71.40624
+Geodetic CRS:  NAD83
+First 5 geometries:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-160.0738 22.00418, -160.0497 2...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-122.402 48.22522, -122.4629 48...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-111.4754 44.70216, -111.4808 4...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-69.77728 44.07415, -69.85993 4...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-98.73044 45.93827, -99.00683 4...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Note: you can use brackets around your code to make a variable assignment and view your code in the same line</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Geometries are printed in abbreviated form, but we can can view a complete geometry by selecting it, e.g.&nbsp;the first one by:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>states_geom[[<span class="dv">1</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>MULTIPOLYGON (((-160.0738 22.00418, -160.0497 21.98816, -160.0899 21.91587, -160.1701 21.8676, -160.2023 21.79531, -160.2424 21.80328, -160.2263 21.89159, -160.122 21.96398, -160.0738 22.00418)), ((-159.3352 21.94834, -159.4395 21.86807, -159.576 21.88414, -159.6402 21.94837, -159.7366 21.96442, -159.8008 22.03667, -159.7125 22.14906, -159.576 22.21318, -159.3914 22.22912, -159.3432 22.19702, -159.295 22.12481, -159.3271 22.04464, -159.3352 21.94834)), ((-157.6733 21.29803, -157.6814 21.27394, -157.7215 21.28197, -157.8259 21.24986, -157.8981 21.33014, -157.9463 21.30606, -158.0988 21.29001, -158.131 21.35423, -158.2353 21.47465, -158.2433 21.53888, -158.2674 21.58704, -158.1149 21.57902, -158.0426 21.67535, -157.9864 21.69943, -157.9142 21.63521, -157.85 21.50676, -157.8098 21.43451, -157.7616 21.45859, -157.7135 21.38634, -157.6733 21.29803)), ((-156.7179 21.13742, -156.766 21.06518, -156.8865 21.04913, -157.0711 21.10533, -157.2879 21.08125, -157.3039 21.13745, -157.2477 21.16153, -157.2317 21.23378, -157.1675 21.19364, -157.0069 21.18561, -156.9925 21.19542, -156.9587 21.20969, -156.9433 21.17278, -156.9142 21.16737, -156.9102 21.15805, -156.7179 21.13742)), ((-157.0391 20.92871, -156.9106 20.92872, -156.8062 20.84042, -156.8142 20.79225, -156.8865 20.73605, -156.9668 20.72802, -156.9909 20.79224, -156.9828 20.83238, -157.0551 20.88054, -157.0391 20.92871)), ((-156.196 20.63165, -156.2763 20.58348, -156.3967 20.56743, -156.4369 20.62362, -156.461 20.72798, -156.4931 20.7922, -156.5252 20.77615, -156.6376 20.80826, -156.6938 20.91262, -156.6536 21.01699, -156.5974 21.04106, -156.5252 20.98487, -156.477 20.89657, -156.3566 20.94473, -156.2603 20.92867, -156.0114 20.80023, -155.9873 20.75206, -156.0435 20.65573, -156.1318 20.62362, -156.196 20.63165)), ((-155.6662 18.92179, -155.7786 19.01009, -155.8589 19.0101, -155.907 19.13051, -155.8749 19.37136, -155.9472 19.48375, -155.9713 19.62825, -156.0435 19.78078, -155.9793 19.82092, -155.883 19.93331, -155.8268 20.00556, -155.8348 20.06176, -155.891 20.17415, -155.8589 20.27048, -155.7384 20.20626, -155.5618 20.13401, -155.2006 19.99753, -155.0962 19.87711, -155.0721 19.72459, -154.9758 19.74064, -154.9758 19.65234, -154.7911 19.53996, -154.8152 19.45968, -154.9276 19.41952, -155.0159 19.33121, -155.1524 19.26699, -155.3049 19.23488, -155.5217 19.12248, -155.5377 19.04221, -155.6662 18.92179)))</code></pre>
+</div>
+</div>
+<p>The way this is printed is called well-known text. The word MULTIPOLYGON is followed by three parenthesis, because it can consist of multiple polygons, in the form of MULTIPOLYGON(POL1,POL2), where POL1 might consist of an exterior ring and zero or more interior rings, as of (EXT1,HOLE1,HOLE2). Sets of coordinates are held together with parenthesis, so we get ((crds_ext)(crds_hole1)(crds_hole2)) where crds_ is a comma-separated set of coordinates of a ring.</p>
+<p>This is easier to see if we plot the polygon:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(states_geom[[<span class="dv">1</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="exercise04_files/figure-html/statesplot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>This MULTIPOLYGON is made up of 7 polygons. If you count the bracketed sets of coordinates above, there are 7 sets.</p>
+<p>Spatial objects have a series of attributes that describe things specific to spatial data such projections and bounding boxes. You can check the attributes of <code>sfc</code> objects using the <code>attributes</code> function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attributes</span>(states_geom)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$n_empty
+[1] 0
+
+$crs
+Coordinate Reference System:
+  User input: NAD83 
+  wkt:
+GEOGCRS["NAD83",
+    DATUM["North American Datum 1983",
+        ELLIPSOID["GRS 1980",6378137,298.257222101,
+            LENGTHUNIT["metre",1]]],
+    PRIMEM["Greenwich",0,
+        ANGLEUNIT["degree",0.0174532925199433]],
+    CS[ellipsoidal,2],
+        AXIS["latitude",north,
+            ORDER[1],
+            ANGLEUNIT["degree",0.0174532925199433]],
+        AXIS["longitude",east,
+            ORDER[2],
+            ANGLEUNIT["degree",0.0174532925199433]],
+    ID["EPSG",4269]]
+
+$class
+[1] "sfc_MULTIPOLYGON" "sfc"             
+
+$precision
+[1] 0
+
+$bbox
+      xmin       ymin       xmax       ymax 
+-178.21760   18.92179  -66.96927   71.40624 </code></pre>
+</div>
+</div>
+<p>Here you can see the bounding box of the shape file. This is a matrix of bounding box coordinates with xmin and xmax showing the longitude (x-axis) and ymin, ymax showing the latitude (y-axis). You can also see information about the data’s coordinate reference system. You can access each of these attributes directly using sf functions.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_bbox</span>(states) <span class="co">#view the data bounding box</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      xmin       ymin       xmax       ymax 
+-178.21760   18.92179  -66.96927   71.40624 </code></pre>
+</div>
+</div>
+</section>
+<section id="projection" class="level2">
+<h2 class="anchored" data-anchor-id="projection">3. Projection</h2>
+<p>People tend to hate projections and generally don’t understand them very well. It is, however, VERY important that you project your data correctly. If you fail to do this, it’s highly likely that your spatial analyses will be wrong. So let’s learn how this stuff works.</p>
+<p>Maps tend to be two-dimensional; the Earth is not. A coordinate system is a way to locate everything on Earth’s surface in x and y space. The way we portray (pseudo-)spherical Earth on a flat surface is by using a projection. Each projection is associated with a particular coordinate system. There are a bazillion coordinate systems, and each coordination system comes with strong assumptions and distortions (and fan-base):</p>
+<ul>
+<li>Geographic Coordinate System (GCS): good ol’ latitude and longitude (degrees, minutes, seconds); we think of data in GCS as unprojected;</li>
+<li>Universal Transverse Mercator (UTM): lots of zones to choose from, Utah sits in 12N;</li>
+<li>State Plane Coordinate System: some states have their own systems, i.e.&nbsp;North Carolina Coordinate System</li>
+<li>National systems: If working in another country, check out country-specific projections.</li>
+</ul>
+<p>Each coordinate system is tied to a datum. This is essentially a reference point, the starting point from which coordinates are measured (i.e.&nbsp;lat and lon are based on the equator and prime meridian). In R we can access the projection information for a spatial object using the crs attribute of the object:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(states_geom) <span class="co">#view the data projection</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Coordinate Reference System:
+  User input: NAD83 
+  wkt:
+GEOGCRS["NAD83",
+    DATUM["North American Datum 1983",
+        ELLIPSOID["GRS 1980",6378137,298.257222101,
+            LENGTHUNIT["metre",1]]],
+    PRIMEM["Greenwich",0,
+        ANGLEUNIT["degree",0.0174532925199433]],
+    CS[ellipsoidal,2],
+        AXIS["latitude",north,
+            ORDER[1],
+            ANGLEUNIT["degree",0.0174532925199433]],
+        AXIS["longitude",east,
+            ORDER[2],
+            ANGLEUNIT["degree",0.0174532925199433]],
+    ID["EPSG",4269]]</code></pre>
+</div>
+</div>
+<p>Coordinate reference systems (CRS) are like measurement units for coordinates: they specify which location on Earth a particular coordinate pair refers to. <code>sfc</code> objects have two attributes to store a CRS:epsg and proj4string. proj4string is a generic, string-based description of a CRS, understood by the PROJ library. It defines projection types and (often) defines parameter values for particular projections, and hence can cover an infinite amount of different projections. This library (also used by GDAL) provides functions to convert or transform between different CRS. epsg is the integer ID for a particular, known CRS that can be resolved into a proj4string. Some proj4string values can resolved back into their corresponding epsg ID, but this does not always work.</p>
+<p>The importance of having epsg values stored with data besides proj4string values is that the epsg refers to particular, well-known CRS, whose parameters may change (improve) over time; fixing only the proj4string may remove the possibility to benefit from such improvements, and limit some of the provenance of datasets, but may help reproducibility.</p>
+<p>Our data is currently in the WGS84 Geographic Coordinate System which plots locations on a sphere using longitude and latitude (but does not project these coordinates into two-dimensional space).</p>
+<ul>
+<li>epsg: 4269</li>
+<li>proj4string: “+proj=longlat +ellps=GRS80 +datum=NAD83 +no_defs”</li>
+</ul>
+<p>We get that long string by searching for the projection on <a href="https://epsg.io/102003">epsg.io</a> and clicking the PROJ.4 link.</p>
+<p>If we have any plans to use the spatial data to compute distance or area, then we need to project our data. This is fairly straightforward in R. Say we want to reproject this dataset into <a href="https://epsg.io/102003">USA Contiguous Albers Equal Area Conic</a>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>states_conic <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(states, <span class="fu">CRS</span>(<span class="st">"+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=37.5 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"</span>))</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="co"># HINT: what is the epsg for albers equal area conic? how could statement be easier?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Don’t forget that the map projection you use strongly impacts the way you visualize and analyze your data (see <a href="https://source.opennews.org/articles/choosing-right-map-projection/">here</a> or <a href="https://www.economist.com/graphic-detail/2010/11/10/the-true-true-size-of-africa">here</a>).</p>
+</section>
+<section id="spatial-data-and-dplyr" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-data-and-dplyr">4. Spatial data and dplyr</h2>
+<p>Since <code>sf</code> objects are data.frames with extra spatial data, all of our <code>dplyr</code> tools apply! Want to know how many states are in each sub-region?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>states <span class="sc">%&gt;%</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(SUB_REGION) <span class="sc">%&gt;%</span></span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">n_states =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 2
+  SUB_REGION         n_states
+  &lt;chr&gt;                 &lt;int&gt;
+1 East North Central        5
+2 East South Central        4
+3 Middle Atlantic           3
+4 Mountain                  8
+5 New England               6
+6 Pacific                   5
+7 South Atlantic            9
+8 West North Central        7
+9 West South Central        4</code></pre>
+</div>
+</div>
+<p>Notice, however, that the output of this dplyring is a data.frame, not a sp object. To keep the subset and cleaned shapefile in shapefile form you can use dplyr verbs directly on sf objects without collapsing them to a data.frame! This means we can use <code>dplyr</code> tools like <code>filter()</code> to directly change our shapefiles:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>states_conic <span class="sc">%&gt;%</span> <span class="fu">filter</span>(SUB_REGION <span class="sc">==</span> <span class="st">"Pacific"</span>) <span class="sc">%&gt;%</span> <span class="fu">st_geometry</span>() <span class="sc">%&gt;%</span> <span class="fu">plot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="exercise04_files/figure-html/statesfilter-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="building-new-shapefiles-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="building-new-shapefiles-in-r">5. Building new shapefiles in R</h2>
+<section id="points" class="level3">
+<h3 class="anchored" data-anchor-id="points">Points</h3>
+<p>Let’s say I’m a volcanologist and I find a really cool dataset describing all eruptions on Earth during the Holocene. The data is stored in a .csv document. We know how to open the .csv in R and inspect its contents:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>volcano <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'../data/volcano.csv'</span>)</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(volcano) <span class="co">#another way to view a data.frame summary</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 1,496
+Columns: 13
+$ Volcano.Number       &lt;int&gt; 210010, 210020, 210030, 210040, 211001, 211003, 2…
+$ Volcano.Name         &lt;chr&gt; "West Eifel Volcanic Field", "Chaine des Puys", "…
+$ Country              &lt;chr&gt; "Germany", "France", "Spain", "Spain", "Italy", "…
+$ Primary.Volcano.Type &lt;chr&gt; "Maar(s)", "Lava dome(s)", "Pyroclastic cone(s)",…
+$ Activity.Evidence    &lt;chr&gt; "Eruption Dated", "Eruption Dated", "Evidence Cre…
+$ Last.Known.Eruption  &lt;chr&gt; "8300 BCE", "4040 BCE", "Unknown", "3600 BCE", "1…
+$ Region               &lt;chr&gt; "Mediterranean and Western Asia", "Mediterranean …
+$ Subregion            &lt;chr&gt; "Western Europe", "Western Europe", "Western Euro…
+$ Latitude             &lt;dbl&gt; 50.170, 45.775, 42.170, 38.870, 43.250, 42.600, 4…
+$ Longitude            &lt;dbl&gt; 6.850, 2.970, 2.530, -4.020, 10.870, 11.930, 12.7…
+$ Elevation..m.        &lt;int&gt; 600, 1464, 893, 1117, 500, 800, 949, 458, 1281, 7…
+$ Dominant.Rock.Type   &lt;chr&gt; "Foidite", "Basalt / Picro-Basalt", "Trachybasalt…
+$ Tectonic.Setting     &lt;chr&gt; "Rift zone / Continental crust (&gt;25 km)", "Rift z…</code></pre>
+</div>
+</div>
+<p>But we’re not here to learn how to work with .csv data … we have now graduated to spatial data! So how do we turn our .csv into a MULTIPOINT spatial object (a set of points in the <code>sf</code> geometry; because we’re dealing with coordinates of eruptions)?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>volcano_sf <span class="ot">=</span> <span class="fu">st_as_sf</span>(volcano,<span class="at">coords=</span><span class="fu">c</span>(<span class="st">"Longitude"</span>,<span class="st">"Latitude"</span>), <span class="at">crs=</span><span class="dv">4326</span>) <span class="co">#projection WGS 84</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(volcano_sf))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="exercise04_files/figure-html/volcanoplot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Ohhh don’t you want to transform this ugly base R plot into something better. Here’s a simple plot with ggplot and some data from the <code>rnaturalearth</code> package:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>world <span class="ot">&lt;-</span> <span class="fu">ne_countries</span>(<span class="at">scale =</span> <span class="st">"medium"</span>, <span class="at">returnclass =</span> <span class="st">"sf"</span>)</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_sf</span>(<span class="at">data =</span> world) <span class="sc">+</span></span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_sf</span>(<span class="at">data =</span> volcano_sf, <span class="at">size =</span> <span class="fl">1.5</span>, </span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">shape =</span> <span class="dv">23</span>, <span class="at">fill =</span> <span class="st">"darkred"</span>) <span class="sc">+</span></span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Global Volcano Eruptions During the Holocene"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="exercise04_files/figure-html/worldplot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>You can use the <code>shape =</code>, <code>size =</code>, and <code>fill =</code> arguments in any ggplot function to coustomize the look of point symbols. You can find a list of commonly used point symbols <a href="http://www.sthda.com/english/wiki/r-plot-pch-symbols-the-different-point-shapes-available-in-r">here</a>.</p>
+</section>
+<section id="polygons" class="level3">
+<h3 class="anchored" data-anchor-id="polygons">Polygons</h3>
+<p>Most of the polygon data you will need has already been built by someone else, so we do not often build polygons from scratch. There are however instances when this might be a useful skill to master. For example defining study area boundaries.</p>
+<p>To do this in R, we have to build each individual polygon and bundle them all together. Let’s start by building a set of simple polygons describing the outline of two study areas (in this example, the coordinates are arbitrary; in the real world, you’d have actual coordinates). The rbind() function pulls together each set of coordinates (i.e.&nbsp;c(1,1)) and binds them together in separate rows to create a mini-matrix of coordinates. Note that the order in which you list the coordinates is the order in which R will draw the polygons so be sure to list them in the correct order.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>site1 <span class="ot">&lt;-</span> <span class="fu">st_polygon</span>(<span class="fu">list</span>(<span class="fu">rbind</span>(<span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>), <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">0</span>), <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">2</span>), <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>), <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>), <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">0</span>))))</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>site2 <span class="ot">&lt;-</span> <span class="fu">st_polygon</span>(<span class="fu">list</span>(<span class="fu">rbind</span>(<span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">0</span>), <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">0</span>), <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">1</span>), <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">1</span>), <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">0</span>))))</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Now, let’s bind the individual Polygon objects into a spatial polygon object</span></span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>sites <span class="ot">&lt;-</span> <span class="fu">st_sfc</span>(site1, site2)</span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(sites)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="exercise04_files/figure-html/sitesimag-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Spatial polygons are cool and all, but polygons with attribute data are much cooler. How do we add data to our new spatial polygons? <code>sf</code> makes it easy to turn spatial data into spatial data.frames.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>pol_sf <span class="ot">&lt;-</span> <span class="fu">st_sf</span>(<span class="fu">data.frame</span>(<span class="at">ID =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="at">Observations =</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">5</span>)), sites) </span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(pol_sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 2 features and 2 fields
+Geometry type: POLYGON
+Dimension:     XY
+Bounding box:  xmin: 0 ymin: 0 xmax: 4 ymax: 4
+CRS:           NA
+  ID Observations                          sites
+1  1          100 POLYGON ((0 0, 1 0, 3 2, 2 ...
+2  2            5 POLYGON ((3 0, 4 0, 4 1, 3 ...</code></pre>
+</div>
+</div>
+<p>Now we can plot our sites to display an attribute! For instance the number of observations at each site.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pol_sf[<span class="st">"Observations"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="exercise04_files/figure-html/polpot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>You can apply the same basic principles to make each of the spatial geometry types in <code>sf</code>:</p>
+<ul>
+<li>POINT: zero-dimensional geometry containing a single point</li>
+<li>LINESTRING: sequence of points connected by straight, non-self intersecting line pieces; one-dimensional geometry</li>
+<li>POLYGON: geometry with a positive area (two-dimensional); sequence of points form a closed, non-self intersecting ring; the first ring denotes the exterior ring, zero or more subsequent rings denote holes in this exterior ring</li>
+<li>MULTIPOINT: set of points; a MULTIPOINT is simple if no two Points in the MULTIPOINT are equal</li>
+<li>MULTILINESTRING: set of linestrings</li>
+<li>MULTIPOLYGON: set of polygons</li>
+</ul>
+</section>
+</section>
+<section id="writing-out-spatial-data" class="level2">
+<h2 class="anchored" data-anchor-id="writing-out-spatial-data">6. Writing out spatial data</h2>
+<p>Writing out spatial data using the <code>sf</code> package takes place in the same fashion as reading in spatial data. Remember <code>st_read()</code> from back when you started this exercise? To write out a spatial data file (like a shape file) you just use <code>st_write()</code>.</p>
+<p>Let’s write out the polygon dataframe we created above as a shapefile.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_write</span>(pol_sf, <span class="st">"../data/imaginary_sites.shp"</span>) <span class="co"># this will write output to your working directory</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Writing layer `imaginary_sites' to data source 
+  `../data/imaginary_sites.shp' using driver `ESRI Shapefile'
+Writing 2 features with 2 fields and geometry type Polygon.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># st_write(pol_sf, dsn = "..data/", layer = "imaginary_sites.shp", driver = "ESRI Shapefile") #you can also specify a folder to write the shape file using the dsn argument</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If we repeat this code, we would get an error message that the file already exists, but we can force a file overwrite by using:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_write</span>(pol_sf, <span class="st">"../data/imaginary_sites.shp"</span>, <span class="at">delete_layer =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Deleting layer `imaginary_sites' using driver `ESRI Shapefile'
+Writing layer `imaginary_sites' to data source 
+  `../data/imaginary_sites.shp' using driver `ESRI Shapefile'
+Writing 2 features with 2 fields and geometry type Polygon.</code></pre>
+</div>
+</div>
+<p>We have written out a classic ESRI Shapefile but there are lots of other drivers you can use found <a href="https://gdal.org/drivers/vector/index.html">here</a>.</p>
+</section>
+<section id="more-sf-functions-finding-the-distance-from-ny-to-ut" class="level2">
+<h2 class="anchored" data-anchor-id="more-sf-functions-finding-the-distance-from-ny-to-ut">7. More <code>sf</code> functions: finding the distance from NY to UT</h2>
+<p><code>sf</code> has some useful functions for simple spatial operations. The code below uses the <code>st_centroid()</code> function to identify points located in the center of NY and UT and the <code>st_distance()</code> function to calculate the distance between those points. Notice that the <code>paste()</code> function is used to add the output value from <code>st_distance()</code> to the plot title.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>NY <span class="ot">&lt;-</span> states_conic <span class="sc">%&gt;%</span> <span class="fu">filter</span>(STATE_NAME <span class="sc">==</span> <span class="st">"New York"</span>)</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>UT <span class="ot">&lt;-</span> states_conic <span class="sc">%&gt;%</span> <span class="fu">filter</span>(STATE_NAME <span class="sc">==</span> <span class="st">"Utah"</span>)</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="st">`</span><span class="at">%notin%</span><span class="st">`</span> <span class="ot">&lt;-</span> <span class="fu">Negate</span>(<span class="st">`</span><span class="at">%in%</span><span class="st">`</span>) <span class="co">#create an operator so we can exclude locations using filter</span></span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>cont_US <span class="ot">&lt;-</span> states_conic <span class="sc">%&gt;%</span> <span class="fu">filter</span>(STATE_NAME <span class="sc">%notin%</span> <span class="fu">c</span>(<span class="st">"Alaska"</span>,<span class="st">"Hawaii"</span>))</span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">geom_sf</span>(<span class="at">data =</span> cont_US) <span class="sc">+</span></span>
+<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">geom_sf</span>(<span class="at">data =</span> <span class="fu">rbind</span>(<span class="fu">st_centroid</span>(NY), <span class="fu">st_centroid</span>(UT))) <span class="sc">+</span> <span class="co">#plot the centroids for NY and UT</span></span>
+<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste</span>(<span class="st">"The distance between NY and UT is"</span>, </span>
+<span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a>                           <span class="fu">as.integer</span>(<span class="fu">st_distance</span>(<span class="fu">st_centroid</span>(NY), <span class="fu">st_centroid</span>(UT))<span class="sc">*</span><span class="fl">0.001</span>), <span class="st">"km"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="exercise04_files/figure-html/nyut-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

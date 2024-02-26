@@ -6,5 +6,7 @@ listing:
   #  - "*/index.qmd"
     - lab01/index.qmd
     - lab02/index.qmd
+    - lab03/index.qmd
+    - lab04/index.qmd
   sort: "date desc"
 ---

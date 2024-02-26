@@ -24,7 +24,7 @@ Before continuing, ensure that you have these setting changed in RStudio.
 
 ### Lab 3 Assignment
 
-[Lab 03 Project](files/lab03.zip)
+[Lab 03 Project](/files/lab03.zip)
 
 Lab 3 asks a number of questions of a dataset, and then asks you to create a map using data that you export out of RStudio. Create a visually pleasing map using the variable `gapminder` dataset (using either <mark>2007</mark> **life expectancy or GDP per capita**). Be sure to add your name, the assignment name, a legend with professional titles, a small and minimalist North arrow, and a scale bar.
 
