@@ -9,11 +9,11 @@ format: html
 
 [Slides for week 5](week5.pptx).
 
-### Lab 3 Assignment
+### Lab 4 Assignment
 
 [Lab 04 Project](/files/lab04.zip)
 
-Lab 4 asks you to perform some simple steps with spatial data. See the project to get started. Note the `docs` folder.
+Lab 4 asks you to perform some simple steps with spatial data with ggplot. See the project to get started. Note the `docs` folder.
 
 ### Turn-in
 
