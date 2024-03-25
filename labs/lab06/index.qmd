@@ -1,9 +1,9 @@
 ---
-title: "Lab 5 - GitHub"
+title: "Lab 6 - GitHub"
 format: html
 ---
 
-## Lab 5 / Week 5
+## Lab 6 / Week Something
 
 ![](images/exploregithub.jpg){fig-alt="GitHub promotional image"}
 
