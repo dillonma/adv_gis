@@ -110,35 +110,31 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 01 (Jan 29): [Lab 01](/labs/lab01)
 
--   [Week 02](/labs/lab02/week2.qmd) (Feb 05): [Lab 02](/labs/lab02)
+-   [Week 02-03](/labs/lab02/week2.qmd) (Feb 05): [Lab 02](/labs/lab02)
 
--   Week 03 (Feb 12): Lab 02 cont'd, [Week 03 Demo](/files/demo03.zip)
+-   Week 04 (Feb 19): Lab 02 cont'd, [Week 03 Demo](/files/demo03.zip)
 
 #### Combining R/RStudio with QGIS
 
--   Week 04 (Feb 19): [Lab 03](/labs/lab03), [Lab 03 Project](/files/lab03.zip)
+-   Week 05-06 (Feb 26): [Lab 03](/labs/lab03), [Lab 03 Project](/files/lab03.zip)
 
--   Week 05 (Feb 26): [Lab 04](/labs/lab04), [Lab 04 Project](/files/lab04.zip)
+-   Week 06-07 (Mar 04): [Lab 04](/labs/lab04), [Lab 04 Project](/files/lab04.zip)
 
-#### Advanced Spatial Analysis
-
--   Week 06 (Mar 04): Lab 05<!--[Lab 6](/labs/lab06)-->
-
--   Week 07 (Mar 11): Lab 06<!--[Lab 7](/labs/lab07)-->
+-   Week 07 (Mar 04): Lab 05, [Lab 05 Project](https://drive.google.com/file/d/12VhYGoMmGEB4l3XJ9S59GpiiusOUl4h0/view?usp=sharing)
 
 -   Week 08 (Mar 18): <mark>**NO CLASS, Spring Break**</mark>
 
--   Week 09 (Mar 25): Lab 07<!--[Lab 8](/labs/lab08)-->; <mark>**NO CLASS Mar 27**</mark>
+#### Advanced Spatial Analysis
 
-#### Advanced Techniques
+-   Week 09 (Mar 25): Lab 06 [Lab 6](/labs/lab06)
 
--   Week 10 (Apr 01): Lab 08<!--[Lab 9](/labs/lab09)-->
+-   Week 10 (Apr 01): <mark>**NO CLASS, Final Project**</mark>
 
--   Week 11 (Apr 08): Lab 09<!--[Lab 9](/labs/lab09)-->
+-   Week 11 (Apr 08): Lab 07<!--[Lab 9](/labs/lab09)-->
 
--   Week 12 (Apr 15): Lab 10<!--[Lab 10](/labs/lab10)-->
+-   Week 12 (Apr 15): Lab 09<!--[Lab 10](/labs/lab10)-->
 
--   Week 13 (Apr 22): Lab 11<!--[Lab 11](/labs/lab11)-->
+-   Week 13 (Apr 22): Lab 09<!--[Lab 11](/labs/lab11)-->
 
 #### Final Project
 
