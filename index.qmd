@@ -126,11 +126,11 @@ This course is designed around a series of labs and a final project. The final p
 
 #### Advanced Spatial Analysis
 
--   Week 09 (Mar 25): Lab 06 [Lab 6](/labs/lab06)
+-   Week 09 (Mar 25): [Lab 6](/labs/lab06)
 
 -   Week 10 (Apr 01): <mark>**NO CLASS, Final Project**</mark>
 
--   Week 11 (Apr 08): Finish Lab 06
+-   Week 11 (Apr 08): Finish Lab 06 and address GitHub issues
 
 -   Week 12 (Apr 15): [Lab 7](/labs/lab07)
 
