@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-7-week-10" id="toc-lab-7-week-10" class="nav-link active" data-scroll-target="#lab-7-week-10">Lab 7 / Week 10</a>
+  <li><a href="#lab-7" id="toc-lab-7" class="nav-link active" data-scroll-target="#lab-7">Lab 7</a>
   <ul class="collapse">
   <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
   <li><a href="#directions" id="toc-directions" class="nav-link" data-scroll-target="#directions">Directions</a></li>
@@ -140,8 +140,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="lab-7-week-10" class="level2">
-<h2 class="anchored" data-anchor-id="lab-7-week-10">Lab 7 / Week 10</h2>
+<section id="lab-7" class="level2">
+<h2 class="anchored" data-anchor-id="lab-7">Lab 7</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../..\material/ols.png" class="img-fluid figure-img"></p>
@@ -158,38 +158,36 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="directions" class="level3">
 <h3 class="anchored" data-anchor-id="directions">Directions</h3>
-<section id="github-pages-graded-separately-please-turn-in-a-link-on-blackboard" class="level4">
-<h4 class="anchored" data-anchor-id="github-pages-graded-separately-please-turn-in-a-link-on-blackboard">GitHub Pages (graded separately, please turn-in a link on Blackboard)</h4>
+<section id="github-pages-not-graded-separately" class="level4">
+<h4 class="anchored" data-anchor-id="github-pages-not-graded-separately">GitHub Pages (not graded separately)</h4>
 <p>Add a project to your GitHub portfolio, follow instructions from in-class demo. <strong>Submit a link to your portfolio page here</strong>&nbsp;(not the backend).</p>
 </section>
 <section id="spatial-analysis-graded-separately-please-turn-in-the-pdf-as-well-as-zip-file" class="level4">
 <h4 class="anchored" data-anchor-id="spatial-analysis-graded-separately-please-turn-in-the-pdf-as-well-as-zip-file">Spatial Analysis (graded separately, please turn-in the PDF as well as zip file)</h4>
-<p>Create a blank project and add week10 Rmd file to the appropriate folder. Complete the Rmd, knit it to html, then use a browser to save it to PDF in the appropriate folder. <strong>Download week10 Rmd file from Blackboard.</strong></p>
+<ol type="1">
+<li><p>Qmd Part 1: Follow the steps <a href="https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html">here</a> (<a href="https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html">https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html</a>) to do your first lab in GeoDa. The sample data set can be downloaded <a href="https://geodacenter.github.io/data-and-lab/Guerry/">here</a> (<a href="https://geodacenter.github.io/data-and-lab/Guerry/">https://geodacenter.github.io/data-and-lab/Guerry/</a>). Reproduce this section in a Qmd.</p></li>
+<li><p>Qmd Part 2: For any coastal/river-based place/county, use <code>tidycensus</code> to download data on two different variables that you think are related, <em>at the census tract level</em>, and explore a relationship between the two variables using GeoDa. Use <code>erase_water</code> to remove water from the shapefile. Save results into a shapefile and render this portion to html, then print to PDF.</p></li>
+<li><p>QGIS: Use your shapefile to produce a polished map showing the relationship. Include all the necessary components for a map.</p></li>
+<li><p>Qmd Part 3: Explain what you did and your findings for Part 2. Include maps where necessary to show the geography and the erasure of water.</p></li>
+</ol>
 </section>
 </section>
 <section id="grading" class="level3">
 <h3 class="anchored" data-anchor-id="grading">Grading</h3>
 <p>This I’ll be looking for while I’m grading.</p>
 <ol type="1">
-<li><p>Is your project folder organized properly? Are the necessary folders and files all there (hint: where will you st_write your files)?</p></li>
-<li><p>What are the comments like, both in r chunks and in text? Are they sufficient? Is the formatting of the markdown proper? Are the headers done properly? Are r chunks named appropriately (hint: is there a setup r chunk)?</p></li>
-<li><p>Are the polished maps actually polished?</p></li>
+<li><p>(15 points) In your Quarto: What are the comments like, both in r chunks and in text? Are they sufficient? Is the formatting of the markdown proper? Are the headers done properly? Are r chunks named appropriately (hint: is there a setup r chunk)?</p></li>
+<li><p>(10 points) Are the polished maps actually polished? Follow the guidelines discussed in class.</p></li>
+<li><p>(5 points) Is your write-up clear? Does it explain the relationship?</p></li>
 </ol>
+<p>Explore GeoDa, which has excellent documentation, and come come up do something that you’re proud of.</p>
 </section>
 <section id="turn-in" class="level3">
 <h3 class="anchored" data-anchor-id="turn-in">Turn-in</h3>
 </section>
 <section id="what-to-turn-in" class="level3 alert alert-info">
 <h3 class="anchored" data-anchor-id="what-to-turn-in">What to turn-in</h3>
-<ol type="1">
-<li><strong>Turn in a single PDF.</strong>
-<ul>
-<li>On the first page, please include a short header.</li>
-<li>Complete the exercises and produce a polished map.</li>
-<li>The output of your Rmd should be an HTML, which you then open and print to PDF.</li>
-</ul></li>
-<li><strong>A zip file of your project properly formatted</strong>. You won’t be able to include the data, but what other files should you include and which folders should they go in?</li>
-</ol>
+<p><strong>Turn in a single PDF.</strong> - On the first page, please include a short header. - Complete the exercises and produce a polished map. - The output of your Qmd should be an HTML, which you then open and print to PDF.</p>
 </section>
 
 

@@ -130,11 +130,11 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 10 (Apr 01): <mark>**NO CLASS, Final Project**</mark>
 
--   Week 11 (Apr 08): Lab 07<!--[Lab 9](/labs/lab09)-->
+-   Week 11 (Apr 08): Finish Lab 06
 
--   Week 12 (Apr 15): Lab 09<!--[Lab 10](/labs/lab10)-->
+-   Week 12 (Apr 15): [Lab 7](/labs/lab07)
 
--   Week 13 (Apr 22): Lab 09<!--[Lab 11](/labs/lab11)-->
+-   Week 13 (Apr 22): Lab 08<!--[Lab 11](/labs/lab11)-->
 
 #### Final Project
 
