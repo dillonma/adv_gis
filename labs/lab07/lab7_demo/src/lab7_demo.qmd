@@ -1,0 +1,110 @@
+---
+title: "Lab 7 Demo"
+author: "Dillon Mahmoudi"
+format: html
+editor: visual
+---
+
+## Introduction
+
+This file is to demonstrate how to download data using `tidycensus` to download data necessary for computation.
+
+## Setup
+
+This chunk loads the necessary packages. Naming this chunk `setup` allows it to run if one inadvertently runes other chunks later.
+
+```{r setup}
+library(dplyr) # for tibbles
+library(sf) # for geospatial
+library(tidyverse) # for tidy functions
+library(tidycensus) # get census data
+library(tigris) # get census geographies and erase_water
+
+options(tigris_class = "sf")
+options(tigris_use_cache = TRUE)
+```
+
+## Data
+
+This chunk downloads the data and uses `dplyer` pipes to send the result to `st_transform` and then to `erase_water`. The result is an `sf` object in an Albers project for North America.
+
+```{r get}
+# This gets the population, race+eth, housing units, and median household income from the ACS
+bmore_tracts <- get_acs(geography = "tract", 
+                           variables = c("pop" = "B03002_001", # Total
+                                         "pop_nhwhite" = "B03002_003", # NH White
+                                         "pop_nhblack" = "B03002_004", # NH Black
+                                         "pop_nhamind" = "B03002_005", # NH Am Ind
+                                         "pop_nhasian" = "B03002_006", # NH Asian
+                                         "pop_nhhwnpi" = "B03002_007", # NH Hawaiian/PI
+                                         "pop_nhother" = "B03002_008", # One Other
+                                         "pop_nhtwomr" = "B03002_009", # Two+
+                                         "pop_hispltx" = "B03002_012", # Hispanic/Latinx
+                                         "hu_total"  = "B25001_001", # Housing Units
+                                         "hu_totocc" = "B25003_001", # Housing Units - Occ
+                                         "hu_totown" = "B25003_002", # Housing Units - Owner Occ,
+                                         "hu_totrnt" = "B25003_003", # Housing Units - Renter Occ,
+                                         "mhhi" = "B19013_001", # Median Household Income
+                                         "mhmv" = "B25077_001"), # Median Home Value - Occ 
+                           
+                           year = 2022,
+                           county = c(510,5,3,27),
+                           survey = "acs5",
+                           state = c(24), 
+                           geometry = TRUE, 
+                           output = "wide") %>%
+  st_transform(crs=5070) %>% # project it so we can remove areas, 5070 is albers north america
+  erase_water(area_threshold = 0.85) # 0.85 is a threshold percent (0 = erase all (even tiny) bodies of water, and 1 = erase large bodies of water)
+```
+
+## Compute
+
+This chunk problematically, but conveniently, reduces the race and ethnicity into 5 categories:
+
+ - NH White as `pop_nhwhiteE` (from the Census)
+ - NH Black as `pop_nhblackE` (from the Census)
+ - Hisp/Latx as `pop_hispltxE` (from the Census)
+ - NH Asian as `pop_nhasianXE` (computed below)
+ - NH Multi/Other as `pop_nhotherXE` (computed below)
+
+```{r computation}
+# With these commands, we problematically, but conveniently, reduce the race+eth into 5 categories:
+# NH White; NH Black, Hisp/Latx, NH Asian, NH Multi/Other
+# Computes the NH Asian Population
+bmore_tracts$pop_nhasianXE <- 
+  bmore_tracts$pop_nhasianE + bmore_tracts$pop_nhhwnpiE
+# Computes the NH "Other" Population
+bmore_tracts$pop_nhotherXE <- 
+  bmore_tracts$pop_nhamindE + bmore_tracts$pop_nhotherE + bmore_tracts$pop_nhtwomrE
+
+# Computes vacant housing (need to verify these are the correct values)
+bmore_tracts$hu_totvacXE <- bmore_tracts$hu_totalE - bmore_tracts$hu_totoccE
+
+# Let's also compute a Percent White column as well
+bmore_tracts$pct_nhwhite <- bmore_tracts$pop_nhwhiteE/bmore_tracts$popE
+# bmore_tracts[is.nan(bmore_tracts$pct_nhwhite),]$pct_nhwhite <- 0
+```
+
+# Backdrop
+
+Let's also get a backdrop for Maryland, counties and the state
+
+```{r backdrop}
+md_counties <- counties(state = 'MD') %>% st_transform(crs=5070)
+
+md_state <- md_counties %>%
+  st_buffer(0.5) %>% # make a buffer of half a meter around all parts (to avoid slivers)
+  st_union() %>% # unite to a geometry object
+  st_sf() # make the geometry a data frame object
+
+```
+
+# Save to Files
+
+Now we save the files to the `data` folder to use in QGIS.
+
+```{r writefiles}
+st_write(bmore_tracts, "../data/bmore_tracts.geojson", delete_layer = TRUE)
+st_write(md_counties, "../data/md_counties.geojson", delete_layer = TRUE)
+st_write(md_state, "../data/md_state.geojson", delete_layer = TRUE)
+```
