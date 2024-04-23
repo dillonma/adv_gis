@@ -9,5 +9,6 @@ listing:
     - lab03/index.qmd
     - lab04/index.qmd
     - lab06/index.qmd
+    - lab05/index.qmd
   sort: "date desc"
 ---
