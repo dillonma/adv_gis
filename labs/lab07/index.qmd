@@ -13,6 +13,8 @@ Don't skimp on these! There are some really useful links in here!
 
 -   For tips on plotting and doing the correlation, see this [tutorial](https://thomaselove.github.io/431notes-2017/straight-line-models-and-correlation.html).
 -   [Here](https://www.r-bloggers.com/2017/07/ordinary-least-squares-ols-linear-regression-in-r/) is how to do a regression line in R, often called Ordinary Least Squares. We'll continue to work on this through-out the rest of the course.
+-   Propublica on Slivers: [One Trump Tax Cut Was Meant to Help the Poor. A Billionaire Ended Up Winning Big.](https://www.propublica.org/article/trump-inc-podcast-one-trump-tax-cut-meant-to-help-the-poor-a-billionaire-ended-up-winning-big)
+-   [My portfolio page](https://dillonma.github.io/), and the [backend](https://github.com/dillonma/dillonma.github.io/) (with the `README.md`) file that I use to keep my own resources.
 
 ### Directions
 
@@ -22,13 +24,15 @@ Add a project to your GitHub portfolio, follow instructions from in-class demo. 
 
 #### Spatial Analysis (graded separately, please turn-in the PDF as well as zip file)
 
-1. Qmd Part 1: Follow the steps [here](https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html) ([https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html](https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html)) to do your first lab in GeoDa. The sample data set can be downloaded [here](https://geodacenter.github.io/data-and-lab/Guerry/) ([https://geodacenter.github.io/data-and-lab/Guerry/](https://geodacenter.github.io/data-and-lab/Guerry/)). Reproduce this section in a Qmd.
+For a demonstration of collecting data for Lab 7, see this demonstration project.
 
-2. Qmd Part 2: For any coastal/river-based place/county, use `tidycensus` to download data on two different variables that you think are related, *at the census tract level*, and explore a relationship between the two variables using GeoDa. Use `erase_water` to remove water from the shapefile. Save results into a shapefile and render this portion to html, then print to PDF.
+1.  Qmd Part 1: Follow the steps [here](https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html) (<https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html>) to do your first lab in GeoDa. The sample data set can be downloaded [here](https://geodacenter.github.io/data-and-lab/Guerry/) (<https://geodacenter.github.io/data-and-lab/Guerry/>). Reproduce this section in a Qmd.
 
-3. QGIS: Use your shapefile to produce a polished map showing the relationship. Include all the necessary components for a map.
+2.  Qmd Part 2: For any coastal/river-based place/county, use `tidycensus` to download data on two different variables that you think are related, *at the census tract level*, and explore a relationship between the two variables using GeoDa. Use `erase_water` to remove water from the shapefile. Save results into a shapefile and render this portion to html, then print to PDF.
 
-4. Qmd Part 3: Explain what you did and your findings for Part 2. Include maps where necessary to show the geography and the erasure of water.
+3.  QGIS: Use your shapefile to produce a polished map showing the relationship. Include all the necessary components for a map.
+
+4.  Qmd Part 3: Explain what you did and your findings for Part 2. Include maps where necessary to show the geography and the erasure of water.
 
 ### Grading
 
@@ -47,8 +51,5 @@ Explore GeoDa, which has excellent documentation, and come come up do something 
 ::: {.alert .alert-info}
 ### What to turn-in
 
-**Turn in a single PDF.**
-    -   On the first page, please include a short header.
-    -   Complete the exercises and produce a polished map.
-    -   The output of your Qmd should be an HTML, which you then open and print to PDF.
+**Turn in a single PDF.** - On the first page, please include a short header. - Complete the exercises and produce a polished map. - The output of your Qmd should be an HTML, which you then open and print to PDF.
 :::
