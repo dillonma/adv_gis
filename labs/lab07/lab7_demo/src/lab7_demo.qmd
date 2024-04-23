@@ -26,7 +26,7 @@ options(tigris_use_cache = TRUE)
 
 ## Data
 
-This chunk downloads the data and uses `dplyer` pipes to send the result to `st_transform` and then to `erase_water`. The result is an `sf` object in an Albers projection for North America.
+This chunk downloads the data and uses `dplyer` pipes to send the result to `st_transform` and then to `erase_water`. The result is an `sf` object in an Albers project for North America.
 
 ```{r get}
 # This gets the population, race+eth, housing units, and median household income from the ACS
@@ -59,25 +59,13 @@ bmore_tracts <- get_acs(geography = "tract",
 
 ## Compute
 
-This chunk makes several calculations ...
+This chunk problematically, but conveniently, reduces the race and ethnicity into 5 categories:
 
-### Race and Ethnicity Groupings
-
-First, we problematically, but conveniently, reduces the race and ethnicity into 5 categories:
-
--   Non-Hispanic white as `pop_nhwhiteE` (from the Census)
--   Non-Hispanic Black as `pop_nhblackE` (from the Census)
--   Hisp/Latx as `pop_hispltxE` (from the Census)
--   Non-Hispanic Asian as `pop_nhasianXE` (computed below)
--   Non-Hispanic Multi/Other as `pop_nhotherXE` (computed below)
-
-### Housing Vacancy
-
-Second we calculate the total vacancy by subtracting the total housing units by the total occupied housing units. Note that we compute this as `hu_totalvacXE`.
-
-### Percent White, Non-Hispanic
-
-Lastly we calculate the percent of non-Hispanic white people in a census tract by dividing the `pop_nhwhiteE` (number of non-Hispanic white) from `popE` (the total population).
+ - NH White as `pop_nhwhiteE` (from the Census)
+ - NH Black as `pop_nhblackE` (from the Census)
+ - Hisp/Latx as `pop_hispltxE` (from the Census)
+ - NH Asian as `pop_nhasianXE` (computed below)
+ - NH Multi/Other as `pop_nhotherXE` (computed below)
 
 ```{r computation}
 # With these commands, we problematically, but conveniently, reduce the race+eth into 5 categories:
@@ -99,7 +87,7 @@ bmore_tracts$pct_nhwhite <- bmore_tracts$pop_nhwhiteE/bmore_tracts$popE
 
 # Backdrop
 
-Let's also get a backdrop for Maryland, counties and the state. This is so just in case you need them when you make maps for QGIS.
+Let's also get a backdrop for Maryland, counties and the state
 
 ```{r backdrop}
 md_counties <- counties(state = 'MD') %>% st_transform(crs=5070)
