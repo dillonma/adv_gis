@@ -120,7 +120,7 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 06-07 (Mar 04): [Lab 04](/labs/lab04), [Lab 04 Project](/files/lab04.zip)
 
--   Week 07 (Mar 04): Lab 05, [Lab 05 Project](https://drive.google.com/file/d/12VhYGoMmGEB4l3XJ9S59GpiiusOUl4h0/view?usp=sharing)
+-   Week 07 (Mar 04): Lab 05, [Lab 05 Project](/files/lab05.zip)
 
 -   Week 08 (Mar 18): <mark>**NO CLASS, Spring Break**</mark>
 

@@ -1,0 +1,22 @@
+---
+title: "Lab 5 - Spatial Analysis"
+format: html
+---
+
+## Lab 5 / Week 7-8
+
+![](images/GBR.png){fig-alt="Great Barrier Reef Analysis"}
+
+### Lab 5 Assignment
+
+[Lab 05 Project](/files/lab05.zip)
+
+Lab 4 asks you to perform some advanced shapefile manipulation using R. See the project to get started.
+
+### Turn-in
+
+::: {.alert .alert-info}
+### What to turn-in
+
+See the instructions linked on the main page, but be sure to submit a single PDF.
+:::
