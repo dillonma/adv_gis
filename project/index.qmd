@@ -25,10 +25,6 @@ Review the work we've done to date. See the useful links in all of the labs we'v
 
 -   And we learned how to do [point pattern analysis](https://dillonma.github.io/adv_gis/labs/lab8/) and make heatmaps.
 
--   Our next lab will look at data from rasters.
-
--   We'll done one more spatial analysis lab.
-
 ### Directions
 
 The expectation is that the final project is at a minimum 20 hours of work. It is a semester long project.

@@ -11,5 +11,6 @@ listing:
     - lab05/index.qmd
     - lab06/index.qmd
     - lab07/index.qmd
+    - lab08/index.qmd
   sort: "date desc"
 ---

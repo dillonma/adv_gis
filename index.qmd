@@ -120,7 +120,7 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 06-07 (Mar 04): [Lab 04](/labs/lab04), [Lab 04 Project](/files/lab04.zip)
 
--   Week 07 (Mar 04): Lab 05, [Lab 05 Project](/files/lab05.zip)
+-   Week 07 (Mar 04): [Lab 05](/labs/lab05), [Lab 05 Project](/files/lab05.zip)
 
 -   Week 08 (Mar 18): <mark>**NO CLASS, Spring Break**</mark>
 
@@ -134,11 +134,11 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 12 (Apr 15): [Lab 7](/labs/lab07)
 
--   Week 13 (Apr 22): Lab 08<!--[Lab 11](/labs/lab11)-->
+-   Week 13 (Apr 22): Continue on Lab 7
 
 #### Final Project
 
--   Week 14 (Apr 29): Final project proposal, work sessions.
+-   Week 14 (Apr 29): [Lab 8](/labs/lab08), [Lab 08 Project](/files/lab08.zip) and work on final project proposal, work sessions.
 
 -   Week 15 (May 06): Final project work sessions.
 

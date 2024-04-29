@@ -1,0 +1,38 @@
+---
+title: "Lab 8 - Interpolation"
+format: html
+---
+
+## Lab 8
+
+![This class so far.](https://media.giphy.com/media/l3nWlEkpv5cIqe0QU/giphy.gif)
+
+### Background
+
+Don't skimp on these! There are some really useful links in here!
+
+### Directions
+
+#### GitHub Pages
+
+Graded separately, finalize your portfolio site with 1 project from this class and 1 project from another class. Remove an extra material. **15 points**
+
+#### Interpolation with Regression Lab
+
+See the sample project. **32 points**
+
+### Grading
+
+ - GitHub portion (15 points)
+ - Part 1 (8 points) - Make maps from Chapter 4 Interpolation
+ - Part 2 (8 points) - Answer questions (see sample project)
+ - Part 3 (8 points) - Make maps (exclude graphics) from Chapter 5 Regression
+ - Part 4 (8 points) - Answer questions (see sample project)
+
+### Turn-in
+
+::: {.alert .alert-info}
+### What to turn-in
+
+**Turn in a single PDF.** - On the first page, please include a short header. - Complete the exercises and produce a polished map. - The output of your Qmd should be an HTML, which you then open and print to PDF.
+:::
