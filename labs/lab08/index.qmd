@@ -23,11 +23,11 @@ See the sample project. **32 points**
 
 ### Grading
 
- - GitHub portion (15 points)
- - Part 1 (8 points) - Make maps from Chapter 4 Interpolation
- - Part 2 (8 points) - Answer questions (see sample project)
- - Part 3 (8 points) - Make maps (exclude graphics) from Chapter 5 Regression
- - Part 4 (8 points) - Answer questions (see sample project)
+-   GitHub portion (15 points)
+-   Part 1 (8 points) - Make maps from [Interpolation from R Spatial](https://rspatial.org/analysis/4-interpolation.html)
+-   Part 2 (8 points) - Answer questions (see sample project)
+-   Part 3 (8 points) - Make maps (exclude graphics) from [Chapter Spatial Regression from R Spatial](https://rspatial.org/analysis/7-spregression.html)
+-   Part 4 (8 points) - Answer questions (see sample project)
 
 ### Turn-in
 
