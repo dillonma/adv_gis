@@ -10,6 +10,9 @@ format: html
 ### Background
 
 Don't skimp on these! There are some really useful links in here!
+ - Working R Spatial in the [RSpatial Book](https://rspatial.org/spatial/index.html)
+ - Examples and [Case Studies](https://rspatial.org/cases/index.html)
+ 
 
 ### Directions
 
