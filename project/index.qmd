@@ -77,6 +77,10 @@ A single PDF that includes:
 
 ### Grading
 
+Use these to help along the way
+
+-   QGIS Cartography [Part 1](https://docs.google.com/presentation/d/1ENZ9Yg4GBeKn7q22dcwlaOiwweaRpsHw/edit?usp=sharing&ouid=107699306026215782274&rtpof=true&sd=true)
+
 This I'll be looking for while I'm grading.
 
 -   Submission (5). Did you submit the correct files?

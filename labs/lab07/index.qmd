@@ -24,7 +24,7 @@ Add a project to your GitHub portfolio, follow instructions from in-class demo. 
 
 #### Spatial Analysis (graded separately, please turn-in the PDF as well as zip file)
 
-For a demonstration of collecting data for Lab 7, see this demonstration project.
+For a demonstration of collecting data for Lab 7, see this [demonstration project](https://dillonma.github.io/adv_gis/files/lab07_demo.zip).
 
 1.  Qmd Part 1: Follow the steps [here](https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html) (<https://geodacenter.github.io/workbook/6a_local_auto/lab6a.html>) to do your first lab in GeoDa. The sample data set can be downloaded [here](https://geodacenter.github.io/data-and-lab/Guerry/) (<https://geodacenter.github.io/data-and-lab/Guerry/>). Reproduce this section in a Qmd.
 
