@@ -47,7 +47,7 @@ Look below and think through what a rough draft of the Introduction + Background
 
 **There are multiple deliverables and they need to be submitted via Blackboard.**
 
-<mark>**You should only submit THREE files on Blackboard, or FOUR for Graduate Students**</mark>.
+<mark>**You should only submit TWO files on Blackboard, or THREE for Graduate Students**</mark>.
 
 <mark>**ONE:** </mark>Your files as a **zipped project folder (or a Google Drive link to a zipped file on your Google Drive of your folder)**. This should have an R project file. If you used QGIS, then it should include your QGIS project file. I recommend exporting finalized data from R and opening the shapefiles in QGIS. Use what we've learned about folder structure to organize your files.
 
@@ -75,7 +75,7 @@ While the range of projects can vary, there are some particular
 
     -   Not as a separate section, but integrated into the text should be polished maps. I realize this will go over the 2 pages, but try to target 1,000 words total.
 
--   <mark>**THREE:** </mark>A **printed to PDF version of your final project portfolio page**. It should not include all the of the debrief, just a summarized version of it. It does not need to be technical, but something short that someone who doesn't know GIS should be able to understand. Here's an [example from last year](https://oonuttlet.github.io/finalproj), but I expect you to do better.
+-   <mark>Don't forget to combine this with the above: </mark>a **printed to PDF version of your final project portfolio page**. It should not include all the of the debrief, just a summarized version of it. It does not need to be technical, but something short that someone who doesn't know GIS should be able to understand. Here's an [example from last year](https://oonuttlet.github.io/finalproj), but I expect you to do better.
 
 -   <mark>**Graduate Student Poster or Presentation**</mark>. A [42x60 poster](https://www.posterpresentations.com/poster-templates-2019/Design-Newfield/PosterPresentations.com-42x60-Template-Newfield.pptx) or presentation of your work (turned into a PDF and included in the single PDF).
 
@@ -83,7 +83,8 @@ While the range of projects can vary, there are some particular
 
 Use these to help along the way
 
--   QGIS Cartography [Part 1](https://docs.google.com/presentation/d/1ENZ9Yg4GBeKn7q22dcwlaOiwweaRpsHw/edit?usp=sharing&ouid=107699306026215782274&rtpof=true&sd=true)
+-   Did you follow style guides? [QGIS Part 1](/files/qgis_part1.pdf), [QGIS Part 2](/files/qgis_part2.pdf)
+-   Did you follow analysis guides? [QGIS Part 3](/files/qgis_part3.pdf), [QGIS Part 4](/files/qgis_part4.pdf)
 
 This I'll be looking for while I'm grading.
 
@@ -100,8 +101,8 @@ This I'll be looking for while I'm grading.
 ### Turn-in
 
 ::: {.alert .alert-info}
-### What to turn-in -- see above for explanation. I only want two files.
+### What to turn-in -- see above for explanation.
 
-1.  **Turn in a single PDF.**
-2.  **A zip file of your Raster Data project properly formatted**. You won't be able to include the data, but what other files should you include and which folders should they go in?
+1.  **Turn in a single PDF of your project and final GitHub Portfolio.**
+2.  **A zip file of your project properly formatted** - but if Blackboard won't allow it, submit a link to a zipped file on Google Drive.
 :::
