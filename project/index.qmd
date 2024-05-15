@@ -23,7 +23,11 @@ Review the work we've done to date. See the useful links in all of the labs we'v
 
 -   We learned how to do [correlations](https://dillonma.github.io/adv_gis/labs/lab7/).
 
--   And we learned how to do [point pattern analysis](https://dillonma.github.io/adv_gis/labs/lab8/) and make heatmaps.
+-   You can also find [point pattern analysis](https://dillonma.github.io/adv_gis/labs/lab8/) and make heatmaps.
+
+-   For final touches in QGIS: [QGIS Part 1](/files/qgis_part1.pdf), [QGIS Part 2](/files/qgis_part2.pdf)
+
+-   For using Geoda and QGIS together for Bivariate Mapping: [QGIS Part 3](/files/qgis_part3.pdf), [QGIS Part 4](/files/qgis_part4.pdf)
 
 ### Directions
 
@@ -43,13 +47,13 @@ Look below and think through what a rough draft of the Introduction + Background
 
 **There are multiple deliverables and they need to be submitted via Blackboard.**
 
-<mark>**You should only submit TWO files on Blackboard**</mark>.
+<mark>**You should only submit THREE files on Blackboard, or FOUR for Graduate Students**</mark>.
 
-Your files as a **zipped project folder**. This should have an R project file. If you used QGIS, then it should include your QGIS project file. I recommend exporting finalized data from R and opening the shapefiles in QGIS. Use what we've learned about folder structure to organize your files.
+<mark>**ONE:** </mark>Your files as a **zipped project folder (or a Google Drive link to a zipped file on your Google Drive of your folder)**. This should have an R project file. If you used QGIS, then it should include your QGIS project file. I recommend exporting finalized data from R and opening the shapefiles in QGIS. Use what we've learned about folder structure to organize your files.
 
 While the range of projects can vary, there are some particular
 
-A single PDF that includes:
+<mark>**TWO:** </mark> A single PDF that includes:
 
 -   A **cover page** that includes your name, GitHub website link (github.io), and your GitHub website repository (github.io), and a link to your final project portfolio page that has a short description of your work (github.io).
 
@@ -71,9 +75,9 @@ A single PDF that includes:
 
     -   Not as a separate section, but integrated into the text should be polished maps. I realize this will go over the 2 pages, but try to target 1,000 words total.
 
--   A **printed to PDF version of your final project portfolio page**. It should not include all the of the debrief, just a summarized version of it. It does not need to be technical, but something short that someone who doesn't know GIS should be able to understand. Here's an [example from last year](https://oonuttlet.github.io/finalproj), but I expect you to do better.
+-   <mark>**THREE:** </mark>A **printed to PDF version of your final project portfolio page**. It should not include all the of the debrief, just a summarized version of it. It does not need to be technical, but something short that someone who doesn't know GIS should be able to understand. Here's an [example from last year](https://oonuttlet.github.io/finalproj), but I expect you to do better.
 
--   <mark>**Graduate Student Poster**</mark>. A poster of your work (turned into a PDF and included in the single PDF). I'll provide a template and some guidelines later.
+-   <mark>**Graduate Student Poster or Presentation**</mark>. A [42x60 poster](https://www.posterpresentations.com/poster-templates-2019/Design-Newfield/PosterPresentations.com-42x60-Template-Newfield.pptx) or presentation of your work (turned into a PDF and included in the single PDF).
 
 ### Grading
 

@@ -140,13 +140,13 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 14 (Apr 29): [Lab 8](/labs/lab08), [Lab 08 Project](/files/lab08.zip) and work on final project proposal, work sessions.
 
--   Week 15 (May 06): Final project work sessions. Final touches: [QGIS Part 1](/files/qgis_part1.pdf), [QGIS Part 2](/files/qgis_part2.pdf), [QGIS Part 3](/files/qgis_part3.pdf)
+-   Week 15 (May 06): Final project work sessions. Final touches: [QGIS Part 1](/files/qgis_part1.pdf), [QGIS Part 2](/files/qgis_part2.pdf)
 
--   Week 16 (May 13): Final project draft due, code review.
+-   Week 16 (May 13): Final project draft due, code review. Analysis: [QGIS Part 3](/files/qgis_part3.pdf), [QGIS Part 4](/files/qgis_part4.pdf)
 
 -   <mark>Finals Period (May 17, 1pm): Graduate Student Project Presentations</mark>
 
--   <mark>May 17 at 11:59pm: Final projects submissions due.</mark>
+-   <mark>Sunday, May 19 at 11:59pm: Final projects submissions due.</mark>
 
 ### Grading
 
