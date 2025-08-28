@@ -7,9 +7,9 @@ format: html
 
 ## GES 486/687/673: Advanced Applications in Geographic Information Systems
 
-**Instructor: [Dillon Mahmoudi](http://ges.umbc.edu/mahmoudi)** (he/him)\
-**Lecture:** Mondays + Wednesdays 2:30PM - 3:45PM, Sondheim 001\
-**Office hours:** Wednesdays 1:00PM to 2:30PM and by appointment (email me)\
+**Instructor:** Associate Professor [**Dillon Mahmoudi**](http://ges.umbc.edu/mahmoudi) (he/him)\
+**Lecture:** Tuesdays + Thursdays 4:00PM - 5:15PM, Sondheim 001\
+**Office hours:** Tuesdays + Thursdays 10:30AM to 11:30AM and by appointment (email me)\
 **Email:** dillonm\@umbc.edu\
 
 ![](material/dollardollarbmore.png){fig-align="center"}
@@ -108,45 +108,45 @@ This course is designed around a series of labs and a final project. The final p
 
 #### Learning QGIS and RStudio
 
--   Week 01 (Jan 29): [Lab 01](/labs/lab01)
+-   Week 01 (Aug 28, Sep 02, Sep 04): [Lab 01](/labs/lab01) (due Sep 8 by midnight)
 
--   [Week 02-03](/labs/lab02/week2.qmd) (Feb 05): [Lab 02](/labs/lab02)
+-   [Week 02](/labs/lab02/week2.qmd) (Sep 09): [Lab 02](/labs/lab02)
 
--   Week 04 (Feb 19): Lab 02 cont'd, [Week 03 Demo](/files/demo03.zip)
+-   Week 03 (Sep 16): Lab 03 [Week 03 Demo](/files/demo03.zip)
 
 #### Combining R/RStudio with QGIS
 
--   Week 05-06 (Feb 26): [Lab 03](/labs/lab03), [Lab 03 Project](/files/lab03.zip)
+-   Week 04 (Sep 23): [Lab 03](/labs/lab03), [Lab 03 Project](/files/lab03.zip)
 
--   Week 06-07 (Mar 04): [Lab 04](/labs/lab04), [Lab 04 Project](/files/lab04.zip)
+-   Week 05 (Sep 30): [Lab 04](/labs/lab04), [Lab 04 Project](/files/lab04.zip)
 
--   Week 07 (Mar 04): [Lab 05](/labs/lab05), [Lab 05 Project](/files/lab05.zip)
+-   Week 06 (Oct 07): [Lab 05](/labs/lab05), [Lab 05 Project](/files/lab05.zip)
 
--   Week 08 (Mar 18): <mark>**NO CLASS, Spring Break**</mark>
+-   Week 07 (Oct 14): [Lab 06](/labs/lab06)
 
 #### Advanced Spatial Analysis
 
--   Week 09 (Mar 25): [Lab 6](/labs/lab06)
+-   Week 09 (Oct 21):
 
--   Week 10 (Apr 01): <mark>**NO CLASS, Final Project**</mark>
+-   Week 10 (Oct 28):
 
--   Week 11 (Apr 08): Finish Lab 06 and address GitHub issues
+-   Week 11 (Nov 04): Finish Lab 06 and address GitHub issues
 
--   Week 12 (Apr 15): [Lab 7](/labs/lab07)
+-   Week 12 (Nov 11):
 
--   Week 13 (Apr 22): Continue on Lab 7
+-   Week 13 (Nov 18):
+
+-   Week 14 (Nov 26): <mark>**NO CLASS, Final Project**</mark>
 
 #### Final Project
 
--   Week 14 (Apr 29): [Lab 8](/labs/lab08), [Lab 08 Project](/files/lab08.zip) and work on final project proposal, work sessions.
+-   Week 14 (Dec 02): [Lab 8](/labs/lab08), [Lab 08 Project](/files/lab08.zip) and work on final project proposal, work sessions.
 
--   Week 15 (May 06): Final project work sessions. Final touches: [QGIS Part 1](/files/qgis_part1.pdf), [QGIS Part 2](/files/qgis_part2.pdf)
+-   Week 15 (Dec 09): Final project work sessions. Final touches: [QGIS Part 1](/files/qgis_part1.pdf), [QGIS Part 2](/files/qgis_part2.pdf), [QGIS Part 3](/files/qgis_part3.pdf), [QGIS Part 4](/files/qgis_part4.pdf)
 
--   Week 16 (May 13): Final project draft due, code review. Analysis: [QGIS Part 3](/files/qgis_part3.pdf), [QGIS Part 4](/files/qgis_part4.pdf)
+-   <mark>Tuesday, Dec 16 3:30pm-5:30pm, **Finals Period**: Project Showcase</mark>
 
--   <mark>Finals Period (May 17, 1pm): Graduate Student Project Presentations</mark>
-
--   <mark>Sunday, May 19 at 11:59pm: Final projects submissions due.</mark>
+-   <mark>Tuesday, Dec 16 3:30pm: **Final projects submissions due**.</mark>
 
 ### Grading
 

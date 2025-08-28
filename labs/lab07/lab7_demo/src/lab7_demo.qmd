@@ -13,7 +13,7 @@ This file is to demonstrate how to download data using `tidycensus` to download 
 
 This chunk loads the necessary packages. Naming this chunk `setup` allows it to run if one inadvertently runes other chunks later.
 
-```{r setup}
+```{r setup, eval = FALSE}
 library(dplyr) # for tibbles
 library(sf) # for geospatial
 library(tidyverse) # for tidy functions
@@ -28,7 +28,7 @@ options(tigris_use_cache = TRUE)
 
 This chunk downloads the data and uses `dplyer` pipes to send the result to `st_transform` and then to `erase_water`. The result is an `sf` object in an Albers project for North America.
 
-```{r get}
+```{r get, eval = FALSE}
 # This gets the population, race+eth, housing units, and median household income from the ACS
 bmore_tracts <- get_acs(geography = "tract", 
                            variables = c("pop" = "B03002_001", # Total
@@ -61,13 +61,13 @@ bmore_tracts <- get_acs(geography = "tract",
 
 This chunk problematically, but conveniently, reduces the race and ethnicity into 5 categories:
 
- - NH White as `pop_nhwhiteE` (from the Census)
- - NH Black as `pop_nhblackE` (from the Census)
- - Hisp/Latx as `pop_hispltxE` (from the Census)
- - NH Asian as `pop_nhasianXE` (computed below)
- - NH Multi/Other as `pop_nhotherXE` (computed below)
+-   NH White as `pop_nhwhiteE` (from the Census)
+-   NH Black as `pop_nhblackE` (from the Census)
+-   Hisp/Latx as `pop_hispltxE` (from the Census)
+-   NH Asian as `pop_nhasianXE` (computed below)
+-   NH Multi/Other as `pop_nhotherXE` (computed below)
 
-```{r computation}
+```{r computation, eval = FALSE}
 # With these commands, we problematically, but conveniently, reduce the race+eth into 5 categories:
 # NH White; NH Black, Hisp/Latx, NH Asian, NH Multi/Other
 # Computes the NH Asian Population
@@ -89,7 +89,7 @@ bmore_tracts$pct_nhwhite <- bmore_tracts$pop_nhwhiteE/bmore_tracts$popE
 
 Let's also get a backdrop for Maryland, counties and the state
 
-```{r backdrop}
+```{r backdrop, eval = FALSE}
 md_counties <- counties(state = 'MD') %>% st_transform(crs=5070)
 
 md_state <- md_counties %>%
@@ -103,7 +103,7 @@ md_state <- md_counties %>%
 
 Now we save the files to the `data` folder to use in QGIS.
 
-```{r writefiles}
+```{r writefiles, eval = FALSE}
 st_write(bmore_tracts, "../data/bmore_tracts.geojson", delete_layer = TRUE)
 st_write(md_counties, "../data/md_counties.geojson", delete_layer = TRUE)
 st_write(md_state, "../data/md_state.geojson", delete_layer = TRUE)
