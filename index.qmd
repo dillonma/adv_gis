@@ -90,7 +90,7 @@ O'Sullivan, David. 2024. **Computing Geographically**: Bridging GIScience and Ge
 
 Cutts, Andrew and Anita Graser. 2018. **Learn QGIS**: your step-by-step guide to the fundamental of QGIS 3.4. Fourth Edition. Birmingham, UK: Packt Publishing. ISBN-13: 9781788998864.
 
--   You can get this book online for free from the UMBC library: <https://catalog.umd.edu/docno=006153965>
+-   You can get this book online for free from the UMBC library: <https://usmai-umbc.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9963882956008247&context=L&vid=01USMAI_UMBC:UMBC&lang=en&search_scope=New_Discovery_Network&adaptor=Local%20Search%20Engine&tab=New_Network_Catalog&query=any,contains,learn%20qgis&sortby=date_d&facet=frbrgroupid,include,9073361343237330638&offset=0>
 
 -   Make sure to review the Preface to get the needed data and materials for the various chapters.
 
