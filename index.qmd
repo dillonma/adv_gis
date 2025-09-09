@@ -5,7 +5,7 @@ format: html
 
 <!-- https://bootswatch.com/cyborg/ -->
 
-## GES 486/687/673: Advanced Applications in Geographic Information Systems
+## GES 486/687: Advanced Applications in Geographic Information Systems
 
 **Instructor:** Associate Professor [**Dillon Mahmoudi**](http://ges.umbc.edu/mahmoudi) (he/him)\
 **Lecture:** Tuesdays + Thursdays 4:00PM - 5:15PM, Sondheim 001\
@@ -78,7 +78,7 @@ This course focuses on the methods for analyzing spatial data and provides an in
 
 **Computing.** I recommend using your own personal laptop in this course, however, you're free to use one of the lab computers. I recommend using the same computer for each class.
 
-**Discord + Community.** <mark>Technical learning alone</mark> is a recipe for disaster. Rely on your fellow classmates and ask questions in the class discord. This link is an invite for Discord for the first week of class. <https://discord.gg/9wUhDdQV>
+**Discord + Community.** <mark>Technical learning alone</mark> is a recipe for disaster. Rely on your fellow classmates and ask questions in the class discord. Check Blackboard for an invitation link to the Discord server for the class.
 
 **Schedule.**. Mondays we will spend on lecturing. Wednesdays we'll start with a quick in-class exercise before moving into lab time. Quizzes will be on Wednesdays.
 
