@@ -108,21 +108,21 @@ This course is designed around a series of labs and a final project. The final p
 
 #### Learning QGIS and RStudio
 
--   Week 01 (Aug 28, Sep 02, Sep 04): [Lab 01](/labs/lab01) (due Sep 8 by midnight)
+-   Week 01 (Aug 28, Sep 02, Sep 04): [Lab 01](/labs/lab01) (due Sep 10 by midnight)
 
--   [Week 02](/labs/lab02/week2.qmd) (Sep 09): [Lab 02](/labs/lab02)
+-   Week 02 (Sep 09): [Lab 02](/labs/lab02) (due Sep 18 before class); [week 2 notes](/labs/lab02/week2.qmd)
 
--   Week 03 (Sep 16): Lab 03 [Week 03 Demo](/files/demo03.zip)
+-   Week 03 (Sep 16): Lab 03 Week 03 Demo
 
 #### Combining R/RStudio with QGIS
 
--   Week 04 (Sep 23): [Lab 03](/labs/lab03), [Lab 03 Project](/files/lab03.zip)
+-   Week 04 (Sep 23): Lab 03, Lab 03 Project
 
--   Week 05 (Sep 30): [Lab 04](/labs/lab04), [Lab 04 Project](/files/lab04.zip)
+-   Week 05 (Sep 30): Lab 04, Lab 04 Project
 
--   Week 06 (Oct 07): [Lab 05](/labs/lab05), [Lab 05 Project](/files/lab05.zip)
+-   Week 06 (Oct 07): Lab 05, Lab 05 Project
 
--   Week 07 (Oct 14): [Lab 06](/labs/lab06)
+-   Week 07 (Oct 14): Lab 06
 
 #### Advanced Spatial Analysis
 

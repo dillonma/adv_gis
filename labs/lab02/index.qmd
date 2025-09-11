@@ -7,7 +7,7 @@ format: html
 
 ![](images/walkerbook.png){fig-alt="Analyzing US Census Data book cover"}
 
-[Notes for lab 2](/labs/lab2/week2.html).
+[Notes for lab 2](/labs/lab02/week2.qmd).
 
 ### RStudio Settings
 
