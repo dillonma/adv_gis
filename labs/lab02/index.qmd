@@ -33,7 +33,7 @@ Before continuing, ensure that you have these setting changed in RStudio.
 
 Please do the R work in R Quarto. Render your Qmd file (to a web page / HTML, this is the default). Then save or print the output to PDF and **turn in only the PDF file(s)**.
 
-Work through Chapters 1 through 2 of *Analyzing US Census Data*. Use an Qmd (Quarto) file to keep track of your progress.
+Work through Chapters 1 through 3 of *Analyzing US Census Data*. Use an Qmd (Quarto) file to keep track of your progress.
 
 Pick any single map from the chapters and use Overpass Turbo to create a map in QGIS, adding the exported data from Overpass Turbo and make a map that you're proud of.
 
