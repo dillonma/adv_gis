@@ -24,11 +24,15 @@ Before continuing, ensure that you have these setting changed in RStudio.
 
 ### Lab 3 Assignment
 
-[Lab 03 Project](/files/lab03.zip)
+-   [Lab 03 Project](/files/lab03.zip)
 
-Lab 3 asks a number of questions of a dataset, and then asks you to create a map using data that you export out of RStudio. Create a visually pleasing map using the variable `gapminder` dataset (using either <mark>2007</mark> **life expectancy or GDP per capita**). Be sure to add your name, the assignment name, a legend with professional titles, a small and minimalist North arrow, and a scale bar.
+-   [Lab 03 Demo](/files/demo03.zip)
 
-Use your best judgement on projection, colors, etc. Install the plugin `HCMQGIS` to find a base map should you choose to use it (there are also other packages).
+First, finish out Chapter 4 from last week in a separate Quarto document.
+
+Second, in the Lab 3 Quarto document, answer questions of a dataset, and then create a map using data that you export out of RStudio — create a visually pleasing map using the variable `gapminder` dataset (using either <mark>2007</mark> **life expectancy or GDP per capita**). Be sure to add your name, the assignment name, a legend with professional titles, a small and minimalist North arrow, and a scale bar.
+
+Use your best judgement on projection, colors, etc. Install the plugin `HCMQGIS` or `QuickMapServices` to find a base map should you choose to use it (there are also other packages).
 
 ### Turn-in
 
