@@ -7,7 +7,7 @@ format: html
 
 ![](images/industry_along_detroit_river-z.jpg){fig-alt="EPA toxic site along river near Detroit"}
 
-[Slides for week 5](week5.pptx).
+[Slides for lab 04](lab04_slides.pptx).
 
 ### Lab 4 Assignment
 
