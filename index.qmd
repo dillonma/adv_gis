@@ -121,7 +121,7 @@ This course is designed around a series of labs and a final project. The final p
 
 #### Combining R/RStudio with QGIS
 
--   Week 04 (Sep 23): [Lab 04](/labs/lab04) (due Sep 30 before class); [Lab 04 Project](/files/lab04.zip)
+-   Week 04 (Sep 23): [Lab 04](/labs/lab04) (due Oct 14 before class); [Lab 04 Project](/files/lab04.zip)
 
 -   Week 05 (Sep 30): Lab 05, Lab 05 Project
 
