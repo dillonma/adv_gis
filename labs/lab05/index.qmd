@@ -11,7 +11,7 @@ format: html
 
 [Lab 05 Project](/files/lab05.zip)
 
-Lab 4 asks you to perform some advanced shapefile manipulation using R. See the project to get started.
+Lab 5 asks you to perform some advanced shapefile manipulation using R. See the project to get started.
 
 ### Turn-in
 
