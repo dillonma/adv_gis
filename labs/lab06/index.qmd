@@ -9,6 +9,8 @@ format: html
 
 ### Directions
 
+Create a GitHub portfolio!
+
 #### GitHub Pages
 
 1.  Review this short description on version control, git, and GitHub. [What Is GitHub? A Beginner's Introduction to GitHub](https://kinsta.com/knowledgebase/what-is-github/)

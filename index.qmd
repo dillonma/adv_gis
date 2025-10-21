@@ -127,11 +127,11 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 06 (Oct 07): [Lab 05](/labs/lab05) (due Oct 14 at midnight); [Lab 05 Project](/files/lab05.zip)
 
--   Week 07 (Oct 14):
+-   Week 07 (Oct 14): Catch-up week
 
 #### Advanced Spatial Analysis
 
--   Week 09 (Oct 21):
+-   Week 09 (Oct 21): [Lab 06](/labs/lab06) (GitHub, due Oct 28 at midnight)
 
 -   Week 10 (Oct 28):
 
