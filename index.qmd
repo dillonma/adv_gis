@@ -110,6 +110,7 @@ This course is designed around a series of labs and a final project. The final p
 
 -   [Part 1](/files/qgis_part1.pdf) (PDF)
 -   [Part 2](/files/qgis_part2.pdf) (PDF)
+-   [Part 3](/files/qgis_part3.pdf) (PDF)
 
 #### Learning QGIS and RStudio
 
@@ -137,7 +138,7 @@ This course is designed around a series of labs and a final project. The final p
 
 -   Week 11 (Nov 04): Finish Lab 06 and address GitHub issues
 
--   Week 12 (Nov 11):
+-   Week 12 (Nov 11): [Lab 07](/labs/lab07) (due Nov 21 at midnight); [Lab 07 Demo](/files/llab07_demo.zip)
 
 -   Week 13 (Nov 18):
 

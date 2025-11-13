@@ -47,7 +47,7 @@ bmore_tracts <- get_acs(geography = "tract",
                                          "mhhi" = "B19013_001", # Median Household Income
                                          "mhmv" = "B25077_001"), # Median Home Value - Occ 
                            
-                           year = 2022,
+                           year = 2023,
                            county = c(510,5,3,27),
                            survey = "acs5",
                            state = c(24), 
