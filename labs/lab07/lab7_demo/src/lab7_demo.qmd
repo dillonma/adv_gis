@@ -13,7 +13,7 @@ This file is to demonstrate how to download data using `tidycensus` to download 
 
 This chunk loads the necessary packages. Naming this chunk `setup` allows it to run if one inadvertently runes other chunks later.
 
-```{r setup, eval = FALSE}
+```{r setup, eval = TRUE}
 library(dplyr) # for tibbles
 library(sf) # for geospatial
 library(tidyverse) # for tidy functions
@@ -28,7 +28,7 @@ options(tigris_use_cache = TRUE)
 
 This chunk downloads the data and uses `dplyer` pipes to send the result to `st_transform` and then to `erase_water`. The result is an `sf` object in an Albers project for North America.
 
-```{r get, eval = FALSE}
+```{r get, eval = TRUE}
 # This gets the population, race+eth, housing units, and median household income from the ACS
 bmore_tracts <- get_acs(geography = "tract", 
                            variables = c("pop" = "B03002_001", # Total
@@ -50,7 +50,7 @@ bmore_tracts <- get_acs(geography = "tract",
                            year = 2023,
                            county = c(510,5,3,27),
                            survey = "acs5",
-                           state = c(24), 
+                           state = c("Maryland"), # 24 is the FIPS code for MD
                            geometry = TRUE, 
                            output = "wide") %>%
   st_transform(crs=5070) %>% # project it so we can remove areas, 5070 is albers north america
@@ -104,7 +104,7 @@ md_state <- md_counties %>%
 Now we save the files to the `data` folder to use in QGIS.
 
 ```{r writefiles, eval = FALSE}
-st_write(bmore_tracts, "../data/bmore_tracts.geojson", delete_layer = TRUE)
-st_write(md_counties, "../data/md_counties.geojson", delete_layer = TRUE)
-st_write(md_state, "../data/md_state.geojson", delete_layer = TRUE)
+st_write(bmore_tracts, "../data/bmore_tracts.geojson", delete_dsn = TRUE)
+st_write(md_counties, "../data/md_counties.geojson", delete_dsn = TRUE)
+st_write(md_state, "../data/md_state.geojson", delete_dsn = TRUE)
 ```
