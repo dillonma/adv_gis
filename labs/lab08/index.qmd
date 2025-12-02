@@ -9,10 +9,7 @@ format: html
 
 ### Background
 
-Don't skimp on these! There are some really useful links in here!
- - Working R Spatial in the [RSpatial Book](https://rspatial.org/spatial/index.html)
- - Examples and [Case Studies](https://rspatial.org/cases/index.html)
- 
+Don't skimp on these! There are some really useful links in here! - Working R Spatial in the [RSpatial Book](https://rspatial.org/spatial/index.html) - Examples and [Case Studies](https://rspatial.org/cases/index.html)
 
 ### Directions
 
@@ -22,15 +19,15 @@ Graded separately, finalize your portfolio site with 1 project from this class a
 
 #### Interpolation with Regression Lab
 
-See the sample project. **32 points**
+See the sample project ([Lab 08 Project](/files/lab08.zip)) **32 points**
 
 ### Grading
 
 -   GitHub portion (15 points)
 -   Part 1 (8 points) - Make maps from [Interpolation from R Spatial](https://rspatial.org/analysis/4-interpolation.html)
--   Part 2 (8 points) - Answer questions (see sample project)
+-   Part 2 (8 points) - Answer questions in the quarto document
 -   Part 3 (8 points) - Make maps (exclude graphics) from [Chapter Spatial Regression from R Spatial](https://rspatial.org/analysis/7-spregression.html)
--   Part 4 (8 points) - Answer questions (see sample project)
+-   Part 4 (8 points) - Answer questions in the quarto document
 
 ### Turn-in
 
